@@ -12,6 +12,7 @@ namespace ContosoCrafts.WebSite.Pages
     /// <summary>
     /// Dave Anderson
     /// Roopini Jayakumar
+    /// Denis Rajic
     /// </summary>
     public class IndexModel : PageModel
     {
