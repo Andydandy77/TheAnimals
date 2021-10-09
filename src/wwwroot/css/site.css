@@ -145,12 +145,20 @@ ul {
 }
 .bg-footer {
     background: -webkit-linear-gradient(110deg, #C6AD8F 60%, #425664 60%);
-    background: -o-linear-gradient(110deg, #C6AD8F 60%, #425664d 60%);
+    background: -o-linear-gradient(110demg, #C6AD8F 60%, #425664d 60%);
     background: -moz-linear-gradient(110deg, #C6AD8F 60%, #425664 60%);
     background: linear-gradient(110deg, #C6AD8F 60%, #425664 60%);
 }
 
-.git {
-    width:30%; /* Will shrink image to 30% of its original width */
-    height: auto;
+.links {
+    display: inline;
+    bottom: 0px;
+    position: absolute;
 }
+
+.icon {
+    width: 100px; /* Will shrink image to 30% of its original width */
+    height: 100px;
+    padding: 15px;
+}
+
