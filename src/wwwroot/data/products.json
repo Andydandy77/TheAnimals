@@ -2,8 +2,7 @@
   {
     "Id": "jenlooper-cactus",
     "Maker": "@jenlooper",
-    "img": "https://user-images.githubusercontent.com/41929050/61567048-13938600-aa33-11e9-9cfd-712191013192.jpeg",
-    "Url": "https://www.hackster.io/agent-hawking-1/the-quantified-cactus-an-easy-plant-soil-moisture-sensor-e65393",
+    "img": "https://assets.epicurious.com/photos/5c745a108918ee7ab68daf79/master/pass/Smashburger-recipe-120219.jpg",
     "Title": "Burger",
     "Description": "This project is a good learning project to get comfortable with soldering and programming an Arduino.",
     "Ratings": [
@@ -54,7 +53,7 @@
   {
     "Id": "sailorhg-corsage",
     "Maker": "sailorhg",
-    "img": "https://user-images.githubusercontent.com/41929050/61567055-142c1c80-aa33-11e9-96ff-9fbac6413625.png",
+    "img": "https://www.seriouseats.com/thmb/uGGwEqPZf7PzhES1ZCAqHLgCbG8=/1500x844/smart/filters:no_upscale()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2015__05__Anova-Steak-Guide-Sous-Vide-Photos15-beauty-159b7038c56a4e7685b57f478ca3e4c8.jpg",
     "Url": "https://twitter.com/sailorhg/status/1090113666911891456",
     "Title": "Steak",
     "Description": "Light-up corsage I made with my summer intern.",
@@ -99,7 +98,7 @@
   {
     "Id": "vogueandcode-hipster-dev-bro",
     "Maker": "vogueandcode",
-    "img": "https://user-images.githubusercontent.com/41929050/61567061-14c4b300-aa33-11e9-9fee-63ff2c0c9823.png",
+    "img": "https://infatuation.s3.amazonaws.com/media/images/guides/the-seattle-ice-cream-power-rankings/NateWatters_SaltAndStraw_Cone-6%20copy.jpg",
     "Url": "https://www.vogueandcode.com/shop/hipster-dev-bro",
     "Title": "Ice Cream",
     "Description": "Hipster Dev is busy coding away while styled in a camo jacket and orange beanie.",
