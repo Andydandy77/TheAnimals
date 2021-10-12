@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 
 using ContosoCrafts.WebSite.Models;
 using ContosoCrafts.WebSite.Services;
-
+// Adding comment that will be synced
 namespace ContosoCrafts.WebSite.Pages
 {
 
