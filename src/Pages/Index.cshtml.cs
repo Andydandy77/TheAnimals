@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 
 using ContosoCrafts.WebSite.Models;
 using ContosoCrafts.WebSite.Services;
-// Adding comment that will be you suck
+// I love Seattle Spring
 namespace ContosoCrafts.WebSite.Pages
 {
 
