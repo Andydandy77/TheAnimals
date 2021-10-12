@@ -15,6 +15,9 @@ namespace ContosoCrafts.WebSite.Pages
     /// Denis Rajic
     /// Gerry Wang
     /// </summary>
+    ///
+
+    /// this sucks
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
