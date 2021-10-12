@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 
 using ContosoCrafts.WebSite.Models;
 using ContosoCrafts.WebSite.Services;
-// I love Seattle Spring
+// I love Seattle winter
 namespace ContosoCrafts.WebSite.Pages
 {
 
