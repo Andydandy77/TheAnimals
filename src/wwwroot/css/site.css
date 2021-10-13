@@ -21,7 +21,7 @@ for details on configuring this project to bundle and minify static web assets. 
 
 .card-text {
     font-family: 'Tinos', serif;
-    text-align: justify;
+    text-align: right;
 }
 
 .card-columns .card-img {
