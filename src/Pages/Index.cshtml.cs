@@ -5,7 +5,6 @@ using Microsoft.Extensions.Logging;
 
 using ContosoCrafts.WebSite.Models;
 using ContosoCrafts.WebSite.Services;
-// I love Seattle winter
 namespace ContosoCrafts.WebSite.Pages
 {
 
@@ -17,7 +16,6 @@ namespace ContosoCrafts.WebSite.Pages
     /// </summary>
     ///
 
-    /// this sucks
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
