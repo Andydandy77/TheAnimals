@@ -1,17 +1,114 @@
 [
   {
-    "Id": "jenlooper-cactus",
-    "Maker": "@jenlooper",
+    "Id": "Burger",
     "img": "https://assets.epicurious.com/photos/5c745a108918ee7ab68daf79/master/pass/Smashburger-recipe-120219.jpg",
     "Title": "Burger",
-    "Description": "This project is a good learning project to get comfortable with soldering and programming an Arduino.",
-    "Ratings": [
-      5,
-      5,
-      3,
-      2,
-      1,
-      5
+    "Category": [ "American" ],
+    "TimeOfDayFood": [ "Dinner", "Lunch" ],
+    "Dishes": [
+      {
+        "Name": "The 8oz.",
+        "Description": "our signature burger - arugula, balsamic onions, hills bacon, beechers flagship cheddar, truffle aioli",
+        "Price": 15,
+        "Restaurant": "8oz Burger",
+        "LocationCity": "Seattle",
+        "LocationState": "WA",
+        "img": "https://s3-media0.fl.yelpcdn.com/bphoto/LnggdyxSd-aVe41dWJF2-Q/o.jpg",
+        "Reviews": [
+          "Wow this burger is one of the best burgers ever!",
+          "I dream about this burger"
+        ],
+        "Ratings": [
+          4,
+          4,
+          5,
+          5,
+          3,
+          4
+        ]
+
+      },
+
+      {
+        "Name": "Mushroom",
+        "Description": "crimini mushroom, porcini, shallots, gruyere​, truffle aioli",
+        "Price": 9.75,
+        "Restaurant": "Uneedaburger",
+        "LocationCity": "Seattle",
+        "LocationState": "WA",
+        "img": "https://s3-media0.fl.yelpcdn.com/bphoto/wf9P2RnUAYHZEXTY2TZeOQ/o.jpg",
+        "Reviews": [
+          "I love the mushrooms in this burger",
+          "This burger was alright. The patty was kind of dry."
+        ],
+        "Ratings": [
+          3,
+          4,
+          5,
+          5,
+          3,
+          4
+        ]
+
+      }
+    ]
+
+  },
+
+  {
+    "Id": "Pizza",
+    "img": "https://lh3.googleusercontent.com/nu1d5IiD32d7uwSKv9luQdqYc0i1wypQO1dRrqL8pZTLn43GeNk7puMR-8VqCpprEqUfhs4qTbGTxtCviv-XC9dyk4o=s1440-e7-v1-rw",
+    "Title": "Pizza",
+    "Category": [ "Italian", "American" ],
+    "TimeOfDayFood": [ "Dinner", "Lunch" ],
+    "Dishes": [
+      {
+        "Name": "Pepperoni and Caramelized Garlic Pizza",
+        "Description": "Pepperoni, garlic confit, and mozzarella on a red base.",
+        "Price": 24,
+        "Restaurant": "Dantini Pizza",
+        "LocationCity": "Seattle",
+        "LocationState": "WA",
+        "img": "https://dantinipizza.square.site/uploads/1/3/5/6/135637590/s954762608108102675_p3_i1_w1181.png",
+        "Reviews": [
+          "One of the best pizzas in Seattle. Gives New York a run for their money!",
+          "The caramelized garlic is a great touch."
+        ],
+        "Ratings": [
+          4,
+          4,
+          5,
+          5,
+          5,
+          4
+        ]
+
+      },
+
+      {
+        "Name": "Pepperoni",
+        "Description": "Pepperoni, Mozzarella, and Red Sauce",
+        "Price": 20.99,
+        "Restaurant": "Big Mario's New York Style Pizza",
+        "LocationCity": "Seattle",
+        "LocationState": "WA",
+        "img": "https://s3-media0.fl.yelpcdn.com/bphoto/_oiC3CcYufLQVn6nv6ihiQ/o.jpg",
+        "Reviews": [
+          "It's a little expensive but this pizza reminds me of home!",
+          "Big marios is a Seattle staple.",
+          "A night out in Capitol Hill isn't complete without Big Mario's"
+        ],
+        "Ratings": [
+          3,
+          4,
+          4,
+          5,
+          3,
+          5,
+          3
+        ]
+
+      }
     ]
   },
   {
