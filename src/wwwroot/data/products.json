@@ -1,4 +1,30 @@
 [
+
+  {
+    "Id": "8oz",
+    "Category": "Burger",
+    "Restaurant": "8oz Burger",
+    "City": "Seattle",
+    "State": "WA",
+    "img": "https://s3-media0.fl.yelpcdn.com/bphoto/LnggdyxSd-aVe41dWJF2-Q/o.jpg",
+    "Url": "https://www.8ozburgerandco.com/",
+    "Title": "The 8oz.",
+    "Description": "Our signature burger - arugula, balsamic onions, hills bacon, beechers flagship cheddar, truffle aioli",
+    "Ratings": [
+      4,
+      4,
+      5,
+      5,
+      3,
+      4
+    ],
+    "Reviews": [
+      "Wow this burger is one of the best burgers ever!",
+      "I dream about this burger"
+    ],
+    "Price": 15
+
+  },
   {
     "Id": "burger",
     "Category": "Burger",
