@@ -35,6 +35,7 @@ namespace ContosoCrafts.WebSite.Services
             }
         }
 
+
         public void AddRating(string productId, int rating)
         {
             var products = GetAllData();
@@ -50,14 +51,20 @@ namespace ContosoCrafts.WebSite.Services
                 products.First(x => x.Id == productId).Ratings = ratings.ToArray();
             }
 
-            using(var outputStream = File.OpenWrite(JsonFileName))
+            SaveData(products);
+        }
+
+        private void SaveData(IEnumerable<ProductModel> products)
+        {
+
+            using (var outputStream = File.Create(JsonFileName))
             {
                 JsonSerializer.Serialize<IEnumerable<ProductModel>>(
                     new Utf8JsonWriter(outputStream, new JsonWriterOptions
                     {
                         SkipValidation = true,
                         Indented = true
-                    }), 
+                    }),
                     products
                 );
             }
