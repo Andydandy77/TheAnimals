@@ -69,5 +69,37 @@ namespace ContosoCrafts.WebSite.Services
                 );
             }
         }
+
+        /// <summary>
+        /// Create a new product using default values
+        /// After create the user can update to set values
+        /// </summary>
+        /// <returns></returns>
+        public ProductModel CreateData()
+        {
+            // Create new product
+            var data = new ProductModel()
+            {
+                Id = System.Guid.NewGuid().ToString(),
+                Category = "Enter Type of food", // Change later to select from options
+                Restaurant = "Enter Restaurant name",
+                City = "Enter City",
+                State = "Enter State",
+                Image = "Link to picture of dish",
+                Url = "Restaurant Website",
+                Title = "Name of Dish",
+                Description = "Enter description of dish",
+                Price = 0,
+            };
+
+            // Get data and append new data to it
+            var dataSet = GetProducts();
+            dataSet = dataSet.Append(data);
+
+            // Save data
+            SaveData(dataSet);
+
+            return data;
+        }
     }
 }
