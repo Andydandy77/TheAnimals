@@ -93,7 +93,7 @@ namespace ContosoCrafts.WebSite.Services
             };
 
             // Get data and append new data to it
-            var dataSet = GetProducts();
+            var dataSet = GetAllData();
             dataSet = dataSet.Append(data);
 
             // Save data
