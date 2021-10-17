@@ -75,6 +75,9 @@ namespace ContosoCrafts.WebSite.Services
             productData.Url = data.Url;
             productData.Image = data.Image;
             productData.Price = data.Price;
+            productData.State = data.State;
+            productData.City = data.City;
+            productData.Category = data.Category;
 
             SaveData(products);
 
