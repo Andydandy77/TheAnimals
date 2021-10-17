@@ -28,6 +28,27 @@
             <span asp-validation-for="Product.Description" class="text-danger"></span>
         </div>
 
+        @*to update the Category of the dish*@
+        <div class="form-group">
+            <label asp-for="Product.Category" class="control-label"></label>
+            <input asp-for="Product.Category" class="form-control" />
+            <span asp-validation-for="Product.Category" class="text-danger"></span>
+        </div>
+
+        @*to update the City of the dish*@
+        <div class="form-group">
+            <label asp-for="Product.City" class="control-label"></label>
+            <input asp-for="Product.City" class="form-control" />
+            <span asp-validation-for="Product.City" class="text-danger"></span>
+        </div>
+
+        @*to update the State of the dish*@
+        <div class="form-group">
+            <label asp-for="Product.State" class="control-label"></label>
+            <input asp-for="Product.State" class="form-control" />
+            <span asp-validation-for="Product.State" class="text-danger"></span>
+        </div>
+
         @*to update the Price of the dish*@
         <div class="form-group">
             <label asp-for="Product.Price" class="control-label"></label>
