@@ -1,5 +1,4 @@
 [
-
   {
     "Id": "8oz",
     "Category": "Burger",
@@ -23,7 +22,6 @@
       "I dream about this burger"
     ],
     "Price": 15
-
   },
   {
     "Id": "burger",
@@ -46,7 +44,7 @@
       4,
       4
     ],
-    "Reviews": null,
+    "Reviews": [ "Love this burger!" ],
     "Price": 15
   },
   {
@@ -60,7 +58,7 @@
     "Title": "Pizza",
     "Description": "Create a web-connected light-strip API controllable from your website, using the Particle.io.",
     "Ratings": null,
-    "Reviews": null,
+    "Reviews": [ "Love this pizza!" ],
     "Price": 15
   },
   {
@@ -74,7 +72,7 @@
     "Title": "Soup",
     "Description": "Mike\u0027s Soup",
     "Ratings": null,
-    "Reviews": null,
+    "Reviews": [ "Love this soup!" ],
     "Price": 15
   },
   {
@@ -88,21 +86,21 @@
     "Title": "Salad",
     "Description": "Mike\u0027s Salad",
     "Ratings": null,
-    "Reviews": null,
+    "Reviews": [ "Love this salad!" ],
     "Price": 15
   },
   {
     "Id": "steak",
     "Category": "Steak",
-    "Restaurant": "Mike\u0027s Soup Shop",
+    "Restaurant": "Mike\u0027s Steak Shop",
     "City": "Seattle",
     "State": "WA",
     "img": "https://www.seriouseats.com/thmb/uGGwEqPZf7PzhES1ZCAqHLgCbG8=/1500x844/smart/filters:no_upscale()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2015__05__Anova-Steak-Guide-Sous-Vide-Photos15-beauty-159b7038c56a4e7685b57f478ca3e4c8.jpg",
     "Url": "https://twitter.com/sailorhg/status/1090113666911891456",
     "Title": "Steak",
-    "Description": "Mike\u0027s Soup",
+    "Description": "Mike\u0027s Steak",
     "Ratings": null,
-    "Reviews": null,
+    "Reviews": [ "Love this steak!" ],
     "Price": 15
   },
   {
@@ -116,7 +114,7 @@
     "Title": "Fries",
     "Description": "Mike\u0027s Fries",
     "Ratings": null,
-    "Reviews": null,
+    "Reviews": [ "Love these fries!" ],
     "Price": 15
   },
   {
@@ -130,7 +128,7 @@
     "Title": "Sandwich",
     "Description": "Mike\u0027s Sandwich",
     "Ratings": null,
-    "Reviews": null,
+    "Reviews": [ "Love this sandwich!" ],
     "Price": 15
   },
   {
@@ -144,7 +142,7 @@
     "Title": "Sushi",
     "Description": "Mike\u0027s Sushi",
     "Ratings": null,
-    "Reviews": null,
+    "Reviews": [ "Love this sushi!" ],
     "Price": 15
   },
   {
@@ -158,7 +156,7 @@
     "Title": "Tacos",
     "Description": "Mike\u0027s Tacos",
     "Ratings": null,
-    "Reviews": null,
+    "Reviews": [ "Love these tacos!" ],
     "Price": 15
   },
   {
@@ -172,7 +170,7 @@
     "Title": "Ice Cream",
     "Description": "Mike\u0027s Ice Cream",
     "Ratings": null,
-    "Reviews": null,
+    "Reviews": [ "Love this Ice Cream!" ],
     "Price": 15
   },
   {
@@ -186,7 +184,7 @@
     "Title": "Fried Chicken",
     "Description": "Mike\u0027s Fried Chicken",
     "Ratings": null,
-    "Reviews": null,
+    "Reviews": [ "Love this fried chicken!" ],
     "Price": 15
   },
   {
@@ -200,7 +198,7 @@
     "Title": "Hot Dog",
     "Description": "Mike\u0027s Hot Dog",
     "Ratings": null,
-    "Reviews": null,
+    "Reviews": [ "Love this hot dog!" ],
     "Price": 15
   },
   {
@@ -214,7 +212,7 @@
     "Title": "Fish",
     "Description": "Mike\u0027s Fish",
     "Ratings": null,
-    "Reviews": null,
+    "Reviews": [ "Love this fish!" ],
     "Price": 15
   },
   {
@@ -228,7 +226,7 @@
     "Title": "Doughnuts",
     "Description": "Mike\u0027s Doughnut",
     "Ratings": null,
-    "Reviews": null,
+    "Reviews": [ "Love these doughnuts!" ],
     "Price": 15
   }
 ]
