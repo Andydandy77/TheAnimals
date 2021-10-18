@@ -20,9 +20,12 @@
     <p class="card-text">@Model.Product.Description</p>
     <p class="card-text">Location: @Model.Product.City, @Model.Product.State</p>
     <p class="card-text">Reviews:</p>
-    @foreach (var review in Model.Product.Reviews)
+    @if (Model.Product.Reviews != null) 
     {
+        foreach (var review in Model.Product.Reviews)
+        {
         <p class="card-text">"@review"</p>
+        }
     }
 
 
