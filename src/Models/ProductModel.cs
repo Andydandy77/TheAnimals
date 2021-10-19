@@ -1,3 +1,4 @@
+using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -20,6 +21,17 @@ namespace ContosoCrafts.WebSite.Models
         public float Price { get; set; }
 
         public override string ToString() => JsonSerializer.Serialize<ProductModel>(this);
+        public int GetCurrentRating()
+        {
+            int rating = 0;
+            if (Ratings != null)
+            {
+                int voteCount = Ratings.Length;
+                rating = Ratings.Sum() / voteCount;
+            }
+            return rating;
+
+        }
 
  
     }
