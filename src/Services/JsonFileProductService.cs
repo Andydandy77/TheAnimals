@@ -11,11 +11,16 @@ namespace ContosoCrafts.WebSite.Services
 {
    public class JsonFileProductService
     {
+        // <summary>
+        /// Default Constructor
+        /// </summary>
+        /// <param name="webHostEnvironment"></param>
         public JsonFileProductService(IWebHostEnvironment webHostEnvironment)
         {
             WebHostEnvironment = webHostEnvironment;
         }
 
+        //Provides information of a Web Hosting Environment
         public IWebHostEnvironment WebHostEnvironment { get; }
 
         private string JsonFileName
@@ -23,6 +28,7 @@ namespace ContosoCrafts.WebSite.Services
             get { return Path.Combine(WebHostEnvironment.WebRootPath, "data", "products.json"); }
         }
 
+        //Exposes an enumerator, iterators over
         public IEnumerable<ProductModel> GetAllData()
         {
             using(var jsonFileReader = File.OpenText(JsonFileName))
@@ -36,6 +42,7 @@ namespace ContosoCrafts.WebSite.Services
         }
 
 
+        //Adds Rating
         public void AddRating(string productId, int rating)
         {
             var products = GetAllData();
@@ -51,6 +58,7 @@ namespace ContosoCrafts.WebSite.Services
                 products.First(x => x.Id == productId).Ratings = ratings.ToArray();
             }
 
+            //Saves data
             SaveData(products);
         }
 
@@ -87,6 +95,7 @@ namespace ContosoCrafts.WebSite.Services
         /// <summary>
         /// Save All products data to storage
         /// </summary>
+
         private void SaveData(IEnumerable<ProductModel> products)
         {
 
