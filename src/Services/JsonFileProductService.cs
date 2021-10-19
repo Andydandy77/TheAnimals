@@ -84,7 +84,9 @@ namespace ContosoCrafts.WebSite.Services
             return productData;
         }
 
-
+        /// <summary>
+        /// Save All products data to storage
+        /// </summary>
         private void SaveData(IEnumerable<ProductModel> products)
         {
 
@@ -116,7 +118,7 @@ namespace ContosoCrafts.WebSite.Services
                 Restaurant = "Enter Restaurant name",
                 City = "Enter City",
                 State = "Enter State",
-                Image = "Link to picture of dish",
+                Image = "https://www.pikpng.com/pngl/b/59-592604_logo-knife-clipart.png",
                 Url = "Restaurant Website",
                 Title = "Name of Dish",
                 Description = "Enter description of dish",
