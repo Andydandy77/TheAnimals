@@ -25,13 +25,19 @@ namespace ContosoCrafts.WebSite.Pages.Product
         // The data to show
         public ProductModel Product;
 
+        public int[] ratings;
+
+        public int currentRating;
+
         /// <summary>
         /// REST Get request
         /// </summary>
         /// <param name="id"></param>
         public void OnGet(string id)
         {
-            Product = ProductService.GetAllData().FirstOrDefault(m => m.Id.Equals(id));
+            Product = ProductService.GetAllData().FirstOrDefault(m => m.Id.Equals(id));            
         }
+
+
     }
 }
