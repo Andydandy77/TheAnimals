@@ -7,6 +7,9 @@ using ContosoCrafts.WebSite.Services;
 
 namespace ContosoCrafts.WebSite.Pages.Product
 {
+    /// <summary>
+    /// Read page will show information about the Dish
+    /// </summary>
     public class ReadModel : PageModel
     {
         // Data middletier
