@@ -9,7 +9,10 @@ using Microsoft.AspNetCore.Hosting;
 
 namespace ContosoCrafts.WebSite.Services
 {
-   public class JsonFileProductService
+    /// <summary>
+    /// Product Service class
+    /// </summary>
+    public class JsonFileProductService
     {
         // <summary>
         /// Default Constructor
@@ -42,7 +45,11 @@ namespace ContosoCrafts.WebSite.Services
         }
 
 
-        //Adds Rating
+        /// <summary>
+        /// Adds rating to dish
+        /// </summary>
+        /// <param name="productId"></param>
+        /// <param name="rating"></param>
         public void AddRating(string productId, int rating)
         {
             var products = GetAllData();
