@@ -23,9 +23,10 @@ namespace ContosoCrafts.WebSite.Services
             WebHostEnvironment = webHostEnvironment;
         }
 
-        //Provides information of a Web Hosting Environment
+        // Provides information of a Web Hosting Environment
         public IWebHostEnvironment WebHostEnvironment { get; }
 
+        // Returns path to json file
         private string JsonFileName
         {
             get { return Path.Combine(WebHostEnvironment.WebRootPath, "data", "products.json"); }
