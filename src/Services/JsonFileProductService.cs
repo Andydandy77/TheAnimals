@@ -9,7 +9,10 @@ using Microsoft.AspNetCore.Hosting;
 
 namespace ContosoCrafts.WebSite.Services
 {
-   public class JsonFileProductService
+    /// <summary>
+    /// Product Service class
+    /// </summary>
+    public class JsonFileProductService
     {
         // <summary>
         /// Default Constructor
@@ -20,9 +23,10 @@ namespace ContosoCrafts.WebSite.Services
             WebHostEnvironment = webHostEnvironment;
         }
 
-        //Provides information of a Web Hosting Environment
+        // Provides information of a Web Hosting Environment
         public IWebHostEnvironment WebHostEnvironment { get; }
 
+        // Returns path to json file
         private string JsonFileName
         {
             get { return Path.Combine(WebHostEnvironment.WebRootPath, "data", "products.json"); }
@@ -42,7 +46,11 @@ namespace ContosoCrafts.WebSite.Services
         }
 
 
-        //Adds Rating
+        /// <summary>
+        /// Adds rating to dish
+        /// </summary>
+        /// <param name="productId"></param>
+        /// <param name="rating"></param>
         public void AddRating(string productId, int rating)
         {
             var products = GetAllData();
