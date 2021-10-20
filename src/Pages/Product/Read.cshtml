@@ -31,10 +31,16 @@
     }
 
     @{
-        var numOfVotes = Model.Product.Ratings.Length;
+        var numOfVotes = 0;
+
+        if (Model.Product.Ratings != null)
+        {
+           numOfVotes = Model.Product.Ratings.Length;
+        }
+
         var voteLabel = numOfVotes > 1 ? "Votes" : "Vote";
 
-        if (Model.Product.Ratings.Length == 0)
+        if (numOfVotes == 0)
         {
             <span>Be the first to vote!</span>
         }
