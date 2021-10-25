@@ -44,7 +44,9 @@
       4,
       4
     ],
-    "Reviews": [ "Love this burger!" ],
+    "Reviews": [
+      "Love this burger!"
+    ],
     "Price": 15
   },
   {
@@ -58,7 +60,9 @@
     "Title": "Pizza",
     "Description": "Create a web-connected light-strip API controllable from your website, using the Particle.io.",
     "Ratings": null,
-    "Reviews": [ "Love this pizza!" ],
+    "Reviews": [
+      "Love this pizza!"
+    ],
     "Price": 15
   },
   {
@@ -72,7 +76,9 @@
     "Title": "Soup",
     "Description": "Mike\u0027s Soup",
     "Ratings": null,
-    "Reviews": [ "Love this soup!" ],
+    "Reviews": [
+      "Love this soup!"
+    ],
     "Price": 15
   },
   {
@@ -86,7 +92,9 @@
     "Title": "Salad",
     "Description": "Mike\u0027s Salad",
     "Ratings": null,
-    "Reviews": [ "Love this salad!" ],
+    "Reviews": [
+      "Love this salad!"
+    ],
     "Price": 15
   },
   {
@@ -100,7 +108,9 @@
     "Title": "Steak",
     "Description": "Mike\u0027s Steak",
     "Ratings": null,
-    "Reviews": [ "Love this steak!" ],
+    "Reviews": [
+      "Love this steak!"
+    ],
     "Price": 15
   },
   {
@@ -114,7 +124,9 @@
     "Title": "Fries",
     "Description": "Mike\u0027s Fries",
     "Ratings": null,
-    "Reviews": [ "Love these fries!" ],
+    "Reviews": [
+      "Love these fries!"
+    ],
     "Price": 15
   },
   {
@@ -128,7 +140,9 @@
     "Title": "Sandwich",
     "Description": "Mike\u0027s Sandwich",
     "Ratings": null,
-    "Reviews": [ "Love this sandwich!" ],
+    "Reviews": [
+      "Love this sandwich!"
+    ],
     "Price": 15
   },
   {
@@ -142,7 +156,9 @@
     "Title": "Sushi",
     "Description": "Mike\u0027s Sushi",
     "Ratings": null,
-    "Reviews": [ "Love this sushi!" ],
+    "Reviews": [
+      "Love this sushi!"
+    ],
     "Price": 15
   },
   {
@@ -156,7 +172,9 @@
     "Title": "Tacos",
     "Description": "Mike\u0027s Tacos",
     "Ratings": null,
-    "Reviews": [ "Love these tacos!" ],
+    "Reviews": [
+      "Love these tacos!"
+    ],
     "Price": 15
   },
   {
@@ -170,7 +188,9 @@
     "Title": "Ice Cream",
     "Description": "Mike\u0027s Ice Cream",
     "Ratings": null,
-    "Reviews": [ "Love this Ice Cream!" ],
+    "Reviews": [
+      "Love this Ice Cream!"
+    ],
     "Price": 15
   },
   {
@@ -184,7 +204,9 @@
     "Title": "Fried Chicken",
     "Description": "Mike\u0027s Fried Chicken",
     "Ratings": null,
-    "Reviews": [ "Love this fried chicken!" ],
+    "Reviews": [
+      "Love this fried chicken!"
+    ],
     "Price": 15
   },
   {
@@ -198,7 +220,9 @@
     "Title": "Hot Dog",
     "Description": "Mike\u0027s Hot Dog",
     "Ratings": null,
-    "Reviews": [ "Love this hot dog!" ],
+    "Reviews": [
+      "Love this hot dog!"
+    ],
     "Price": 15
   },
   {
@@ -212,7 +236,9 @@
     "Title": "Fish",
     "Description": "Mike\u0027s Fish",
     "Ratings": null,
-    "Reviews": [ "Love this fish!" ],
+    "Reviews": [
+      "Love this fish!"
+    ],
     "Price": 15
   },
   {
@@ -226,7 +252,79 @@
     "Title": "Doughnuts",
     "Description": "Mike\u0027s Doughnut",
     "Ratings": null,
-    "Reviews": [ "Love these doughnuts!" ],
+    "Reviews": [
+      "Love these doughnuts!"
+    ],
     "Price": 15
+  },
+  {
+    "Id": "ef224a7d-6fa1-475c-a8f7-9442529688c8",
+    "Category": "Sandwich",
+    "Restaurant": "Enter Restaurant name",
+    "City": "Seattle",
+    "State": "WA",
+    "img": "https://digitalmarketing.blob.core.windows.net/11257/images/items/image536067.jpg",
+    "Url": "https://www.tubssubs.com/",
+    "Title": "The California Sandwich",
+    "Description": "Sandwich - Mayo, sliced avocado, turkey, bacon, provolone cheese; toasted on a baguette, topped with lettuce and tomato",
+    "Ratings": null,
+    "Reviews": null,
+    "Price": 7.75
+  },
+  {
+    "Id": "cdcf309b-ceb1-4040-a342-d6c49e0d9f28",
+    "Category": "Burger",
+    "Restaurant": "Enter Restaurant name",
+    "City": "Seattle",
+    "State": "WA",
+    "img": "https://dostuff-assets.s3.amazonaws.com/property_asset/56501/red-mill-burger.jpg",
+    "Url": "https://redmillburgers.com/",
+    "Title": "Red ill Deluxe W/ Cheese",
+    "Description": "American cheese, lettuce, tomato, pickle, red onion, mill sauce",
+    "Ratings": null,
+    "Reviews": null,
+    "Price": 7.25
+  },
+  {
+    "Id": "1a776d0c-224f-4d5e-8572-14ccf8197716",
+    "Category": "Tacos",
+    "Restaurant": "Enter Restaurant name",
+    "City": "Seattle",
+    "State": "WA",
+    "img": "http://www.elcamionseattle.com/_assets/f6438dd3cee2b83829252014281874b4/(slideshow)_IMG_0330.jpg",
+    "Url": "http://www.elcamionseattle.com/",
+    "Title": "Tacos",
+    "Description": "Corn tortillas, your choice of meat or fresh grilled vegetables, topped with Pico de Gallo",
+    "Ratings": null,
+    "Reviews": null,
+    "Price": 1.5
+  },
+  {
+    "Id": "fe096d54-6bbd-4e57-875a-06eaf6c623c8",
+    "Category": "Pizza",
+    "Restaurant": "Enter Restaurant name",
+    "City": "Seattle",
+    "State": "WA",
+    "img": "https://media-cdn.tripadvisor.com/media/photo-s/01/eb/95/34/prosciutto-basil-and.jpg",
+    "Url": "https://www.tuttabella.com/",
+    "Title": "Pizza - Prosciutto \u0026 Mushroom",
+    "Description": "Tomato sauce, prosciutto di parma, mushroom, fresh mozzarella, basil",
+    "Ratings": null,
+    "Reviews": null,
+    "Price": 16
+  },
+  {
+    "Id": "e767509f-ab60-48ba-b56f-09447b941ca6",
+    "Category": "Doughnut",
+    "Restaurant": "Enter Restaurant name",
+    "City": "Seattle",
+    "State": "WA",
+    "img": "https://cdn.shopify.com/s/files/1/1349/1039/files/Glazed_Old_Fashionedx.jpg?v=1580194107",
+    "Url": "https://www.toppotdoughnuts.com/",
+    "Title": "The Old Fashioned",
+    "Description": "Made delicious with a touch of sour cream, these are some of our most popular doughnuts",
+    "Ratings": null,
+    "Reviews": null,
+    "Price": 2.75
   }
 ]
