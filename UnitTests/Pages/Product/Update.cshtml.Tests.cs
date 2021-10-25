@@ -46,6 +46,10 @@ namespace UnitTests.Pages.Product.Update
             pageModel.Product = new ProductModel
             {
                 Id = "sandwich",
+                Category = "category",
+                Restaurant = "restaurant",
+                City = "city",
+                State = "state",
                 Title = "title",
                 Description = "description",
                 Url = "url",
