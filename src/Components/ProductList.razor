@@ -3,6 +3,29 @@
 @using Microsoft.AspNetCore.Components.Web
 @inject JsonFileProductService ProductService
 
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Filter by category
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <button class="dropdown-item" type="button">Burger</button>
+        <button class="dropdown-item" type="button">Pizza</button>
+        <button class="dropdown-item" type="button">Soup</button>
+        <button class="dropdown-item" type="button">Salad</button>
+        <button class="dropdown-item" type="button">Steak</button>
+        <button class="dropdown-item" type="button">Fries</button>
+        <button class="dropdown-item" type="button">Sandwich</button>
+        <button class="dropdown-item" type="button">Sushi</button>
+        <button class="dropdown-item" type="button">Tacos</button>
+        <button class="dropdown-item" type="button">Ice Cream</button>
+        <button class="dropdown-item" type="button">Fried Chicken</button>
+        <button class="dropdown-item" type="button">Hot Dog</button>
+        <button class="dropdown-item" type="button">Fish</button>
+        <button class="dropdown-item" type="button">Doughnuts</button>
+    </div>
+</div>
+
+
 <div class="card-columns">
 @foreach (var product in ProductService.GetAllData())
 {
