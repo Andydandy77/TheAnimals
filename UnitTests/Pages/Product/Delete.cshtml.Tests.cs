@@ -22,6 +22,21 @@ namespace UnitTests.Pages.Product.Delete
             };
         }
 
-        #endregion TestSetup    
+        #endregion TestSetup 
+
+        #region OnGet
+        [Test]
+        public void OnGet_Valid_Should_Return_Products()
+        {
+            // Arrange
+
+            // Act
+            pageModel.OnGet("8oz");
+
+            // Assert
+            Assert.AreEqual(true, pageModel.ModelState.IsValid);
+            Assert.AreEqual("Burger", pageModel.Product.Category);
+        }
+        #endregion OnGet
     }
 }
