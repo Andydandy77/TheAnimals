@@ -185,3 +185,8 @@ ul {
 a:link {
     text-decoration: none
 }
+
+.filterButton {
+    display: inline-block;
+    /* additional code */
+}

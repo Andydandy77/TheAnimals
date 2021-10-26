@@ -3,7 +3,7 @@
 @using Microsoft.AspNetCore.Components.Web
 @inject JsonFileProductService ProductService
 
-<div class="dropdown">
+<div class="dropdown filterButton">
     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Filter by category
     </button>
@@ -16,11 +16,12 @@
     </div>
 </div>
 
+<button class="btn btn-primary filterButton" type="button" @onclick="(e => resetFilters())">Reset Filters</button>
 
 <div class="card-columns">
     @foreach (var product in ProductService.GetAllData())
     {
-        
+
         if ("All" == getSelectedCategory() || product.Category == getSelectedCategory())
         {
             <div class="card">
@@ -92,12 +93,14 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-@code 
+@code
 {
     ProductModel selectedProduct;
     string selectedProductId;
     string selectedCategory = "All";
-
+    int currentRating = 0;
+    int voteCount = 0;
+    string voteLabel;
 
     void SelectProduct(string productId)
     {
@@ -133,9 +136,10 @@
         return categories;
     }
 
-    int currentRating = 0;
-    int voteCount = 0;
-    string voteLabel;
+    void resetFilters()
+    {
+        selectedCategory = "All";
+    }
 
     void GetCurrentRating()
     {
@@ -160,4 +164,6 @@
         ProductService.AddRating(selectedProductId, rating);
         SelectProduct(selectedProductId);
     }
+
+
 }
