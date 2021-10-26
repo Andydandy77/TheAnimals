@@ -35,6 +35,13 @@
             <span asp-validation-for="Product.Category" class="text-danger"></span>
         </div>
 
+        @*to update the Restaurant of the dish*@
+        <div class="form-group">
+            <label asp-for="Product.Restaurant" class="control-label"></label>
+            <input asp-for="Product.Restaurant" class="form-control" />
+            <span asp-validation-for="Product.Restaurant" class="text-danger"></span>
+        </div>
+
         @*to update the City of the dish*@
         <div class="form-group">
             <label asp-for="Product.City" class="control-label"></label>

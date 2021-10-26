@@ -94,6 +94,7 @@ namespace ContosoCrafts.WebSite.Services
             productData.State = data.State;
             productData.City = data.City;
             productData.Category = data.Category;
+            productData.Restaurant = data.Category;
 
             SaveData(products);
 
