@@ -20,7 +20,8 @@
 <div class="card-columns">
     @foreach (var product in ProductService.GetAllData())
     {
-        if (product.Category == getSelectedCategory())
+        
+        if ("All" == getSelectedCategory() || product.Category == getSelectedCategory())
         {
             <div class="card">
                 <div class="card-img" style="background-image: url('@product.Image');">
@@ -95,7 +96,7 @@
 {
     ProductModel selectedProduct;
     string selectedProductId;
-    string selectedCategory;
+    string selectedCategory = "All";
 
 
     void SelectProduct(string productId)
@@ -117,9 +118,18 @@
     }
 
 
-    string[] getCategories()
+    List<string> getCategories()
     {
-        string[] categories = {"Burger", "Pizza", "Soup"};
+        List<string> categories = new List<string>();
+        var products = ProductService.GetAllData();
+
+        foreach(var product in products)
+        {
+            if (!categories.Contains(product.Category))
+            {
+                categories.Add(product.Category);
+            }
+        }
         return categories;
     }
 
