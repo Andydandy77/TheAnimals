@@ -1,12 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 
-namespace UnitTests.Pages.Product
+using Microsoft.AspNetCore.Mvc;
+
+using NUnit.Framework;
+
+using ContosoCrafts.WebSite.Pages.Product;
+using ContosoCrafts.WebSite.Models;
+
+namespace UnitTests.Pages.Product.Delete
 {
-    class Delete
+    public class DeleteTests
     {
+        #region TestSetup
+        public static DeleteModel pageModel;
+
+        [SetUp]
+        public void TestInitialize()
+        {
+            pageModel = new DeleteModel(TestHelper.ProductService)
+            {
+            };
+        }
+
+        #endregion TestSetup    
     }
 }
