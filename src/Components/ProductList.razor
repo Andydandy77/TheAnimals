@@ -8,40 +8,38 @@
         Filter by category
     </button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <button class="dropdown-item" type="button">Burger</button>
-        <button class="dropdown-item" type="button">Pizza</button>
-        <button class="dropdown-item" type="button">Soup</button>
-        <button class="dropdown-item" type="button">Salad</button>
-        <button class="dropdown-item" type="button">Steak</button>
-        <button class="dropdown-item" type="button">Fries</button>
-        <button class="dropdown-item" type="button">Sandwich</button>
-        <button class="dropdown-item" type="button">Sushi</button>
-        <button class="dropdown-item" type="button">Tacos</button>
-        <button class="dropdown-item" type="button">Ice Cream</button>
-        <button class="dropdown-item" type="button">Fried Chicken</button>
-        <button class="dropdown-item" type="button">Hot Dog</button>
-        <button class="dropdown-item" type="button">Fish</button>
-        <button class="dropdown-item" type="button">Doughnuts</button>
+        @foreach (var category in getCategories())
+        {
+            <button class="dropdown-item" type="button" @onclick="(e => setSelectedCategory(category))">@category</button>
+        }
+
     </div>
 </div>
 
 
 <div class="card-columns">
-@foreach (var product in ProductService.GetAllData())
-{
-    <div class="card">
-        <div class="card-img" style="background-image: url('@product.Image');">
-        </div>
-        <div class="card-body">
-            <h5 class="card-title">@product.Title</h5>
-        </div>
-        <div class="card-footer">
-            <small class="text-muted"><button @onclick="(e => SelectProduct(product.Id))" 
-              data-toggle="modal" data-target="#productModal" class="btn btn-primary">More Info</button>
-            </small>
-        </div>
-    </div>
-}
+    @foreach (var product in ProductService.GetAllData())
+    {
+        if (product.Category == getSelectedCategory())
+        {
+            <div class="card">
+                <div class="card-img" style="background-image: url('@product.Image');">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">@product.Title</h5>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">
+                        <button @onclick="(e => SelectProduct(product.Id))"
+                                data-toggle="modal" data-target="#productModal" class="btn btn-primary">
+                            More Info
+                        </button>
+                    </small>
+                </div>
+            </div>
+        }
+
+    }
 </div>
 
 @if(selectedProduct != null)
@@ -97,12 +95,32 @@
 {
     ProductModel selectedProduct;
     string selectedProductId;
+    string selectedCategory;
+
 
     void SelectProduct(string productId)
     {
-      selectedProductId = productId;
-      selectedProduct = ProductService.GetAllData().First(x => x.Id == productId);
-      GetCurrentRating();
+        selectedProductId = productId;
+        selectedProduct = ProductService.GetAllData().First(x => x.Id == productId);
+        GetCurrentRating();
+    }
+
+    void setSelectedCategory(string category)
+    {
+        selectedCategory = category;
+
+    }
+
+    string getSelectedCategory()
+    {
+        return selectedCategory;
+    }
+
+
+    string[] getCategories()
+    {
+        string[] categories = {"Burger", "Pizza", "Soup"};
+        return categories;
     }
 
     int currentRating = 0;
@@ -111,25 +129,25 @@
 
     void GetCurrentRating()
     {
-      if(selectedProduct.Ratings == null)
-      {
-        currentRating = 0;
-        voteCount = 0;
-      }
-      else
-      {
-        voteCount = selectedProduct.Ratings.Count();
-        voteLabel = voteCount > 1 ? "Votes" : "Vote";
-        currentRating = selectedProduct.Ratings.Sum() / voteCount;
-      }
+        if(selectedProduct.Ratings == null)
+        {
+            currentRating = 0;
+            voteCount = 0;
+        }
+        else
+        {
+            voteCount = selectedProduct.Ratings.Count();
+            voteLabel = voteCount > 1 ? "Votes" : "Vote";
+            currentRating = selectedProduct.Ratings.Sum() / voteCount;
+        }
 
-      System.Console.WriteLine($"Current rating for {selectedProduct.Id}: {currentRating}");
+        System.Console.WriteLine($"Current rating for {selectedProduct.Id}: {currentRating}");
     }
 
     void SubmitRating(int rating)
     {
-      System.Console.WriteLine($"Rating received for {selectedProduct.Id}: {rating}");
-      ProductService.AddRating(selectedProductId, rating);
-      SelectProduct(selectedProductId);
+        System.Console.WriteLine($"Rating received for {selectedProduct.Id}: {rating}");
+        ProductService.AddRating(selectedProductId, rating);
+        SelectProduct(selectedProductId);
     }
 }
