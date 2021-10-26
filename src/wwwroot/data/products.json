@@ -260,7 +260,7 @@
   {
     "Id": "ef224a7d-6fa1-475c-a8f7-9442529688c8",
     "Category": "Sandwich",
-    "Restaurant": "Enter Restaurant name",
+    "Restaurant": "Sandwich",
     "City": "Seattle",
     "State": "WA",
     "img": "https://digitalmarketing.blob.core.windows.net/11257/images/items/image536067.jpg",
@@ -274,12 +274,12 @@
   {
     "Id": "cdcf309b-ceb1-4040-a342-d6c49e0d9f28",
     "Category": "Burger",
-    "Restaurant": "Enter Restaurant name",
+    "Restaurant": "Burger",
     "City": "Seattle",
     "State": "WA",
     "img": "https://dostuff-assets.s3.amazonaws.com/property_asset/56501/red-mill-burger.jpg",
     "Url": "https://redmillburgers.com/",
-    "Title": "Red ill Deluxe W/ Cheese",
+    "Title": "Red Mill Deluxe W/ Cheese",
     "Description": "American cheese, lettuce, tomato, pickle, red onion, mill sauce",
     "Ratings": null,
     "Reviews": null,
@@ -288,7 +288,7 @@
   {
     "Id": "1a776d0c-224f-4d5e-8572-14ccf8197716",
     "Category": "Tacos",
-    "Restaurant": "Enter Restaurant name",
+    "Restaurant": "Tacos",
     "City": "Seattle",
     "State": "WA",
     "img": "http://www.elcamionseattle.com/_assets/f6438dd3cee2b83829252014281874b4/(slideshow)_IMG_0330.jpg",
@@ -302,7 +302,7 @@
   {
     "Id": "fe096d54-6bbd-4e57-875a-06eaf6c623c8",
     "Category": "Pizza",
-    "Restaurant": "Enter Restaurant name",
+    "Restaurant": "Pizza",
     "City": "Seattle",
     "State": "WA",
     "img": "https://media-cdn.tripadvisor.com/media/photo-s/01/eb/95/34/prosciutto-basil-and.jpg",
@@ -316,7 +316,7 @@
   {
     "Id": "e767509f-ab60-48ba-b56f-09447b941ca6",
     "Category": "Doughnut",
-    "Restaurant": "Enter Restaurant name",
+    "Restaurant": "Doughnut",
     "City": "Seattle",
     "State": "WA",
     "img": "https://cdn.shopify.com/s/files/1/1349/1039/files/Glazed_Old_Fashionedx.jpg?v=1580194107",
