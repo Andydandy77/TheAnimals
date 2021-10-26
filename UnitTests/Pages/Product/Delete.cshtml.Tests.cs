@@ -38,5 +38,29 @@ namespace UnitTests.Pages.Product.Delete
             Assert.AreEqual("Burger", pageModel.Product.Category);
         }
         #endregion OnGet
+
+        #region OnPost
+        [Test]
+        public void OnPost_Valid_Should_Return_Products()
+        {
+            // Arrange
+
+            // First Create the product to delete
+            pageModel.Product = TestHelper.ProductService.CreateData();
+            pageModel.Product.Title = "Example to Delete";
+            TestHelper.ProductService.UpdateData(pageModel.Product);
+
+            // Act
+            var result = pageModel.OnPost() as RedirectToPageResult;
+
+            // Assert
+            Assert.AreEqual(true, pageModel.ModelState.IsValid);
+            Assert.AreEqual(true, result.PageName.Contains("Index"));
+
+            // Confirm the item is deleted
+            Assert.AreEqual(null, TestHelper.ProductService.GetAllData().FirstOrDefault(m => m.Id.Equals(pageModel.Product.Id)));
+        }
+
+        #endregion OnPost
     }
 }
