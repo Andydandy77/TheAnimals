@@ -25,9 +25,9 @@
         Filter by city
     </button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        @foreach (var city in getCategories())
+        @foreach (var city in getCities())
         {
-            <button class="dropdown-item" type="button" @onclick="(e => setSelectedCategory(city))">@city</button>
+            <button class="dropdown-item" type="button" @onclick="(e => setSelectedCity(city))">@city</button>
         }
 
     </div>
@@ -39,7 +39,7 @@
     @foreach (var product in ProductService.GetAllData())
     {
 
-        if ("All" == getSelectedCategory() || product.Category == getSelectedCategory())
+        if ("All" == getSelectedCategory() || "All" == getSelectedCity() || product.Category == getSelectedCategory())
         {
             <div class="card">
                 <div class="card-img" style="background-image: url('@product.Image');">
@@ -115,6 +115,7 @@
     ProductModel selectedProduct;
     string selectedProductId;
     string selectedCategory = "All";
+    string selectedCity = "All";
     int currentRating = 0;
     int voteCount = 0;
     string voteLabel;
@@ -133,6 +134,22 @@
     }
 
     string getSelectedCategory()
+    {
+        return selectedCategory;
+    }
+
+    string getSelectedCity()
+    {
+        return selectedCategory;
+    }
+
+    void setSelectedCity(string city)
+    {
+        selectedCategory = city;
+
+    }
+
+    string setSelectedCity()
     {
         return selectedCategory;
     }
