@@ -39,7 +39,7 @@
     @foreach (var product in ProductService.GetAllData())
     {
 
-        if ("All" == getSelectedCategory() || "All" == getSelectedCity() || product.Category == getSelectedCategory())
+        if ("All" == getSelectedCategory() || "All" == getSelectedCity() || product.City == getSelectedCity() || product.Category == getSelectedCategory())
         {
             <div class="card">
                 <div class="card-img" style="background-image: url('@product.Image');">
@@ -172,17 +172,17 @@
 
     List<string> getCities()
     {
-        List<string> categories = new List<string>();
+        List<string> cities = new List<string>();
         var products = ProductService.GetAllData();
 
         foreach (var product in products)
         {
-            if (!categories.Contains(product.City))
+            if (!cities.Contains(product.City))
             {
-                categories.Add(product.City);
+                cities.Add(product.City);
             }
         }
-        return categories;
+        return cities;
     }
 
     void resetFilters()
