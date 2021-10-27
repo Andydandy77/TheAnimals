@@ -468,34 +468,6 @@
     "Price": 18
   },
   {
-    "Id": "02a59e19-d2fa-4028-b940-5d573927954a",
-    "Category": "Enter Type of food",
-    "Restaurant": "Enter Restaurant name",
-    "City": "Enter City",
-    "State": "Enter State",
-    "img": "https://www.pikpng.com/pngl/b/59-592604_logo-knife-clipart.png",
-    "Url": "Restaurant Website",
-    "Title": "Name of Dish",
-    "Description": "Enter description of dish",
-    "Ratings": null,
-    "Reviews": null,
-    "Price": 0
-  },
-  {
-    "Id": "3b253b9d-0e25-4f11-9ac4-ccb33e536ce6",
-    "Category": "Enter Type of food",
-    "Restaurant": "Enter Restaurant name",
-    "City": "Enter City",
-    "State": "Enter State",
-    "img": "https://www.pikpng.com/pngl/b/59-592604_logo-knife-clipart.png",
-    "Url": "Restaurant Website",
-    "Title": "Name of Dish",
-    "Description": "Enter description of dish",
-    "Ratings": null,
-    "Reviews": null,
-    "Price": 0
-  },
-  {
     "Id": "4c10cf86-ebc0-4702-a667-dfef150a4a1b",
     "Category": "Sandwich",
     "Restaurant": "Un Bien",
