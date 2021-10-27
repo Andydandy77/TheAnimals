@@ -20,6 +20,19 @@
     </div>
 </div>
 
+<div class="dropdown filterButton">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Filter by city
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        @foreach (var city in getCategories())
+        {
+            <button class="dropdown-item" type="button" @onclick="(e => setSelectedCategory(city))">@city</button>
+        }
+
+    </div>
+</div>
+
 <button class="btn btn-primary filterButton" type="button" @onclick="(e => resetFilters())">Reset Filters</button>
 
 <div class="card-columns">
@@ -135,6 +148,21 @@
             if (!categories.Contains(product.Category))
             {
                 categories.Add(product.Category);
+            }
+        }
+        return categories;
+    }
+
+    List<string> getCities()
+    {
+        List<string> categories = new List<string>();
+        var products = ProductService.GetAllData();
+
+        foreach (var product in products)
+        {
+            if (!categories.Contains(product.City))
+            {
+                categories.Add(product.City);
             }
         }
         return categories;
