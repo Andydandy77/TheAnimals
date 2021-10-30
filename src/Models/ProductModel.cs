@@ -15,6 +15,8 @@ namespace ContosoCrafts.WebSite.Models
         public string Category { get; set; }
         // Restaurant where dish is sold
         public string Restaurant { get; set; }
+        // Street address of restaurant
+        public string Address { get; set; }
         // City of restaurant
         public string City { get; set; }
         // State of restaurant
