@@ -91,6 +91,7 @@ namespace ContosoCrafts.WebSite.Services
             productData.Url = data.Url;
             productData.Image = data.Image;
             productData.Price = data.Price;
+            productData.Address = data.Address;
             productData.State = data.State;
             productData.City = data.City;
             productData.Category = data.Category;
@@ -134,6 +135,7 @@ namespace ContosoCrafts.WebSite.Services
                 Id = System.Guid.NewGuid().ToString(),
                 Category = "Enter Type of food", // Change later to select from options
                 Restaurant = "Enter Restaurant name",
+                Address = "Enter Address",
                 City = "Enter City",
                 State = "Enter State",
                 Image = "https://www.pikpng.com/pngl/b/59-592604_logo-knife-clipart.png",
