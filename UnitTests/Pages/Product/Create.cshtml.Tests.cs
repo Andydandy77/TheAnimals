@@ -7,6 +7,9 @@ using ContosoCrafts.WebSite.Pages.Product;
 
 namespace UnitTests.Pages.Product.Create
 {
+    /// <summary>
+    /// Tests Create page
+    /// </summary>
     public class CreateTests
     {
         #region TestSetup
@@ -23,6 +26,9 @@ namespace UnitTests.Pages.Product.Create
         #endregion TestSetup
 
         #region OnGet
+        /// <summary>
+        /// Tests that OnGet method should return the items in the database
+        /// </summary>
         [Test]
         public void OnGet_Valid_Should_Return_Products()
         {
