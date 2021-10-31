@@ -92,6 +92,7 @@ namespace ContosoCrafts.WebSite.Services
             productData.Image = data.Image;
             productData.Price = data.Price;
             productData.Address = data.Address;
+            productData.Cuisine = data.Cuisine;
             productData.State = data.State;
             productData.City = data.City;
             productData.Category = data.Category;
@@ -141,6 +142,7 @@ namespace ContosoCrafts.WebSite.Services
                 Image = "https://www.pikpng.com/pngl/b/59-592604_logo-knife-clipart.png",
                 Url = "Restaurant Website",
                 Title = "Name of Dish",
+                Cuisine = "Type of Cuisine",
                 Description = "Enter description of dish",
                 Price = 0,
             };
