@@ -28,6 +28,8 @@ namespace ContosoCrafts.WebSite.Models
         public string Url { get; set; }
         // Name of the dish at restaurant
         public string Title { get; set; }
+        // Cuisine that the dish belongs to 
+        public string Cuisine { get; set; }
         // Description of dish
         public string Description { get; set; }
         // User ratings of dish
