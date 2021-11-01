@@ -22,6 +22,19 @@
 
 <div class="dropdown filterButton">
     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Filter by cuisine
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        @foreach (var cuisine in getCuisines())
+        {
+            <button class="dropdown-item" type="button" @onclick="(e => setSelectedCuisine(cuisine))">@cuisine</button>
+        }
+
+    </div>
+</div>
+
+<div class="dropdown filterButton">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Filter by city
     </button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -116,6 +129,7 @@
     string selectedProductId;
     string selectedCategory = "All";
     string selectedCity = "All";
+    string selectedCuisine = "All";
     int currentRating = 0;
     int voteCount = 0;
     string voteLabel;
@@ -136,6 +150,16 @@
     string getSelectedCategory()
     {
         return selectedCategory;
+    }
+
+    void setSelectedCuisine(string cuisine)
+    {
+        selectedCuisine = cuisine;
+    }
+
+    string getSelectedCuisine()
+    {
+        return selectedCuisine;
     }
 
     string getSelectedCity()
@@ -185,10 +209,26 @@
         return cities;
     }
 
+    List<string> getCuisines()
+    {
+        List<string> cuisines = new List<string>();
+        var products = ProductService.GetAllData();
+
+        foreach (var product in products)
+        {
+            if (!cuisines.Contains(product.Cuisine))
+            {
+                cuisines.Add(product.Cuisine);
+            }
+        }
+        return cuisines;
+    }
+
     void resetFilters()
     {
         selectedCategory = "All";
         selectedCity = "All";
+        selectedCuisine = "All";
     }
 
     void GetCurrentRating()
@@ -221,7 +261,10 @@
         {
             if (selectedCity == "All" || selectedCity == product.City)
             {
-                return true;
+                if (selectedCuisine == "All" || selectedCuisine == product.Cuisine)
+                {
+                    return true;
+                }
             }
 
         }
