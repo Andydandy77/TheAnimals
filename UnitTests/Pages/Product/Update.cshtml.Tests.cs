@@ -8,11 +8,18 @@ using ContosoCrafts.WebSite.Models;
 
 namespace UnitTests.Pages.Product.Update
 {
+    /// <summary>
+    /// Unit test for Update.cshtml.cs
+    /// </summary>
     public class UpdateTests
     {
         #region TestSetup
+        //Testing OnGet
         public static UpdateModel pageModel;
 
+        /// <summary>
+        /// Initializing page model with TestHelper
+        /// </summary>
         [SetUp]
         public void TestInitialize()
         {
@@ -24,6 +31,9 @@ namespace UnitTests.Pages.Product.Update
         #endregion TestSetup
 
         #region OnGet
+        /// <summary>
+        /// Tests if OnGet returns a Valid set of products
+        /// </summary>
         [Test]
         public void OnGet_Valid_Should_Return_Products()
         {
@@ -39,6 +49,9 @@ namespace UnitTests.Pages.Product.Update
         #endregion OnGet
 
         #region OnPost
+        /// <summary>
+        /// Tests if OnPost returns a valid set of products
+        /// </summary>
         [Test]
         public void OnPost_Valid_Should_Return_Products()
         {
@@ -64,8 +77,11 @@ namespace UnitTests.Pages.Product.Update
             Assert.AreEqual(true, result.PageName.Contains("Index"));
         }
 
-         [Test]
-           public void OnPost_InValid_Model_NotValid_Return_Page()
+        [Test]
+        ///<summary>
+        /// Tests if OnPost is Returning an Invalid when the product is not available
+        ///</summary>
+        public void OnPost_InValid_Model_NotValid_Return_Page()
         {
             // Arrange
 
