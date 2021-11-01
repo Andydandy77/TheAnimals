@@ -76,7 +76,6 @@ namespace UnitTests.Pages.Product.Delete
         /// Tests that OnPost method is returning an invalid record and record is not actually deleted
         /// </summary>
         [Test]
-        [Test]
         public void OnPost_InValid_Model_NotValid_Return_Page()
         {
             // Arrange
