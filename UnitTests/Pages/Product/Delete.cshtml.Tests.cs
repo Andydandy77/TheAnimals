@@ -9,9 +9,15 @@ using ContosoCrafts.WebSite.Models;
 
 namespace UnitTests.Pages.Product.Delete
 {
+    /// <summary>
+    /// Tests Delete page
+    /// </summary>
     public class DeleteTests
     {
         #region TestSetup
+        /// <summary>
+        /// Initialize a DeleteModel with the TestHelper
+        /// </summary>
         public static DeleteModel pageModel;
 
         [SetUp]
@@ -25,6 +31,9 @@ namespace UnitTests.Pages.Product.Delete
         #endregion TestSetup 
 
         #region OnGet
+        /// <summary>
+        /// Tests that OnGet method should return the items in the database
+        /// </summary>
         [Test]
         public void OnGet_Valid_Should_Return_Products()
         {
@@ -40,6 +49,9 @@ namespace UnitTests.Pages.Product.Delete
         #endregion OnGet
 
         #region OnPost
+        /// <summary>
+        /// Tests that OnPost method is returning a valid record and record is actually deleted
+        /// </summary>
         [Test]
         public void OnPost_Valid_Should_Return_Products()
         {
@@ -60,7 +72,10 @@ namespace UnitTests.Pages.Product.Delete
             // Confirm the item is deleted
             Assert.AreEqual(null, TestHelper.ProductService.GetAllData().FirstOrDefault(m => m.Id.Equals(pageModel.Product.Id)));
         }
-
+        /// <summary>
+        /// Tests that OnPost method is returning an invalid record and record is not actually deleted
+        /// </summary>
+        [Test]
         [Test]
         public void OnPost_InValid_Model_NotValid_Return_Page()
         {
