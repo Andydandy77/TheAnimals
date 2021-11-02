@@ -57,6 +57,9 @@ namespace UnitTests.Pages.Product.Search
 
 
         #region SearchAdded
+        /// <summary>
+        /// Tests that a valid search term returns true from the Searched method
+        /// </summary>
         [Test]
         public void SearchAdded_Valid_Should_Return_True()
         {
@@ -69,6 +72,9 @@ namespace UnitTests.Pages.Product.Search
             Assert.AreEqual(true, searchModel.Searched());
         }
 
+        /// <summary>
+        /// Tests that a null search term returns false from the Searched Method
+        /// </summary>
         [Test]
         public void SearchAdded_Null_Should_Return_False()
         {
