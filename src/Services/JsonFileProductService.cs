@@ -51,23 +51,50 @@ namespace ContosoCrafts.WebSite.Services
         /// </summary>
         /// <param name="productId"></param>
         /// <param name="rating"></param>
-        public void AddRating(string productId, int rating)
+        public bool AddRating(string productId, int rating)
         {
+            // If the ProductID is invalid, return
+            if (string.IsNullOrEmpty(productId))
+            {
+                return false;
+            }
+
             var products = GetAllData();
 
-            if(products.First(x => x.Id == productId).Ratings == null)
+            // Look up the product, if it does not exist, return
+            var data = products.FirstOrDefault(x => x.Id.Equals(productId));
+            if (data == null)
             {
-                products.First(x => x.Id == productId).Ratings = new int[] { rating };
-            }
-            else
-            {
-                var ratings = products.First(x => x.Id == productId).Ratings.ToList();
-                ratings.Add(rating);
-                products.First(x => x.Id == productId).Ratings = ratings.ToArray();
+                return false;
             }
 
-            //Saves data
+            // Check Rating for boundries, do not allow ratings below 0
+            if (rating < 0)
+            {
+                return false;
+            }
+
+            // Check Rating for boundries, do not allow ratings above 5
+            if (rating > 5)
+            {
+                return false;
+            }
+
+            // Check to see if the rating exist, if there are none, then create the array
+            if (data.Ratings == null)
+            {
+                data.Ratings = new int[] { };
+            }
+
+            // Add the Rating to the Array
+            var ratings = data.Ratings.ToList();
+            ratings.Add(rating);
+            data.Ratings = ratings.ToArray();
+
+            // Save the data back to the data store
             SaveData(products);
+
+            return true;
         }
 
         /// <summary>
