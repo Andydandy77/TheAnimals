@@ -50,7 +50,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
 
         }
 
-        public bool searched()
+        public bool Searched()
         {
             if (SearchTerm == null)
             {
