@@ -8,6 +8,9 @@ using ContosoCrafts.WebSite.Pages;
 
 namespace UnitTests.Pages.Privacy
 {
+    /// <summary>
+    /// Unit test for Privacy.cshtml.cs
+    /// </summary>
     public class PrivacyTests
     {
         #region TestSetup
