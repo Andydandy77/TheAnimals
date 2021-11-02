@@ -10,12 +10,18 @@ using ContosoCrafts.WebSite.Pages;
 
 namespace UnitTests.Pages.Index
 {
+    /// <summary>
+    /// Unit Test for Index.cshtml.cs
+    /// </summary>
     public class IndexTests
     {
         #region TestSetup
 
         public static IndexModel pageModel;
 
+        /// <summary>
+        /// Initializing pageModel with TestHelper
+        /// </summary>
         [SetUp]
         public void TestInitialize()
         {
@@ -29,6 +35,9 @@ namespace UnitTests.Pages.Index
         #endregion TestSetup
 
         #region OnGet
+        /// <summary>
+        /// Tests if OnGet returns Products
+        /// </summary>
         [Test]
         public void OnGet_Valid_Should_Return_Products()
         {
