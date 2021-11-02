@@ -50,8 +50,23 @@ namespace UnitTests.Pages.Product.Delete
         }
         #endregion ToString
 
-        
+        #region GetCurrentRating
+        /// <summary>
+        /// Tests that GetCurrentRating() method should return 0 as default rating
+        /// </summary>
+        [Test]
+        public void GetCurrentRating_Should_Return_Zero_As_Default()
+        {
+            // Arrange
+            var expected = 0;
+            // Act
+            var result = pageModel.GetCurrentRating();
 
+            // Assert
+            Assert.AreEqual(expected, result);
+
+        }
+        #endregion GetCurrentRating
 
     }
 }
