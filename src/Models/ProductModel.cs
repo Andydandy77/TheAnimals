@@ -65,6 +65,62 @@ namespace ContosoCrafts.WebSite.Models
 
         }
 
+        public bool hasSearchQuery(string search)
+        {
+            search = search.ToLower();
+            if (Category != null)
+            {
+                if (Category.ToLower().Contains(search))
+                {
+                    return true;
+                }
+            }
+
+            if (Restaurant != null)
+            {
+                if (Restaurant.ToLower().Contains(search))
+                {
+                    return true;
+                }
+            }
+
+            if (City != null)
+            {
+                if (City.ToLower().Contains(search))
+                {
+                    return true;
+                }
+            }
+
+
+            if (Cuisine != null)
+            {
+                if (Cuisine.ToLower().Contains(search))
+                {
+                    return true;
+                }
+            }
+
+            if (Title != null)
+            {
+                if (Title.ToLower().Contains(search))
+                {
+                    return true;
+                }
+            }
+
+            if (Description != null)
+            {
+                if (Description.ToLower().Contains(search))
+                {
+                    return true;
+                }
+            }
+
+
+            return false;
+        }
+
  
     }
 }

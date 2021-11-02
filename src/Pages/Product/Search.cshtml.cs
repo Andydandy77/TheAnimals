@@ -45,7 +45,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
             Products = ProductService.GetAllData();
             if (!string.IsNullOrEmpty(SearchTerm))
             {
-                Products = Products.Where(s => s.Restaurant.Contains(SearchTerm));
+                Products = Products.Where(s => s.hasSearchQuery(SearchTerm));
             }
 
         }
