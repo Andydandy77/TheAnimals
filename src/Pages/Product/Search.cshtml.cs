@@ -9,7 +9,7 @@ using System.Collections.Generic;
 namespace ContosoCrafts.WebSite.Pages.Product
 {
     /// <summary>
-    /// Read page will show information about the Dish
+    /// Search Page allows users to query all dishes by keyword
     /// </summary>
     public class SearchModel : PageModel
     {
@@ -30,15 +30,12 @@ namespace ContosoCrafts.WebSite.Pages.Product
         // The data to show
         public IEnumerable<ProductModel> Products { get; private set; }
 
+        // User's search query in the search bar
         [Microsoft.AspNetCore.Mvc.BindProperty(SupportsGet = true)]
         public string SearchTerm { get; set; }
 
-        public int[] ratings;
-
-        public int currentRating;
-
         /// <summary>
-        /// REST Get request
+        /// REST Get request to show dishes by query
         /// </summary>
         public void OnGet()
         {
@@ -50,6 +47,10 @@ namespace ContosoCrafts.WebSite.Pages.Product
 
         }
 
+        /// <summary>
+        /// This determines if a user has searched something in the search bar
+        /// </summary>
+        /// <returns>True if user has searched, false, otherwise</returns>
         public bool Searched()
         {
             if (SearchTerm == null)

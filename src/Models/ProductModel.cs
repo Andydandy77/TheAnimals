@@ -65,6 +65,13 @@ namespace ContosoCrafts.WebSite.Models
 
         }
 
+        /// <summary>
+        /// This checks if any of the Model's fields contain the
+        /// search keyword
+        /// </summary>
+        /// <param name="search"></param>
+        /// <returns>True if the Model contains the search keywork,
+        /// false otherwise </returns>
         public bool hasSearchQuery(string search)
         {
             search = search.ToLower();
