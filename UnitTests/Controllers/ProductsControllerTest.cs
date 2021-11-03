@@ -32,7 +32,7 @@ namespace UnitTests.Controllers
 
         #endregion TestSetup
 
-        #region OnGet
+        #region Patch
         
         /// <summary>
         /// Tests if patch returns Ok
@@ -52,6 +52,24 @@ namespace UnitTests.Controllers
             //Assert
             Assert.AreEqual(new OkResult().ToString(), result.ToString());
         }
-        #endregion OnGet
+        #endregion Patch
+
+        #region Get
+        /// <summary>
+        /// Tests that Get method returns a list of products
+        /// </summary>
+        [Test]
+        public void OnGet_Valid_Should_Get_Products()
+        {
+            // Arrange
+
+            // Act
+            IEnumerable<ProductModel> products = pageModel.Get();
+
+            // Assert
+            Assert.AreNotEqual(null, products);
+        }
+
+        #endregion Get
     }
 }
