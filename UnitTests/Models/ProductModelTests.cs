@@ -52,7 +52,7 @@ namespace UnitTests.Pages.Product.Delete
 
         #region GetCurrentRating
         /// <summary>
-        /// Tests that GetCurrent() method should return the 0 by default
+        /// Tests that GetCurrentRatings() method should return the 0 by default
         /// </summary>
         [Test]
         public void GetCurrentRating_Should_Return_Zero_As_Default()
@@ -66,6 +66,24 @@ namespace UnitTests.Pages.Product.Delete
             Assert.AreEqual(expected, result);
 
         }
+
+        /// <summary>
+        /// Tests that GetCurrentRatings() method should return the average rating if Ratings is not null
+        /// </summary>
+        [Test]
+        public void GetCurrentRating_Not_Null_Should_Return_Average_Rating()
+        {
+            // Arrange
+            pageModel.Ratings = new int[] { 1, 2, 3, 4, 5 };
+            var expected = 3;
+            // Act
+            var result = pageModel.GetCurrentRating();
+
+            // Assert
+            Assert.AreEqual(expected, result);
+
+        }
+
         #endregion GetCurrentRating
 
 
