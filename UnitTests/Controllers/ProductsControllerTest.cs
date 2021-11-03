@@ -59,7 +59,7 @@ namespace UnitTests.Controllers
         /// Tests that Get method returns a list of products
         /// </summary>
         [Test]
-        public void OnGet_Valid_Should_Get_Products()
+        public void Get_Valid_Should_Get_Products()
         {
             // Arrange
 
