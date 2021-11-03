@@ -86,7 +86,134 @@ namespace UnitTests.Pages.Product.Delete
 
         #endregion GetCurrentRating
 
+        #region HasSearchQuery
+        /// <summary>
+        /// Tests that HasSearchQuery that searches on not null category should return true
+        /// </summary>
+        [Test]
+        public void HasSearchQuery_Should_Search_Category_Should_Return_True()
+        {
+            // Arrange
 
+            // Act
+            pageModel.Category = "bogus";
+            var result = pageModel.HasSearchQuery("Bogus");
 
+            // Assert
+            Assert.AreEqual(true, result);
+        }
+        
+        /// <summary>
+        /// Tests that HasSearchQuery that searches on not null restaurant should return true
+        /// </summary>
+        [Test]
+        public void HasSearchQuery_Should_Search_Restaurant_Should_Return_True()
+        {
+            // Arrange
+
+            // Act
+            pageModel.Restaurant = "bogus";
+            var result = pageModel.HasSearchQuery("Bogus");
+
+            // Assert
+            Assert.AreEqual(true, result);
+        }
+
+        /// <summary>
+        /// Tests that HasSearchQuery that searches on not null city should return true
+        /// </summary>
+        [Test]
+        public void HasSearchQuery_Should_Search_City_Should_Return_True()
+        {
+            // Arrange
+
+            // Act
+            pageModel.City = "bogus";
+            var result = pageModel.HasSearchQuery("Bogus");
+
+            // Assert
+            Assert.AreEqual(true, result);
+        }
+
+        /// <summary>
+        /// Tests that HasSearchQuery that searches on not null cuisine should return true
+        /// </summary>
+        [Test]
+        public void HasSearchQuery_Should_Search_Cuisine_Should_Return_True()
+        {
+            // Arrange
+
+            // Act
+            pageModel.Cuisine = "bogus";
+            var result = pageModel.HasSearchQuery("Bogus");
+
+            // Assert
+            Assert.AreEqual(true, result);
+        }
+
+        /// <summary>
+        /// Tests that HasSearchQuery that searches on not null cuisine should return true
+        /// </summary>
+        [Test]
+        public void HasSearchQuery_Should_Search_Title_Should_Return_True()
+        {
+            // Arrange
+
+            // Act
+            pageModel.Title = "bogus";
+            var result = pageModel.HasSearchQuery("Bogus");
+
+            // Assert
+            Assert.AreEqual(true, result);
+        }
+
+        /// <summary>
+        /// Tests that HasSearchQuery that searches on not null description should return true
+        /// </summary>
+        [Test]
+        public void HasSearchQuery_Should_Search_Description_Return_True()
+        {
+            // Arrange
+
+            // Act
+            pageModel.Description = "bogus";
+            var result = pageModel.HasSearchQuery("Bogus");
+
+            // Assert
+            Assert.AreEqual(true, result);
+        }
+
+        /// <summary>
+        /// Tests that HasSearchQuery did not find result
+        /// </summary>
+        [Test]
+        public void HasSearchQuery_Search__Not_Found_Should_Return_False()
+        {
+            // Arrange
+
+            // Act
+            pageModel.Description = "bogus";
+            var result = pageModel.HasSearchQuery("superbogus");
+
+            // Assert
+            Assert.AreEqual(false, result);
+        }
+
+        /// <summary>
+        /// Tests that HasSearchQuery that searches null category should return false
+        /// </summary>
+        [Test]
+        public void HasSearchQuery_Search_On_Null_Category_Should_Return_False()
+        {
+            // Arrange
+
+            // Act
+            pageModel.Category = null;
+            var result = pageModel.HasSearchQuery("Bogus");
+
+            // Assert
+            Assert.AreEqual(false, result);
+        }
+        #endregion HasSearchQuery
     }
 }
