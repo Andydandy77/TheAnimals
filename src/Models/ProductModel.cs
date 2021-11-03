@@ -72,7 +72,7 @@ namespace ContosoCrafts.WebSite.Models
         /// <param name="search"></param>
         /// <returns>True if the Model contains the search keywork,
         /// false otherwise </returns>
-        public bool hasSearchQuery(string search)
+        public bool HasSearchQuery(string search)
         {
             search = search.ToLower();
             if (Category != null)

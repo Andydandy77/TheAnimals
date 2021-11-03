@@ -42,7 +42,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
             Products = ProductService.GetAllData();
             if (!string.IsNullOrEmpty(SearchTerm))
             {
-                Products = Products.Where(s => s.hasSearchQuery(SearchTerm));
+                Products = Products.Where(s => s.HasSearchQuery(SearchTerm));
             }
 
         }
