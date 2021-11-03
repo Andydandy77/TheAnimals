@@ -40,11 +40,11 @@ namespace UnitTests.Pages.Product.Update
             // Arrange
 
             // Act
-            pageModel.OnGet("soup");
+            pageModel.OnGet("8oz");
 
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
-            Assert.AreEqual("Soup", pageModel.Product.Title);
+            Assert.AreEqual("The 8oz.", pageModel.Product.Title);
         }
         #endregion OnGet
 
