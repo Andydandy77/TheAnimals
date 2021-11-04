@@ -5,9 +5,11 @@
 
 <div class="input-group">
     <div class="form-outline">
-        <input type="search" id="form1" class="form-control" @bind="@SearchTerm"/>
+        <input type="search" class="form-control" @bind="@SearchTerm" />
     </div>
     <button type="button" class="btn btn-primary mb-3" @onclick="StateHasChanged">Search</button>
+    <button type="button" class="btn btn-primary mb-3" @onclick="ClearSearch">Clear</button>
+
 </div>
 
 <div class="dropdown filterButton">
@@ -300,6 +302,11 @@
         }
 
         return ProductList;
+    }
+
+    void ClearSearch()
+    {
+        SearchTerm = null;
     }
 
 }
