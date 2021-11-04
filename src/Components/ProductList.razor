@@ -3,6 +3,13 @@
 @using Microsoft.AspNetCore.Components.Web
 @inject JsonFileProductService ProductService
 
+<div class="input-group">
+    <div class="form-outline">
+        <input type="search" id="form1" class="form-control" @bind="@SearchTerm"/>
+    </div>
+    <button type="button" class="btn btn-primary mb-3" @onclick="StateHasChanged">Search</button>
+</div>
+
 <div class="dropdown filterButton">
     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Filter by category
@@ -45,7 +52,7 @@
 <button class="btn btn-primary filterButton" type="button" @onclick="(e => resetFilters())">Reset Filters</button>
 
 <div class="card-columns">
-    @foreach (var product in ProductService.GetAllData())
+    @foreach (var product in GetDishes())
     {
 
         if (willDishShow(product))
@@ -129,6 +136,8 @@
     int currentRating = 0;
     int voteCount = 0;
     string voteLabel;
+    string SearchTerm { get; set; }
+
 
     void SelectProduct(string productId)
     {
@@ -266,6 +275,31 @@
         }
         return false;
 
+    }
+
+
+    IEnumerable<ProductModel> GetDishes()
+    {
+        if (string.IsNullOrEmpty(SearchTerm))
+        {
+            return ProductService.GetAllData();
+        }
+        return GetSearchDishes();
+
+    }
+
+
+    IEnumerable<ProductModel> GetSearchDishes()
+    {
+        IEnumerable<ProductModel> ProductList = ProductService.GetAllData();
+
+        foreach (var product in ProductList)
+        {
+            ProductList = ProductList.Where(s => s.HasSearchQuery(SearchTerm));
+
+        }
+
+        return ProductList;
     }
 
 }
