@@ -5,7 +5,14 @@
     ViewData["Title"] = "Home page";
 }
 
-<h1>The Animals</h1>
+<style>
+    body {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://www.maxpixel.net/static/photo/1x/Beverage-Mugs-Snacks-Pattern-Donut-Food-6043572.png');
+        background-repeat: repeat;
+        background-attachment: fixed;
+    }
+</style>
+
 @(await Html.RenderComponentAsync<ProductList>(RenderMode.ServerPrerendered))
 
 <script src="_framework/blazor.server.js"></script>
