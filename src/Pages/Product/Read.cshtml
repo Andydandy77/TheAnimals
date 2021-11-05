@@ -11,57 +11,65 @@
 
 <h1>Read</h1>
 
+
+
 <div class="container">
-    <h5 class="title" id="productTitle">@Model.Product.Title</h5>
+    <div class="row">
+        <div class="col-sm">
+            <div><img class="card-img" src='@Model.Product.Image' alt='Image for @Model.Product.Title'></div>
+        </div>
+        <div class="col-sm">
+            <h2 class="title" id="productTitle">@Model.Product.Title</h2>
 
-    <img class="card-img" src='@Model.Product.Image' alt='Image for @Model.Product.Title'>
-    <div class="card-text">
-        <h2>Restaurant: <a href=@Model.Product.Url>@Model.Product.Restaurant</a></h2>
-    </div>
-    <p class="card-text">Price: $@Model.Product.Price</p>
-    <p class="card-text">@Model.Product.Description</p>
-    <p class="card-text">Cuisine: @Model.Product.Cuisine</p>
-    <p class="card-text">Location: @Model.Product.Address @Model.Product.City, @Model.Product.State</p>
-    <p class="card-text">Reviews:</p>
-    @if (Model.Product.Reviews != null)
-    {
-        foreach (var review in Model.Product.Reviews)
-        {
-            <p class="card-text">"@review"</p>
-        }
-    }
-
-    @{
-        var numOfVotes = 0;
-
-        if (Model.Product.Ratings != null)
-        {
-            numOfVotes = Model.Product.Ratings.Length;
-        }
-
-        var voteLabel = numOfVotes > 1 ? "Votes" : "Vote";
-
-        if (numOfVotes == 0)
-        {
-            <span>Be the first to vote!</span>
-        }
-        else
-        {
-            <span>@Model.Product.Ratings.Length @voteLabel</span>
-        }
-        for (int i = 1; i < 6; i++)
-        {
-            int currentStar = i;
-            if (i <= Model.Product.GetCurrentRating())
+            <div class="card-text">
+                <h2>Restaurant: <a href=@Model.Product.Url>@Model.Product.Restaurant</a></h2>
+            </div>
+            <p class="card-text">Price: $@Model.Product.Price</p>
+            <p class="card-text">@Model.Product.Description</p>
+            <p class="card-text">Cuisine: @Model.Product.Cuisine</p>
+            <p class="card-text">Location: @Model.Product.Address @Model.Product.City, @Model.Product.State</p>
+            <p class="card-text">Reviews:</p>
+            @if (Model.Product.Reviews != null)
             {
-                <span class="fa fa-star checked"></span>
+            foreach (var review in Model.Product.Reviews)
+            {
+            <p class="card-text">"@review"</p>
+            }
+            }
+
+            @{
+            var numOfVotes = 0;
+
+            if (Model.Product.Ratings != null)
+            {
+            numOfVotes = Model.Product.Ratings.Length;
+            }
+
+            var voteLabel = numOfVotes > 1 ? "Votes" : "Vote";
+
+            if (numOfVotes == 0)
+            {
+            <span>Be the first to vote!</span>
             }
             else
             {
-                <span class="fa fa-star"></span>
+            <span>@Model.Product.Ratings.Length @voteLabel</span>
             }
-        }
-    }
+            for (int i = 1; i < 6; i++)
+            {
+            int currentStar = i;
+            if (i <= Model.Product.GetCurrentRating())
+            {
+            <span class="fa fa-star checked"></span>
+            }
+            else
+            {
+            <span class="fa fa-star"></span>
+            }
+            }
+            }
+        </div>
+    </div>
 </div>
 
 <br />
