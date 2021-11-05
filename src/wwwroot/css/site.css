@@ -179,3 +179,8 @@ a:link {
 .searchButton {
     margin-left: 10px;
 }
+
+.title {
+    font-family: 'Bookman Old Style';
+    font-size: 42px;
+}
