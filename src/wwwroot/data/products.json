@@ -746,5 +746,114 @@
     "Ratings": null,
     "Reviews": null,
     "Price": 6
+  },
+  {
+    "Id": "96d97a40-bdb3-487c-876c-b4a7c00850001",
+    "Category": "Curry",
+    "Restaurant": "Naan-N-Cuury",
+    "Address": "1420 NW Gilman Blvd",
+    "City": "Issaquah",
+    "State": "WA",
+    "img": "https://s3-media0.fl.yelpcdn.com/bphoto/RXAmiyKt_AzbLcV1K6AkHg/o.jpg",
+    "Url": "http://www.naanncurry.com/",
+    "Title": "Tikka Masala",
+    "Cuisine": "Indian",
+    "Description": "Also known as Butter Chicken. A sweet creamy tomato and fenugreek based sauce available in chicken or paneer.",
+    "Ratings": [
+      5,
+      5
+    ],
+    "Reviews": [
+      "I love their garlic naans and chicken tikka masala! It's my go-to for curry. Staff is very nice and friendly as well! I usually order for delivery since it's a bit of a drive away but today I did a take out and ate in my car since I couldn't wait! Food was definitely fresh and the chicken was so tender with perfect seasoning.",
+      "My wife and I love Naan-N-Curry Issaquah! We keep coming back almost weekly. The excellent customer service, amazing food and quick turn-around time is what keeps us coming back. My wife always orders the Chicken Tikka Masala and I normally get the Lamb Baalti Gosht. We also order rice and naan to go with it. We could not recommend this place more! If you haven't tried this place yet, you need to!"
+    ],
+    "Price": 14.99
+  },
+  {
+    "Id": "96d97a40-bdb3-487c-876c-b4a7c00850010",
+    "Category": "Chaat",
+    "Restaurant": "Chaat House",
+    "Address": "14725 NE 20th St",
+    "City": "Bellevue",
+    "State": "WA",
+    "img": "https://tse1.mm.bing.net/th?id=OIP.WsWNzH7n94cKZITAfLYaXgHaEK&pid=Api&rs=1&c=1&qlt=95&w=195&h=109",
+    "Url": "http://www.bellevuechaathouse.com/",
+    "Title": "Chole Bhature",
+    "Cuisine": "Indian",
+    "Description": "Whole wheat flour bread served with Chickpea curry",
+    "Ratings": [
+      5,
+      4
+    ],
+    "Reviews": [
+      "Recently got their chole bhature and amritsari kulcha for takeout. Everything was very flavorful, hot & fresh. Not to mention the amazing value for money! It was like a feast for $20. Service was a little on the slow side, but I'll forgive them for that given how delicious their bhature is :)",
+      "Recommend Aloo and Gobi Parathas and Chole Bhature. Solid four stars for flavors of parathas and chole. Their thali was not good."
+    ],
+    "Price": 10.49
+  },
+  {
+    "Id": "96d97a40-bdb3-487c-876c-b4a7c00850011",
+    "Category": "Curry",
+    "Restaurant": "Anjappar Chettinad",
+    "Address": "14625 NE 24th St",
+    "City": "Bellevue",
+    "State": "WA",
+    "img": "https://seattleanjappar.com/wp-content/uploads/2020/09/chettinatedchicken.jpg",
+    "Url": "https://seattleanjappar.com/",
+    "Title": "Chettinad Chicken",
+    "Cuisine": "Indian",
+    "Description": "Chicken cooked with south Indian hot sauce of freshly ground homemade spices.",
+    "Ratings": [
+      5,
+      4
+    ],
+    "Reviews": [
+      "This used to probably be a 2 or 3 star place before new management (Venkatesh and crew) took over... but this crew knows what they're doing! Been here most recently for takeout but have also been in about a couple dozen times over the past 24 months, sent in friends (desis & non-desis) who have become regulars, and used them for catering. Besides the supremely high-quality weekend buffet (pre-covid), our favorites include the parotta plate, any dosas, chettinad chicken, pepper chicken, chicken 65 (order it spicy), mutton sukka, mutton biryani and kothu parotta - all 4.5 / 5 star dishes. Anjappar - the brand's claim to fame in Chennai is Chettinad Food and this place does not disappoint. The chettinad food here very closely mirrors the flavors from Anjappar in Chennai. (I do miss the buffet but would rather stay safe than sorry!)",
+      "We tried the Sirai paratha, chettinad chicken and veg briyani. As we love it spicy we asked for that extra kick, and that was delivered to perfection. Loved the food, will definitely go for it again. One star taken off for it could had be a tad cleaner"
+    ],
+    "Price": 15.99
+  },
+  {
+    "Id": "96d97a40-bdb3-487c-876c-b4a7c00850012",
+    "Category": "Dosa",
+    "Restaurant": "Anjappar Chettinad",
+    "Address": "14625 NE 24th St",
+    "City": "Bellevue",
+    "State": "WA",
+    "img": "https://seattleanjappar.com/wp-content/uploads/2019/12/mysore-masala-dosa-recipe-2-500x375-1.jpg",
+    "Url": "https://seattleanjappar.com/",
+    "Title": "Mysore Masala Dosa",
+    "Cuisine": "Indian",
+    "Description": "Spicy dosa with chilies and mint chutney and clarified butter with potato masala.",
+    "Ratings": [
+      5,
+      4
+    ],
+    "Reviews": [
+      "The food was amazing. Have been coming here frequently for the past 4-5 months. The ambience and food has improved significantly. Every dish i try deserves a five star. Some top recommendations are gobi masala dosa, veg kotu iddyapam ( less oil and spice.)",
+      "Food - I give this place 5 stars for the food. The food is delicious, authentic and spicy the way it is back home. We ordered a masala dosa that was perfect. The chutneys and sambar were excellent too."
+    ],
+    "Price": 10.99
+  },
+  {
+    "Id": "96d97a40-bdb3-487c-876c-b4a7c00850012",
+    "Category": "Parotta",
+    "Restaurant": "Anjappar Chettinad",
+    "Address": "14625 NE 24th St",
+    "City": "Bellevue",
+    "State": "WA",
+    "img": "https://seattleanjappar.com/wp-content/uploads/2020/09/eggkothuparoda.jpg",
+    "Url": "https://seattleanjappar.com/",
+    "Title": "Egg kothu Parotta",
+    "Cuisine": "Indian",
+    "Description": "Spicy dosa with chilies and mint chutney and clarified butter with potato masala.",
+    "Ratings": [
+      5,
+      4
+    ],
+    "Reviews": [
+      "Took me back to India, the best Kothu Parotta around Seattle"
+    ],
+    "Price": 10.99
   }
 ]
