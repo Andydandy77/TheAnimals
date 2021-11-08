@@ -9,10 +9,16 @@ using System.Linq;
 
 namespace UnitTests.Pages.Product.AddRating
 {
+    /// <summary>
+    /// Tests the Product Service file
+    /// </summary>
     public class JsonFileProductServiceTests
     {
         #region TestSetup
 
+        /// <summary>
+        /// Initializes Tests
+        /// </summary>
         [SetUp]
         public void TestInitialize()
         {
@@ -21,6 +27,9 @@ namespace UnitTests.Pages.Product.AddRating
         #endregion TestSetup
 
         #region AddRating
+        /// <summary>
+        /// Adding a rating to an invalid product should return false
+        /// </summary>
         [Test]
         public void AddRating_InValid_Product_Null_Should_Return_False()
         {
@@ -34,6 +43,9 @@ namespace UnitTests.Pages.Product.AddRating
         }
         // ....
 
+        /// <summary>
+        /// Adding a rating to a valid product should return true
+        /// </summary>
         [Test]
         public void AddRating_Valid_Product_Valid_Rating_Valid_Should_Return_True()
         {
@@ -53,6 +65,9 @@ namespace UnitTests.Pages.Product.AddRating
             Assert.AreEqual(5, dataNewList.Ratings.Last());
         }
 
+        /// <summary>
+        /// Adding an invalid rating, > 5, should return false
+        /// </summary>
         [Test]
         public void AddRating_Valid_Product_Invalid_Rating_Greater_Than_Five_Should_Return_False()
         {
@@ -66,6 +81,10 @@ namespace UnitTests.Pages.Product.AddRating
             Assert.AreEqual(false, result);
         }
 
+
+        /// <summary>
+        /// Adding an invalid rating, < 0, should return false
+        /// </summary>
         [Test]
         public void AddRating_Valid_Product_Invalid_Rating_Less_Than_Zero_Should_Return_False()
         {
@@ -79,6 +98,9 @@ namespace UnitTests.Pages.Product.AddRating
             Assert.AreEqual(false, result);
         }
 
+        /// <summary>
+        /// Adding a rating to an invalid product that doesn't exist should return false
+        /// </summary>
         [Test]
         public void AddRating_Invalid_Product_Doesnt_Exist_Should_Return_False()
         {
@@ -91,6 +113,9 @@ namespace UnitTests.Pages.Product.AddRating
             Assert.AreEqual(false, result);
         }
 
+        /// <summary>
+        /// Adding a raing to a valid product that doesn't have a rating array yet should create a new array
+        /// </summary>
         [Test]
         public void AddRating_Valid_Product_No_Ratings_Should_Create_New_Array()
         {
@@ -110,6 +135,9 @@ namespace UnitTests.Pages.Product.AddRating
         #endregion AddRating
 
         #region UpdateData
+        /// <summary>
+        /// Updating data on an invalid ID should return null
+        /// </summary>
         [Test]
         public void UpdateData_Invalid_Id_Should_Return_Null()
         {
