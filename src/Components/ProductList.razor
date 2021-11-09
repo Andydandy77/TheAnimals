@@ -14,7 +14,7 @@
 
 <div class="dropdown filterButton">
     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Category
+        @GetCategoryTitle()
     </button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
         @foreach (var category in getCategories())
@@ -27,7 +27,7 @@
 
 <div class="dropdown filterButton">
     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Cuisine
+        @GetCuisineTitle()
     </button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
         @foreach (var cuisine in getCuisines())
@@ -40,7 +40,7 @@
 
 <div class="dropdown filterButton">
     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        City
+        @GetCityTitle()
     </button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
         @foreach (var city in getCities())
@@ -53,7 +53,7 @@
 
 <div class="dropdown filterButton">
     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Price
+        @GetPriceTitle()
     </button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
         @foreach (var price in getPrices())
@@ -391,6 +391,26 @@
     void ClearSearch()
     {
         SearchTerm = null;
+    }
+
+    string GetCategoryTitle()
+    {
+        return selectedCategory == "All" ? "Category" : selectedCategory;
+    }
+
+    string GetCuisineTitle()
+    {
+        return selectedCuisine == "All" ? "Cuisine" : selectedCuisine;
+    }
+
+    string GetCityTitle()
+    {
+        return selectedCity == "All" ? "City" : selectedCity;
+    }
+
+    string GetPriceTitle()
+    {
+        return high == 1000 ? "Price" : "" + low + "-" + high;
     }
 
 }
