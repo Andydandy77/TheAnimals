@@ -208,8 +208,68 @@ namespace UnitTests.Pages.Product.Delete
             // Arrange
 
             // Act
-            pageModel.Category = null;
-            var result = pageModel.HasSearchQuery("Bogus");
+            pageModel.Category = "bogus";
+            var result = pageModel.HasSearchQuery("superbogus");
+
+            // Assert
+            Assert.AreEqual(false, result);
+        }
+        /// <summary>
+        /// Tests that HasSearchQuery that searches null Restaurant should return false
+        /// </summary>
+        [Test]
+        public void HasSearchQuery_Search_On_Null_Restaurant_Should_Return_False()
+        {
+            // Arrange
+
+            // Act
+            pageModel.Restaurant = "bogus";
+            var result = pageModel.HasSearchQuery("superbogus");
+
+            // Assert
+            Assert.AreEqual(false, result);
+        }
+        /// <summary>
+        /// Tests that HasSearchQuery that searches null city should return false
+        /// </summary>
+        [Test]
+        public void HasSearchQuery_Search_On_Null_City_Should_Return_False()
+        {
+            // Arrange
+
+            // Act
+            pageModel.City = "bogus";
+            var result = pageModel.HasSearchQuery("superbogus");
+
+            // Assert
+            Assert.AreEqual(false, result);
+        }
+        /// <summary>
+        /// Tests that HasSearchQuery that searches null Cuisine should return false
+        /// </summary>
+        [Test]
+        public void HasSearchQuery_Search_On_Null_Cuisine_Should_Return_False()
+        {
+            // Arrange
+
+            // Act
+            pageModel.Cuisine = "bogus";
+            var result = pageModel.HasSearchQuery("superbogus");
+
+            // Assert
+            Assert.AreEqual(false, result);
+        }
+        /// <summary>
+        /// Tests that HasSearchQuery that searches null Title should return false
+        /// </summary>
+        [Test]
+        public void HasSearchQuery_Search_On_Null_Title_Should_Return_False()
+        {
+            // Arrange
+
+            // Act
+            pageModel.Title = "bogus";
+            var result = pageModel.HasSearchQuery("superbogus");
 
             // Assert
             Assert.AreEqual(false, result);
