@@ -20,7 +20,9 @@ namespace ContosoCrafts.WebSite.Controllers
         /// <param name="productService"></param>
         public ProductsController(JsonFileProductService productService)
         {
+
             ProductService = productService;
+        
         }
 
         // service to access json data
@@ -33,7 +35,9 @@ namespace ContosoCrafts.WebSite.Controllers
         [HttpGet]
         public IEnumerable<ProductModel> Get()
         {
+
             return ProductService.GetAllData();
+        
         }
 
         /// <summary>
@@ -44,6 +48,7 @@ namespace ContosoCrafts.WebSite.Controllers
         [HttpPatch]
         public ActionResult Patch([FromBody] RatingRequest request)
         {
+
             ProductService.AddRating(request.ProductId, request.Rating);
             
             return Ok();
@@ -54,10 +59,13 @@ namespace ContosoCrafts.WebSite.Controllers
         /// </summary>
         public class RatingRequest
         {
+
             // Id for the Product
             public string ProductId { get; set; }
+
             // Rating for the Product
             public int Rating { get; set; }
+
         }
     }
 }
