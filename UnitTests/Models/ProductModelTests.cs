@@ -39,8 +39,10 @@ namespace UnitTests.Pages.Product.Delete
         [Test]
         public void ToString_Valid_Should_Return_Product_As_String()
         {
+
             // Arrange
             var expected = "{\"Id\":null,\"Category\":null,\"Restaurant\":null,\"Address\":null,\"City\":null,\"State\":null,\"img\":null,\"Url\":null,\"Title\":null,\"Cuisine\":null,\"Description\":null,\"Ratings\":null,\"Reviews\":null,\"Price\":0}";
+            
             // Act
             var result = pageModel.ToString();
 
@@ -59,6 +61,7 @@ namespace UnitTests.Pages.Product.Delete
         {
             // Arrange
             var expected = 0;
+            
             // Act
             var result = pageModel.GetCurrentRating();
 
@@ -73,9 +76,12 @@ namespace UnitTests.Pages.Product.Delete
         [Test]
         public void GetCurrentRating_Not_Null_Should_Return_Average_Rating()
         {
+            
             // Arrange
             pageModel.Ratings = new int[] { 1, 2, 3, 4, 5 };
+            
             var expected = 3;
+            
             // Act
             var result = pageModel.GetCurrentRating();
 
