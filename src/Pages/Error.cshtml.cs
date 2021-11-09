@@ -10,6 +10,7 @@ namespace ContosoCrafts.WebSite.Pages
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public class ErrorModel : PageModel
     {
+
         // Id for the Request
         public string RequestId { get; set; }
 
@@ -21,13 +22,17 @@ namespace ContosoCrafts.WebSite.Pages
         //Represents a type used to perform logging. 
         public ErrorModel(ILogger<ErrorModel> logger)
         {
+
             _logger = logger;
+        
         }
 
         //handles GET exceptions
         public void OnGet()
         {
+
             RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
+        
         }
     }
 }   
