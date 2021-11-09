@@ -23,7 +23,9 @@ namespace ContosoCrafts.WebSite.Pages.Product
         /// <param name="productService"></param>
         public DeleteModel(JsonFileProductService productService)
         {
+
             ProductService = productService;
+        
         }
 
         // The data to show, bind to it for the post
@@ -37,7 +39,9 @@ namespace ContosoCrafts.WebSite.Pages.Product
         /// <param name="id"></param>
         public void OnGet(string id)
         {
+
             Product = ProductService.GetAllData().FirstOrDefault(m => m.Id.Equals(id));
+        
         }
 
         /// <summary>
