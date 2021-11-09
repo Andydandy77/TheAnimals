@@ -153,5 +153,25 @@ namespace UnitTests.Pages.Product.AddRating
 
         }
         #endregion
+
+        #region GetAllDataSorted
+        [Test]
+        public void GetAllDataSortedByRating_Valid_Should_Return_Sorted_Data_By_Rating()
+        {
+            // Arrange
+
+            // Act
+            var data = TestHelper.ProductService.GetAllDataSortedByRating();
+
+            // Assert
+            int maxRating = 5;
+            foreach (var p in data)
+            {
+                Assert.AreEqual(true, p.GetCurrentRating() <= maxRating);
+                maxRating = p.GetCurrentRating();
+            }
+        }
+
+        #endregion
     }
 }
