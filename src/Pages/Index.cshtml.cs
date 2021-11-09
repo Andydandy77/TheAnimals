@@ -14,6 +14,7 @@ namespace ContosoCrafts.WebSite.Pages
     /// </summary>
     public class IndexModel : PageModel
     {
+
         // Ilogger for write to the console and debugging
         private readonly ILogger<IndexModel> _logger;
 
@@ -25,13 +26,17 @@ namespace ContosoCrafts.WebSite.Pages
         public IndexModel(ILogger<IndexModel> logger,
             JsonFileProductService productService)
         {
+
             _logger = logger;
+            
             ProductService = productService;
+        
         }
 
 
         // ProductService to access data about products
         public JsonFileProductService ProductService { get; }
+        
         // An IEnumerable that allows us to iterate over the Products
         public IEnumerable<ProductModel> Products { get; private set; }
 
@@ -41,7 +46,9 @@ namespace ContosoCrafts.WebSite.Pages
         /// </summary>
         public void OnGet()
         {
+
             Products = ProductService.GetAllData();
+        
         }
     }
 }
