@@ -22,7 +22,9 @@ namespace ContosoCrafts.WebSite.Pages.Product
         /// <param name="productService"></param>
         public ReadModel(JsonFileProductService productService)
         {
+
             ProductService = productService;
+        
         }
 
         // The data to show
@@ -38,7 +40,9 @@ namespace ContosoCrafts.WebSite.Pages.Product
         /// <param name="id"></param>
         public void OnGet(string id)
         {
+
             Product = ProductService.GetAllData().FirstOrDefault(m => m.Id.Equals(id));            
+        
         }
 
 
