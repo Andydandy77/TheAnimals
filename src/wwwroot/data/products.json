@@ -218,8 +218,10 @@
     "Title": "Crunchy Fried Buttermilk Chicken Sandwich",
     "Cuisine": "American",
     "Description": "Fried Buttermilk Chicken thighs with a spicy chili pineapple sauce, garlic aioli, thinly sliced cabbage, pickled red onion, and pickles on a toasted brioche bun",
-    "Ratings": null,
-    "Reviews": null,
+    "Ratings": [
+      5
+    ],
+    "Reviews": [ "oh yesss, best fried chicken sandwich in seattle! you deserve to treat yourself to this amazing sando. flavorful chicken with a crispy crunchy outside and juicy inside. their tots are to die for, the nori seasoning is a great addition to the entire meal." ],
     "Price": 13.75
   },
   {
@@ -234,8 +236,17 @@
     "Title": "Sweet Fennel Sausage",
     "Cuisine": "Italian",
     "Description": "Tomato sauce, fennel sausage, mixed peppers, provolone, Murray River salt, marjoram",
-    "Ratings": null,
-    "Reviews": null,
+    "Ratings": [
+      5,
+      5,
+      4,
+      5,
+      4
+    ],
+    "Reviews": [
+      "The service was welcoming, helpful and fast. We were seated right away and our food and drinks came out not too long after. I had the sweet fennel sausage pizza with pepperoni and my fianc? had the ferndale farms pizza. We were both satisfied and would return if back in the Seattle area and craving pizza.",
+      "This was our first time trying Serious Pie and we ordered three very delicious pizzas!! We recommend this place if you are looking for some high quality wood-burning stove pizza! sweet fennel sausage, roasted peppers, provolone: Our favorite pizza!! The sweet and salty flavors worked really well together! ferndale farms mozzarella, tomato sauce, fresh basil: Great for a traditional Margarita pizza! roasted oyster mushrooms, crimini, truffle cheese: Really yummy flavor on this pizza with the mushrooms and truffle. It could have used a bit more sauce since it was a little dry."
+    ],
     "Price": 19
   },
   {
@@ -258,7 +269,7 @@
       5,
       4
     ],
-    "Reviews": null,
+    "Reviews": [ "This place was great. I had to hesitate to order the Old Stove burger because it was $20. But dang, that may be the best burger I've ever had! Great quality bun that was super fresh and just sturdy enough, and not all buttery and gross like the buns on most $10+ burgers. Quality meat, perfectly cooked. Just the right amount of cheese, tasty caramelized onions and special sauce, all while being possible to eat at a leisurely pace. So well balanced. Just a great burger experience. I had the two-pronged crown IPA which was really complex and tasty without being overly aggressive in any one vector, a fun and enjoyable beer that was perfect for a cool day. The one downside was my wife had the clams and mussels, and there was something we couldn't put our finger on that was just a little too bitter about the sauce. Not exactly peppery, but we expected it to be more savory / buttery, not such a fight in the mouth." ],
     "Price": 20
   },
   {
@@ -273,8 +284,17 @@
     "Title": "Pastrami Sandwich",
     "Cuisine": "American",
     "Description": "Pastrami Sandwich",
-    "Ratings": null,
-    "Reviews": null,
+    "Ratings": [
+      5,
+      5,
+      3,
+      4,
+      5
+    ],
+    "Reviews": [
+      "Best pastrami sandwich I've had in my life, arguably best sandwich. I tell my friends to try it when they visit Seattle but they never do because it's not an instagrammable spot or maybe I just don't have real friends. Point is, this is a must try. You can enjoy your sandwich at a table in pioneer square and listen to live music or play some giant chess as well since it's right outside.",
+      "This is probably one of the best Pastrami sandwiches I've ever had. Right up there with Kat's deli in New York. Perhaps even better since I prefer thinly sliced pastrami. I got the Tat'strami Sandwich, and I think what makes the sandwich so good and unique is the sweet cole slaw and melted Swiss. The cole slaw really balances the heavy salty flavor of the sandwich. And the melted cheese makes it almost feel like a cheesesteak. Went with a buddy and we split a large. Even that was pretty filling. They were nice enough the split on 2 plates. Also ordered a basket of fries. I'd probably pass on that next time. They were pretty wilted and soggy. I like my fries super crispy."
+    ],
     "Price": 15
   },
   {
@@ -289,8 +309,17 @@
     "Title": "Mediterranean Vegan Sourdough Pasta",
     "Cuisine": "Italian",
     "Description": "Sundried and cherry tomatoes,kalamata olives,basil,sicilian spice,oven roasted eggplant red sauce",
-    "Ratings": null,
-    "Reviews": null,
+    "Ratings": [
+      4,
+      5,
+      4,
+      4,
+      5
+    ],
+    "Reviews": [
+      "Great service and vibe. Went for happy hour and got the Mac and cheese which has Beecher's cheese and their Scratch made sourdough pasta, pork confit fries, and a champagne mango margarita. Everything was delicious!",
+      "Welcome to Seattle, wow did not disappoint! Was referred to this awesome establishment by our hotel and we are very satisfied! The handmade sourdough pasta was the best pasta I ever had! The Apple strudel dessert was the perfect end to our amazing meal. We had the Sidechick as our drinks and it was so tropical and a great drink with our meal. Be prepared to spend downtown prices and our waiter disappeared a few times but it was a great first meal in WA!"
+    ],
     "Price": 18
   },
   {
@@ -551,13 +580,19 @@
     "Title": "Butter Chicken Pizza",
     "Cuisine": "Indian/Italian",
     "Description": "Butter chicken marinated in Can-Am special curry sauce, onions, green peppers, tomatoes, mozzarella cheese \u0026 pizza sauce",
-    "Ratings": null,
-    "Reviews": null,
+    "Ratings": [
+      5,
+      5
+    ],
+    "Reviews": [
+      "Excellent Indian flavored pizzas - Had the Butter chicken and the Butter paneer and both were top notch. The thickness of the pizza was perfect for my liking and the toppings/sauce were abundant ensuring every bite was flavorful.",
+      "Grab their indian version of pizzas chicken tandoori, butter chicken pizza those are yummy."
+    ],
     "Price": 18.99
   },
   {
     "Id": "8d326ce6-131c-4742-9ba0-afb9269a37001",
-    "Category": "Curry",
+    "Category": "Chaat",
     "Restaurant": "Honest",
     "Address": "2241 148th Ave NE",
     "City": "Bellevue",
@@ -567,8 +602,14 @@
     "Title": "Pav Bhaji",
     "Cuisine": "Indian",
     "Description": "Indian Vegetable Curry With Signature Spices Served with Pav(Bread)",
-    "Ratings": null,
-    "Reviews": null,
+    "Ratings": [
+      4,
+      5
+    ],
+    "Reviews": [
+      "Ordered Vada pav, Bahubali sandwich and Pav Bhaji. The Vada pav hype is for real. Loved it, took me back to the vada pav from Mumbai. However I don't understand the hype with the Pav Bhaji. Was pretty bland for me. Nowhere close to the mumbai style one. Bahubali sandwich was huge and filling. I am looking forward to trying the other chaat they have. Vada pav is a clear winner compared to the competition in the area. I didn't receive the receipt and I had to make sure they charged the correct amount. I will be on the watch out next time.",
+      "It's incredible when you run into the same flavours as back home abroad. Honest for me is that. I am amazed that everything tastes similar to the ones back in India! I got their pav bhaji, masala pav with bhaji, dahi vada chaat, dahi puri, chutney puri, pulav, samosa sandwich! The pav bhaji is a must have from here. That's what honest is known for in india and that's the best item on menu without doubt. Both pulav (flavoured rice) and samosa sandwich were on point. Not sweet and really perfect. I would eat this pulav everyday. Personally dahi vada chaat is so so so good - I want more. Dahi puri and chutney puri are also quite nice but compared to everything else they feel overpriced. Lastly - I didn't enjoy masala pav with bhaji. It's basically like pav bhaji but the bread is also toasted with spices. I got the cheese version and that didn't seat too well with me. Maybe because I ordered so much food but I have no regrets. Honest I wish you were in Seattle so it would be easier to order all the damn time. No photos since I couldn't keep myself from diving in even for few mins"
+    ],
     "Price": 9.99
   },
   {
@@ -583,8 +624,14 @@
     "Title": "Mutton (Goat) Dum Biryani",
     "Cuisine": "Indian",
     "Description": "Flavoured Goat meat rice served with raita and birnjal curry",
-    "Ratings": null,
-    "Reviews": null,
+    "Ratings": [
+      5,
+      5
+    ],
+    "Reviews": [
+      "We love their chicken and mutton dum biryani because it is better than the one in Redmond. The taste is the best in the area since they only cook it on Fridays, Saturdays, and Sundays. It is cooked slowly and you can taste all the flavors. We are looking forward to trying other dishes. The staff is very nice. Thanks!",
+      "Their Chicken Dum Biryani is ON POINT. I am very fussy when it comes to Biryani, but these guys are generous with masala :) If you're experimental, Avakai (pickle) chicken biryani is also a good try. Tasty and you actually get the pickle! P.S. Redmond location is much better than the Bellevue one!"
+    ],
     "Price": 16.99
   },
   {
@@ -599,8 +646,11 @@
     "Title": "Chicken Tikka Masala",
     "Cuisine": "Indian",
     "Description": "Breast meat simmered in our signature tomato sauce and butter-cream sauce",
-    "Ratings": null,
-    "Reviews": null,
+    "Ratings": [
+      4,
+      3
+    ],
+    "Reviews": [ "Had the chicken tikka and it was very good. Place was not crowded but should've been based on their food. Decor is nothing to write home about but it is pretty cool that you can see the chef cooking. Filled waters at a decent rate and thought overall value was good. He also brought a side of my dining partners chicken tikka masala sauce so I could dip my chicken tikka in it if I chose. That was a really nice touch and the sauce was very good." ],
     "Price": 16.99
   },
   {
@@ -615,8 +665,13 @@
     "Title": "Mango Lassi",
     "Cuisine": "Indian",
     "Description": "Mango Yogurt Shake",
-    "Ratings": null,
-    "Reviews": null,
+    "Ratings": [
+      5,
+      4,
+      3
+    ],
+    "Reviews": [ "The mango lassi here is very creamy and tastly",
+                 "The best authentic mango lassi" ],
     "Price": 3.49
   },
   {
@@ -830,7 +885,7 @@
     "Address": "14625 NE 24th St",
     "City": "Bellevue",
     "State": "WA",
-    "img": "https://seattleanjappar.com/wp-content/uploads/2020/09/chettinatedchicken.jpg",
+    "img": "https://tse2.mm.bing.net/th?id=OIP.BuHaJkKZYPgxCEqM-D4sOAHaE7&pid=Api&P=0&w=258&h=173",
     "Url": "https://seattleanjappar.com/",
     "Title": "Chettinad Chicken",
     "Cuisine": "Indian",
@@ -852,7 +907,7 @@
     "Address": "14625 NE 24th St",
     "City": "Bellevue",
     "State": "WA",
-    "img": "https://seattleanjappar.com/wp-content/uploads/2019/12/mysore-masala-dosa-recipe-2-500x375-1.jpg",
+    "img": "https://tse1.mm.bing.net/th?id=OIP.hwuIWAIo6lpn9mSOWn4TEwHaFU&pid=Api&P=0&w=247&h=178",
     "Url": "https://seattleanjappar.com/",
     "Title": "Mysore Masala Dosa",
     "Cuisine": "Indian",
@@ -868,13 +923,13 @@
     "Price": 10.99
   },
   {
-    "Id": "96d97a40-bdb3-487c-876c-b4a7c00850012",
+    "Id": "96d97a40-bdb3-487c-876c-b4a7c00850013",
     "Category": "Parotta",
     "Restaurant": "Anjappar Chettinad",
     "Address": "14625 NE 24th St",
     "City": "Bellevue",
     "State": "WA",
-    "img": "https://seattleanjappar.com/wp-content/uploads/2020/09/eggkothuparoda.jpg",
+    "img": "https://tse1.mm.bing.net/th?id=OIP.Te99QXvOytDmPkWzHsjklwHaFA&pid=Api&P=0&w=241&h=164",
     "Url": "https://seattleanjappar.com/",
     "Title": "Egg kothu Parotta",
     "Cuisine": "Indian",
