@@ -155,6 +155,10 @@ namespace UnitTests.Pages.Product.AddRating
         #endregion
 
         #region GetAllDataSorted
+        /// <summary>
+        /// Tests that data is returned sorted by rating. Checks that each rating is less than
+        /// or equal to previous rating
+        /// </summary>
         [Test]
         public void GetAllDataSortedByRating_Valid_Should_Return_Sorted_Data_By_Rating()
         {
@@ -171,7 +175,6 @@ namespace UnitTests.Pages.Product.AddRating
                 maxRating = p.GetCurrentRating();
             }
         }
-
         #endregion
     }
 }
