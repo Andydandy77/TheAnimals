@@ -51,6 +51,19 @@
     </div>
 </div>
 
+<div class="dropdown filterButton">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Filter by price
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        @foreach (var price in getPrices())
+        {
+            <button class="dropdown-item" type="button" @onclick="(e => SetPriceRange(price))">@price</button>
+        }
+
+    </div>
+</div>
+
 <button class="btn btn-primary filterButton" type="button" @onclick="(e => resetFilters())">Reset Filters</button>
 
 <button class="btn btn-primary filterButton" type="button" @onclick="(e => SortDishesByRating())">Get Me the Best!</button>
@@ -169,6 +182,8 @@
     bool getTheBest = false;
     int currentRating = 0;
     int voteCount = 0;
+    int low = 0;
+    int high = 1000;
     string voteLabel;
     string SearchTerm { get; set; }
 
@@ -222,6 +237,13 @@
         getTheBest = true;
     }
 
+    void SetPriceRange(string priceRange)
+    {
+        string[] prices = priceRange.Split('-');
+        low = Int32.Parse(prices[0]);
+        high = Int32.Parse(prices[1]);
+    }
+
 
     List<string> getCategories()
     {
@@ -253,6 +275,19 @@
         return cities;
     }
 
+    List<string> getPrices()
+    {
+        List<string> prices = new List<string>();
+        prices.Add("0-5");
+        prices.Add("5-15");
+        prices.Add("15-25");
+        prices.Add("25-35");
+        prices.Add("35-50");
+        prices.Add("50-100");
+
+        return prices;
+    }
+
     List<string> getCuisines()
     {
         List<string> cuisines = new List<string>();
@@ -274,6 +309,8 @@
         selectedCity = "All";
         selectedCuisine = "All";
         getTheBest = false;
+        high = 1000;
+        low = 0;
     }
 
     void GetCurrentRating()
@@ -308,7 +345,11 @@
             {
                 if (selectedCuisine == "All" || selectedCuisine == product.Cuisine)
                 {
-                    return true;
+                    if ((product.Price <= high && product.Price >= low) || high == 1000)
+                    {
+                        return true;
+
+                    }
                 }
             }
 
