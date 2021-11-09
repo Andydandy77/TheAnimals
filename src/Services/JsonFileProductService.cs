@@ -200,5 +200,14 @@ namespace ContosoCrafts.WebSite.Services
 
             return data;
         }
+
+        /// < summary>
+        /// Returns data sorted by average rating
+        /// </summary>
+        /// <returns></returns>
+        public IEnumerable<ProductModel> GetAllDataSortedByRating()
+        {
+            return GetAllData().OrderByDescending(s => s.GetCurrentRating());
+        }
     }
 }
