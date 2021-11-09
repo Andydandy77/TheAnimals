@@ -24,7 +24,9 @@ namespace ContosoCrafts.WebSite.Pages.Product
         /// <param name="productService"></param>
         public CreateModel(JsonFileProductService productService)
         {
+
             ProductService = productService;
+        
         }
 
         // Data to show
@@ -36,6 +38,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
         /// <param name="id"></param>
         public IActionResult OnGet()
         {
+
             Product = ProductService.CreateData();
 
             // Redirect the webpage to the Update page populated with the data so the user can fill in the fields
