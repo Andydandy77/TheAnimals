@@ -7,8 +7,10 @@ namespace ContosoCrafts.WebSite
     {
         public static void Main(string[] args)
         {
+
             //runs code on a builder object
             CreateHostBuilder(args).Build().Run();
+        
         }
 
         //CreateHostBuilder method to configure the host without running the app
@@ -16,7 +18,9 @@ namespace ContosoCrafts.WebSite
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
+
                     webBuilder.UseStartup<Startup>();
+                
                 });
     }
 }
