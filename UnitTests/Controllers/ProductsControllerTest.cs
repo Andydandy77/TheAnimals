@@ -40,12 +40,14 @@ namespace UnitTests.Controllers
         [Test]
         public void Patch_Valid_Should_Return_OK()
         {
+
             //Arrange
             var data = new ProductsController.RatingRequest
             {
                 ProductId = "8oz",
                 Rating = 4
             };
+
             //Act
             var result = pageModel.Patch(data) as OkResult;
 
@@ -68,6 +70,7 @@ namespace UnitTests.Controllers
 
             // Assert
             Assert.AreNotEqual(null, products);
+
         }
 
         #endregion Get
