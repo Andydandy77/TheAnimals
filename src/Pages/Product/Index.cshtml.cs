@@ -18,7 +18,9 @@ namespace ContosoCrafts.WebSite.Pages.Product
         /// <param name="productService"></param>
         public IndexModel(JsonFileProductService productService)
         {
+
             ProductService = productService;
+        
         }
 
         // Data Service
@@ -32,7 +34,9 @@ namespace ContosoCrafts.WebSite.Pages.Product
         /// </summary>
         public void OnGet()
         {
+
             Products = ProductService.GetAllData();
+        
         }
     }
 }
