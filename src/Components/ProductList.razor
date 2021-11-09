@@ -17,9 +17,9 @@
         @GetCategoryTitle()
     </button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        @foreach (var category in getCategories())
+        @foreach (var category in GetCategories())
         {
-            <button class="dropdown-item" type="button" @onclick="(e => setSelectedCategory(category))">@category</button>
+            <button class="dropdown-item" type="button" @onclick="(e => SetSelectedCategory(category))">@category</button>
         }
 
     </div>
@@ -30,9 +30,9 @@
         @GetCuisineTitle()
     </button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        @foreach (var cuisine in getCuisines())
+        @foreach (var cuisine in GetCuisines())
         {
-            <button class="dropdown-item" type="button" @onclick="(e => setSelectedCuisine(cuisine))">@cuisine</button>
+            <button class="dropdown-item" type="button" @onclick="(e => SetSelectedCuisine(cuisine))">@cuisine</button>
         }
 
     </div>
@@ -43,9 +43,9 @@
         @GetCityTitle()
     </button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        @foreach (var city in getCities())
+        @foreach (var city in GetCities())
         {
-            <button class="dropdown-item" type="button" @onclick="(e => setSelectedCity(city))">@city</button>
+            <button class="dropdown-item" type="button" @onclick="(e => SetSelectedCity(city))">@city</button>
         }
 
     </div>
@@ -56,7 +56,7 @@
         @GetPriceTitle()
     </button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        @foreach (var price in getPrices())
+        @foreach (var price in GetPrices())
         {
             <button class="dropdown-item" type="button" @onclick="(e => SetPriceRange(price))">@price</button>
         }
@@ -64,7 +64,7 @@
     </div>
 </div>
 
-<button class="btn btn-primary filterButton" type="button" @onclick="(e => resetFilters())">Reset Filters</button>
+<button class="btn btn-primary filterButton" type="button" @onclick="(e => ResetFilters())">Reset Filters</button>
 
 <button class="btn btn-success" type="button" @onclick="(e => SortDishesByRating())">Get Me the Best!</button>
 
@@ -74,7 +74,7 @@
         foreach (var product in GetDishesByRating())
         {
 
-            if (willDishShow(product))
+            if (WillDishShow(product))
             {
                 <div class="card">
                     <div class="card-img" style="background-image: url('@product.Image');">
@@ -100,7 +100,7 @@
         foreach (var product in GetDishes())
         {
 
-            if (willDishShow(product))
+            if (WillDishShow(product))
             {
                 <div class="card">
                     <div class="card-img" style="background-image: url('@product.Image');">
@@ -195,39 +195,39 @@
         GetCurrentRating();
     }
 
-    void setSelectedCategory(string category)
+    void SetSelectedCategory(string category)
     {
         selectedCategory = category;
 
     }
 
-    string getSelectedCategory()
+    string GetSelectedCategory()
     {
         return selectedCategory;
     }
 
-    void setSelectedCuisine(string cuisine)
+    void SetSelectedCuisine(string cuisine)
     {
         selectedCuisine = cuisine;
     }
 
-    string getSelectedCuisine()
+    string GetSelectedCuisine()
     {
         return selectedCuisine;
     }
 
-    string getSelectedCity()
+    string GetSelectedCity()
     {
         return selectedCategory;
     }
 
-    void setSelectedCity(string city)
+    void SetSelectedCity(string city)
     {
         selectedCity = city;
 
     }
 
-    string setSelectedCity()
+    string SetSelectedCity()
     {
         return selectedCategory;
     }
@@ -245,7 +245,7 @@
     }
 
 
-    List<string> getCategories()
+    List<string> GetCategories()
     {
         List<string> categories = new List<string>();
         var products = ProductService.GetAllData();
@@ -260,7 +260,7 @@
         return categories;
     }
 
-    List<string> getCities()
+    List<string> GetCities()
     {
         List<string> cities = new List<string>();
         var products = ProductService.GetAllData();
@@ -275,7 +275,7 @@
         return cities;
     }
 
-    List<string> getPrices()
+    List<string> GetPrices()
     {
         List<string> prices = new List<string>();
         prices.Add("0-5");
@@ -288,7 +288,7 @@
         return prices;
     }
 
-    List<string> getCuisines()
+    List<string> GetCuisines()
     {
         List<string> cuisines = new List<string>();
         var products = ProductService.GetAllData();
@@ -303,7 +303,7 @@
         return cuisines;
     }
 
-    void resetFilters()
+    void ResetFilters()
     {
         selectedCategory = "All";
         selectedCity = "All";
@@ -337,7 +337,7 @@
         SelectProduct(selectedProductId);
     }
 
-    bool willDishShow(ProductModel product)
+    bool WillDishShow(ProductModel product)
     {
         if (selectedCategory == "All" || selectedCategory == product.Category)
         {
