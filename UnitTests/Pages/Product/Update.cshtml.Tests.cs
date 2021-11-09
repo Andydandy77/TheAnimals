@@ -44,7 +44,7 @@ namespace UnitTests.Pages.Product.Update
 
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
-            Assert.AreEqual("The 8oz.", pageModel.Product.Title);
+            Assert.AreEqual("The 8oz", pageModel.Product.Title);
         }
         #endregion OnGet
 
