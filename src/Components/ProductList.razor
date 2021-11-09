@@ -53,29 +53,60 @@
 
 <button class="btn btn-primary filterButton" type="button" @onclick="(e => resetFilters())">Reset Filters</button>
 
+<button class="btn btn-primary filterButton" type="button" @onclick="(e => SortDishesByRating())">Get Me the Best!</button>
+
 <div class="card-columns">
-    @foreach (var product in GetDishes())
+    @if (getTheBest)
     {
-
-        if (willDishShow(product))
+        foreach (var product in GetDishesByRating())
         {
-            <div class="card">
-                <div class="card-img" style="background-image: url('@product.Image');">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">@product.Title</h5>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">
-                        <button @onclick="(e => SelectProduct(product.Id))"
-                                data-toggle="modal" data-target="#productModal" class="btn btn-primary">
-                            More Info
-                        </button>
-                    </small>
-                </div>
-            </div>
-        }
 
+            if (willDishShow(product))
+            {
+                <div class="card">
+                    <div class="card-img" style="background-image: url('@product.Image');">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">@product.Title</h5>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">
+                            <button @onclick="(e => SelectProduct(product.Id))"
+                                    data-toggle="modal" data-target="#productModal" class="btn btn-primary">
+                                More Info
+                            </button>
+                        </small>
+                    </div>
+                </div>
+            }
+
+        }
+    }
+    else
+    {
+        foreach (var product in GetDishes())
+        {
+
+            if (willDishShow(product))
+            {
+                <div class="card">
+                    <div class="card-img" style="background-image: url('@product.Image');">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">@product.Title</h5>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">
+                            <button @onclick="(e => SelectProduct(product.Id))"
+                                    data-toggle="modal" data-target="#productModal" class="btn btn-primary">
+                                More Info
+                            </button>
+                        </small>
+                    </div>
+                </div>
+            }
+
+        }
     }
 </div>
 
@@ -135,6 +166,7 @@
     string selectedCategory = "All";
     string selectedCity = "All";
     string selectedCuisine = "All";
+    bool getTheBest = false;
     int currentRating = 0;
     int voteCount = 0;
     string voteLabel;
@@ -183,6 +215,11 @@
     string setSelectedCity()
     {
         return selectedCategory;
+    }
+
+    void SortDishesByRating()
+    {
+        getTheBest = true;
     }
 
 
@@ -236,6 +273,7 @@
         selectedCategory = "All";
         selectedCity = "All";
         selectedCuisine = "All";
+        getTheBest = false;
     }
 
     void GetCurrentRating()
@@ -288,6 +326,11 @@
         }
         return GetSearchDishes();
 
+    }
+
+    IEnumerable<ProductModel> GetDishesByRating()
+    {
+        return ProductService.GetAllDataSortedByRating();
     }
 
 
