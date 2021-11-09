@@ -17,7 +17,12 @@
       5,
       5,
       3,
-      4
+      4,
+      5,
+      5,
+      5,
+      5,
+      5
     ],
     "Reviews": [
       "Wow this burger is one of the best burgers ever!",
@@ -71,7 +76,14 @@
     "Title": "Red Mill Deluxe W/ Cheese",
     "Cuisine": "American",
     "Description": "American cheese, lettuce, tomato, pickle, red onion, mill sauce",
-    "Ratings": null,
+    "Ratings": [
+      4,
+      4,
+      1,
+      1,
+      4,
+      4
+    ],
     "Reviews": null,
     "Price": 7.25
   },
@@ -183,7 +195,14 @@
     "Title": "Dick\u0027s Deluxe",
     "Cuisine": "American",
     "Description": "Two 1/8 pound grilled patties, with melted cheese, lettuce, mayonnaise and pickle relish.",
-    "Ratings": null,
+    "Ratings": [
+      3,
+      3,
+      2,
+      2,
+      2,
+      2
+    ],
     "Reviews": null,
     "Price": 4.5
   },
@@ -231,7 +250,14 @@
     "Title": "Old Stove Burger",
     "Cuisine": "American",
     "Description": "Pure Country beef*, American cheese, Blitzfire Brown braised onions, Old Stove sauce. Sub beyond patty at no extra cost.",
-    "Ratings": null,
+    "Ratings": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      4
+    ],
     "Reviews": null,
     "Price": 20
   },
@@ -375,7 +401,13 @@
     "Title": "Taiwanese Pork Burger",
     "Cuisine": "Chinese",
     "Description": "Taiwanese Pork Burger",
-    "Ratings": null,
+    "Ratings": [
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
     "Reviews": null,
     "Price": 6.95
   },
@@ -764,8 +796,8 @@
       5
     ],
     "Reviews": [
-      "I love their garlic naans and chicken tikka masala! It's my go-to for curry. Staff is very nice and friendly as well! I usually order for delivery since it's a bit of a drive away but today I did a take out and ate in my car since I couldn't wait! Food was definitely fresh and the chicken was so tender with perfect seasoning.",
-      "My wife and I love Naan-N-Curry Issaquah! We keep coming back almost weekly. The excellent customer service, amazing food and quick turn-around time is what keeps us coming back. My wife always orders the Chicken Tikka Masala and I normally get the Lamb Baalti Gosht. We also order rice and naan to go with it. We could not recommend this place more! If you haven't tried this place yet, you need to!"
+      "I love their garlic naans and chicken tikka masala! It\u0027s my go-to for curry. Staff is very nice and friendly as well! I usually order for delivery since it\u0027s a bit of a drive away but today I did a take out and ate in my car since I couldn\u0027t wait! Food was definitely fresh and the chicken was so tender with perfect seasoning.",
+      "My wife and I love Naan-N-Curry Issaquah! We keep coming back almost weekly. The excellent customer service, amazing food and quick turn-around time is what keeps us coming back. My wife always orders the Chicken Tikka Masala and I normally get the Lamb Baalti Gosht. We also order rice and naan to go with it. We could not recommend this place more! If you haven\u0027t tried this place yet, you need to!"
     ],
     "Price": 14.99
   },
@@ -776,7 +808,7 @@
     "Address": "14725 NE 20th St",
     "City": "Bellevue",
     "State": "WA",
-    "img": "https://tse1.mm.bing.net/th?id=OIP.WsWNzH7n94cKZITAfLYaXgHaEK&pid=Api&rs=1&c=1&qlt=95&w=195&h=109",
+    "img": "https://tse1.mm.bing.net/th?id=OIP.WsWNzH7n94cKZITAfLYaXgHaEK\u0026pid=Api\u0026rs=1\u0026c=1\u0026qlt=95\u0026w=195\u0026h=109",
     "Url": "http://www.bellevuechaathouse.com/",
     "Title": "Chole Bhature",
     "Cuisine": "Indian",
@@ -786,7 +818,7 @@
       4
     ],
     "Reviews": [
-      "Recently got their chole bhature and amritsari kulcha for takeout. Everything was very flavorful, hot & fresh. Not to mention the amazing value for money! It was like a feast for $20. Service was a little on the slow side, but I'll forgive them for that given how delicious their bhature is :)",
+      "Recently got their chole bhature and amritsari kulcha for takeout. Everything was very flavorful, hot \u0026 fresh. Not to mention the amazing value for money! It was like a feast for $20. Service was a little on the slow side, but I\u0027ll forgive them for that given how delicious their bhature is :)",
       "Recommend Aloo and Gobi Parathas and Chole Bhature. Solid four stars for flavors of parathas and chole. Their thali was not good."
     ],
     "Price": 10.49
@@ -808,7 +840,7 @@
       4
     ],
     "Reviews": [
-      "This used to probably be a 2 or 3 star place before new management (Venkatesh and crew) took over... but this crew knows what they're doing! Been here most recently for takeout but have also been in about a couple dozen times over the past 24 months, sent in friends (desis & non-desis) who have become regulars, and used them for catering. Besides the supremely high-quality weekend buffet (pre-covid), our favorites include the parotta plate, any dosas, chettinad chicken, pepper chicken, chicken 65 (order it spicy), mutton sukka, mutton biryani and kothu parotta - all 4.5 / 5 star dishes. Anjappar - the brand's claim to fame in Chennai is Chettinad Food and this place does not disappoint. The chettinad food here very closely mirrors the flavors from Anjappar in Chennai. (I do miss the buffet but would rather stay safe than sorry!)",
+      "This used to probably be a 2 or 3 star place before new management (Venkatesh and crew) took over... but this crew knows what they\u0027re doing! Been here most recently for takeout but have also been in about a couple dozen times over the past 24 months, sent in friends (desis \u0026 non-desis) who have become regulars, and used them for catering. Besides the supremely high-quality weekend buffet (pre-covid), our favorites include the parotta plate, any dosas, chettinad chicken, pepper chicken, chicken 65 (order it spicy), mutton sukka, mutton biryani and kothu parotta - all 4.5 / 5 star dishes. Anjappar - the brand\u0027s claim to fame in Chennai is Chettinad Food and this place does not disappoint. The chettinad food here very closely mirrors the flavors from Anjappar in Chennai. (I do miss the buffet but would rather stay safe than sorry!)",
       "We tried the Sirai paratha, chettinad chicken and veg briyani. As we love it spicy we asked for that extra kick, and that was delivered to perfection. Loved the food, will definitely go for it again. One star taken off for it could had be a tad cleaner"
     ],
     "Price": 15.99
