@@ -1,3 +1,4 @@
+using System;
 using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -126,6 +127,31 @@ namespace ContosoCrafts.WebSite.Models
 
 
             return false;
+        }
+
+        /// <summary>
+        /// Compares average rating of one product to another product
+        /// </summary>
+        /// <param name="obj">Object that will be compared</param>
+        /// <returns>1 if parameter is smaller, 0 if equal, -1 if bigger</returns>
+        public int CompareTo(object obj)
+        {
+            // Check that object is not null
+            if (obj == null)
+            {
+                return 1;
+            }
+
+            // Verify that object is a Product Model
+            ProductModel otherProduct = obj as ProductModel;
+            if (otherProduct != null)
+            {
+                return this.GetCurrentRating().CompareTo(otherProduct.GetCurrentRating());
+            } 
+            else
+            {
+                throw new ArgumentException("Object is not a ProductModel");
+            }
         }
 
  
