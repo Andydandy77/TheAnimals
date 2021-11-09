@@ -8,19 +8,23 @@ using ContosoCrafts.WebSite.Models;
 using Microsoft.AspNetCore.Hosting;
 
 namespace ContosoCrafts.WebSite.Services
+
 {
     /// <summary>
     /// Product Service class
     /// </summary>
     public class JsonFileProductService
     {
+
         // <summary>
         /// Default Constructor
         /// </summary>
         /// <param name="webHostEnvironment"></param>
         public JsonFileProductService(IWebHostEnvironment webHostEnvironment)
         {
+
             WebHostEnvironment = webHostEnvironment;
+        
         }
 
         // Provides information of a Web Hosting Environment
@@ -29,7 +33,9 @@ namespace ContosoCrafts.WebSite.Services
         // Returns path to json file
         private string JsonFileName
         {
+
             get { return Path.Combine(WebHostEnvironment.WebRootPath, "data", "products.json"); }
+        
         }
 
         //Exposes an enumerator, iterators over
@@ -40,7 +46,9 @@ namespace ContosoCrafts.WebSite.Services
                 return JsonSerializer.Deserialize<ProductModel[]>(jsonFileReader.ReadToEnd(),
                     new JsonSerializerOptions
                     {
+
                         PropertyNameCaseInsensitive = true
+                    
                     });
             }
         }
@@ -56,39 +64,52 @@ namespace ContosoCrafts.WebSite.Services
             // If the ProductID is invalid, return
             if (string.IsNullOrEmpty(productId))
             {
+
                 return false;
+            
             }
 
             var products = GetAllData();
 
             // Look up the product, if it does not exist, return
             var data = products.FirstOrDefault(x => x.Id.Equals(productId));
+            
             if (data == null)
             {
+
                 return false;
+            
             }
 
             // Check Rating for boundries, do not allow ratings below 0
             if (rating < 0)
             {
+
                 return false;
+            
             }
 
             // Check Rating for boundries, do not allow ratings above 5
             if (rating > 5)
             {
+
                 return false;
+            
             }
 
             // Check to see if the rating exist, if there are none, then create the array
             if (data.Ratings == null)
             {
+
                 data.Ratings = new int[] { };
+            
             }
 
             // Add the Rating to the Array
             var ratings = data.Ratings.ToList();
+
             ratings.Add(rating);
+
             data.Ratings = ratings.ToArray();
 
             // Save the data back to the data store
@@ -106,10 +127,14 @@ namespace ContosoCrafts.WebSite.Services
         public ProductModel UpdateData(ProductModel data)
         {
             var products = GetAllData();
+
             var productData = products.FirstOrDefault(x => x.Id.Equals(data.Id));
+
             if (productData == null)
             {
+
                 return null;
+            
             }
 
             // Update the data to the new passed in values
@@ -142,8 +167,10 @@ namespace ContosoCrafts.WebSite.Services
                 JsonSerializer.Serialize<IEnumerable<ProductModel>>(
                     new Utf8JsonWriter(outputStream, new JsonWriterOptions
                     {
+
                         SkipValidation = true,
                         Indented = true
+                    
                     }),
                     products
                 );
@@ -157,9 +184,11 @@ namespace ContosoCrafts.WebSite.Services
         /// <returns></returns>
         public ProductModel CreateData()
         {
+
             // Create new product
             var data = new ProductModel()
             {
+
                 Id = System.Guid.NewGuid().ToString(),
                 Category = "Enter Type of food", // Change later to select from options
                 Restaurant = "Enter Restaurant name",
@@ -172,6 +201,7 @@ namespace ContosoCrafts.WebSite.Services
                 Cuisine = "Type of Cuisine",
                 Description = "Enter description of dish",
                 Price = 0,
+
             };
 
             // Get data and append new data to it
@@ -190,6 +220,7 @@ namespace ContosoCrafts.WebSite.Services
         /// <returns></returns>
         public ProductModel DeleteData(string id)
         {
+
             // Get the current set, and append the new record to it
             var dataSet = GetAllData();
             var data = dataSet.FirstOrDefault(m => m.Id.Equals(id));
@@ -207,7 +238,9 @@ namespace ContosoCrafts.WebSite.Services
         /// <returns></returns>
         public IEnumerable<ProductModel> GetAllDataSortedByRating()
         {
+
             return GetAllData().OrderByDescending(s => s.GetCurrentRating());
+        
         }
     }
 }
