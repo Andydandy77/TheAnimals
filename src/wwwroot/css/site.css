@@ -184,3 +184,11 @@ a:link {
     font-family: 'Bookman Old Style';
     font-size: 42px;
 }
+.card {
+    width: 16rem;
+    margin: 10px;
+}
+
+.card-body{
+    height: 30rem;
+}
