@@ -3,11 +3,13 @@ using Microsoft.Extensions.Logging;
 
 namespace ContosoCrafts.WebSite.Pages
 {
+
     /// <summary>
     /// Privacy page
     /// </summary>
     public class PrivacyModel : PageModel
     {
+
         // Ilogger for write to the console and debugging
         private readonly ILogger<PrivacyModel> _logger;
 
@@ -18,7 +20,9 @@ namespace ContosoCrafts.WebSite.Pages
         /// <param name="logger"></param>
         public PrivacyModel(ILogger<PrivacyModel> logger)
         {
+
             _logger = logger;
+        
         }
 
         /// <summary>
