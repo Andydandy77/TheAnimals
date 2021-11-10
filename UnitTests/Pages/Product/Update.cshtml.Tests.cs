@@ -31,6 +31,7 @@ namespace UnitTests.Pages.Product.Update
         #endregion TestSetup
 
         #region OnGet
+
         /// <summary>
         /// Tests if OnGet returns a Valid set of products
         /// </summary>
@@ -49,6 +50,7 @@ namespace UnitTests.Pages.Product.Update
         #endregion OnGet
 
         #region OnPost
+
         /// <summary>
         /// Tests if OnPost returns a valid set of products
         /// </summary>
@@ -76,11 +78,10 @@ namespace UnitTests.Pages.Product.Update
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
             Assert.AreEqual(true, result.PageName.Contains("Index"));
         }
-
-        [Test]
         ///<summary>
         /// Tests if OnPost is Returning an Invalid when the product is not available
         ///</summary>
+        [Test]
         public void OnPost_InValid_Model_NotValid_Return_Page()
         {
             // Arrange
