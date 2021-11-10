@@ -27,6 +27,7 @@ namespace UnitTests.Pages.Product.AddRating
         #endregion TestSetup
 
         #region AddRating
+
         /// <summary>
         /// Adding a rating to an invalid product should return false
         /// </summary>
@@ -135,6 +136,7 @@ namespace UnitTests.Pages.Product.AddRating
         #endregion AddRating
 
         #region UpdateData
+
         /// <summary>
         /// Updating data on an invalid ID should return null
         /// </summary>
@@ -155,6 +157,7 @@ namespace UnitTests.Pages.Product.AddRating
         #endregion
 
         #region GetAllDataSorted
+
         /// <summary>
         /// Tests that data is returned sorted by rating. Checks that each rating is less than
         /// or equal to previous rating
