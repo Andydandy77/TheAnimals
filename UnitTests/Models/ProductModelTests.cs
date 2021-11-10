@@ -17,6 +17,7 @@ namespace UnitTests.Pages.Product.Delete
     public class ProductModelTests
     {
         #region TestSetup
+
         /// <summary>
         /// Initialize a ProductModel with the TestHelper
         /// </summary>
@@ -33,6 +34,7 @@ namespace UnitTests.Pages.Product.Delete
         #endregion TestSetup 
 
         #region ToString
+
         /// <summary>
         /// Tests that ToString() method should return the string representation of the dish
         /// </summary>
@@ -53,6 +55,7 @@ namespace UnitTests.Pages.Product.Delete
         #endregion ToString
 
         #region GetCurrentRating
+
         /// <summary>
         /// Tests that GetCurrentRatings() method should return the 0 by default
         /// </summary>
