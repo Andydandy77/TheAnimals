@@ -11,6 +11,7 @@ namespace UnitTests.Pages.Product.Read
     public class ReadTests
     {
         #region TestSetup
+
         // This is our model that we test OnGet
         public static ReadModel pageModel;
 
@@ -28,6 +29,7 @@ namespace UnitTests.Pages.Product.Read
         #endregion TestSetup
 
         #region OnGet
+
         /// <summary>
         /// This tests that the onGet method for the read page has the correct information
         /// for 8oz burger in this case
