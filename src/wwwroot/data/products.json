@@ -42,7 +42,15 @@
     "Title": "Red Pie \u002B Pepperoni \u002B Caramelized Garlic",
     "Cuisine": "Italian",
     "Description": "A classic Dantini combo! Pepperoni, garlic confit, and mozzarella on a red base.",
-    "Ratings": null,
+    "Ratings": [
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
     "Reviews": [
       "Love this pizza!"
     ],
@@ -60,7 +68,14 @@
     "Title": "The California Sandwich",
     "Cuisine": "American",
     "Description": "Sandwich - Mayo, sliced avocado, turkey, bacon, provolone cheese; toasted on a baguette, topped with lettuce and tomato",
-    "Ratings": null,
+    "Ratings": [
+      3,
+      4,
+      4,
+      4,
+      1,
+      1
+    ],
     "Reviews": null,
     "Price": 7.75
   },
@@ -99,7 +114,20 @@
     "Title": "Tacos",
     "Cuisine": "Mexican",
     "Description": "Corn tortillas, your choice of meat or fresh grilled vegetables, topped with Pico de Gallo",
-    "Ratings": null,
+    "Ratings": [
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
     "Reviews": null,
     "Price": 1.5
   },
@@ -115,7 +143,17 @@
     "Title": "Pizza - Prosciutto \u0026 Mushroom",
     "Cuisine": "Italian",
     "Description": "Tomato sauce, prosciutto di parma, mushroom, fresh mozzarella, basil",
-    "Ratings": null,
+    "Ratings": [
+      3,
+      3,
+      3,
+      3,
+      5,
+      5,
+      5,
+      1,
+      2
+    ],
     "Reviews": null,
     "Price": 16
   },
@@ -131,7 +169,12 @@
     "Title": "The Old Fashioned",
     "Cuisine": "American",
     "Description": "Made delicious with a touch of sour cream, these are some of our most popular doughnuts",
-    "Ratings": null,
+    "Ratings": [
+      4,
+      4,
+      4,
+      4
+    ],
     "Reviews": null,
     "Price": 2.75
   },
@@ -147,7 +190,15 @@
     "Title": "Shrimp \u0026 Kurobuta Pork Wontons with House Spicy Sauce",
     "Cuisine": "Chinese",
     "Description": "Served with our signature house spicy sauce and topped with garlic and green onion, our handmade wontons are always a fan favorite.",
-    "Ratings": null,
+    "Ratings": [
+      4,
+      4,
+      4,
+      5,
+      5,
+      2,
+      2
+    ],
     "Reviews": null,
     "Price": 13.75
   },
@@ -163,7 +214,13 @@
     "Title": "Taco Asada",
     "Cuisine": "Mexican",
     "Description": "Steak, onion, cilantro, salsa and guacamole on a soft corn tortilla. Priced per taco. Adjust quantity as desired.",
-    "Ratings": null,
+    "Ratings": [
+      3,
+      4,
+      5,
+      5,
+      5
+    ],
     "Reviews": null,
     "Price": 2.5
   },
@@ -179,7 +236,15 @@
     "Title": "Kao Soi",
     "Cuisine": "Thai",
     "Description": "A Northern Thai curry noodle soup. Egg noodles cooked with chicken topped with red onions, pickled mustard greens and crispy noodles.",
-    "Ratings": null,
+    "Ratings": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      4,
+      4
+    ],
     "Reviews": null,
     "Price": 15
   },
@@ -219,6 +284,9 @@
     "Cuisine": "American",
     "Description": "Fried Buttermilk Chicken thighs with a spicy chili pineapple sauce, garlic aioli, thinly sliced cabbage, pickled red onion, and pickles on a toasted brioche bun",
     "Ratings": [
+      5,
+      5,
+      5,
       5
     ],
     "Reviews": [
@@ -338,7 +406,17 @@
     "Title": "Caribbean Sandwich",
     "Cuisine": "Caribbean",
     "Description": "Morsels of roasted pork nestled atop banana peppers, draped with slices of smoked ham, and Swiss cheese, melted together in a hot press.",
-    "Ratings": null,
+    "Ratings": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      4
+    ],
     "Reviews": null,
     "Price": 12.95
   },
@@ -354,7 +432,12 @@
     "Title": "Pad Thai",
     "Cuisine": "Thai",
     "Description": "Rice noodle stir fried with egg, fresh bean sprout, green onion, ground peanut and your choice Chicken or beef or Tofu",
-    "Ratings": null,
+    "Ratings": [
+      5,
+      4,
+      4,
+      4
+    ],
     "Reviews": null,
     "Price": 14
   },
@@ -370,7 +453,9 @@
     "Title": "Burrito",
     "Cuisine": "Mexican",
     "Description": "Meat, rice, cheese, and beans wrapped up in a flour tortilla",
-    "Ratings": null,
+    "Ratings": [
+      3
+    ],
     "Reviews": null,
     "Price": 10
   },
@@ -386,7 +471,14 @@
     "Title": "Dim Sum",
     "Cuisine": "Chinese",
     "Description": "large range of small Chinese dishes that are traditionally enjoyed in restaurants for breakfast and lunch",
-    "Ratings": null,
+    "Ratings": [
+      2,
+      2,
+      5,
+      5,
+      5,
+      5
+    ],
     "Reviews": null,
     "Price": 2.95
   },
@@ -402,7 +494,12 @@
     "Title": "Vindaloo",
     "Cuisine": "Indian",
     "Description": "Zesty curry cooked in a tangy sauce of wine vinegar, ginger, and potatoes.",
-    "Ratings": null,
+    "Ratings": [
+      5,
+      5,
+      5,
+      5
+    ],
     "Reviews": null,
     "Price": 19.99
   },
@@ -418,7 +515,12 @@
     "Title": "Hangry Style Fries",
     "Cuisine": "Vegan",
     "Description": "Fries smothered in Hangry Style fry sauce, American cheese and grilled onions.",
-    "Ratings": null,
+    "Ratings": [
+      3,
+      4,
+      5,
+      5
+    ],
     "Reviews": null,
     "Price": 7
   },
@@ -456,7 +558,11 @@
     "Title": "The O.G.",
     "Cuisine": "Jewish-American",
     "Description": "house made pastrami, mama lil\u2019s peppers, 1000 island, horseradish cream, arugula \u0026 gruyere",
-    "Ratings": null,
+    "Ratings": [
+      4,
+      4,
+      4
+    ],
     "Reviews": null,
     "Price": 14
   },
@@ -472,7 +578,14 @@
     "Title": "Shoyu Ramen",
     "Cuisine": "Japanese",
     "Description": "Silky pork soup with shoyu flavor, noodle, char siu (roast pork), bamboo shoots, aji-tamago (marinated egg), scallion, and aroma oil.",
-    "Ratings": null,
+    "Ratings": [
+      5,
+      5,
+      5,
+      4,
+      3,
+      2
+    ],
     "Reviews": null,
     "Price": 14
   },
@@ -488,7 +601,12 @@
     "Title": "Luau Lunch Plate",
     "Cuisine": "Hawaiian",
     "Description": "Have it for lunch or dinner! Choice of protein, mac salad, signature slaw, 2 scoops white rice.",
-    "Ratings": null,
+    "Ratings": [
+      4,
+      5,
+      5,
+      5
+    ],
     "Reviews": null,
     "Price": 10.5
   },
@@ -504,7 +622,15 @@
     "Title": "Menudo",
     "Cuisine": "Mexican",
     "Description": "In Mexican cuisine, Menudo, also known as pancita or mole de panza, is a traditional Mexican soup, made with cow\u0027s stomach in broth with a red chili pepper base. Hominy, lime, onions, and oregano are used to season the broth.",
-    "Ratings": null,
+    "Ratings": [
+      1,
+      2,
+      2,
+      2,
+      4,
+      4,
+      4
+    ],
     "Reviews": null,
     "Price": 11.99
   },
@@ -520,7 +646,12 @@
     "Title": "Xiao Long Bao",
     "Cuisine": "Chinese",
     "Description": "Steamed bun with pork filling",
-    "Ratings": null,
+    "Ratings": [
+      3,
+      4,
+      4,
+      4
+    ],
     "Reviews": null,
     "Price": 10.99
   },
@@ -536,7 +667,15 @@
     "Title": "Pho Bo",
     "Cuisine": "Vietnamese",
     "Description": "Eye-round steak (medium rare beef) in a beef vermicelli noodle soup",
-    "Ratings": null,
+    "Ratings": [
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
     "Reviews": null,
     "Price": 14.99
   },
@@ -568,7 +707,12 @@
     "Title": "Glendronach Parliament 21 year",
     "Cuisine": "Scottish",
     "Description": "Matured in a combination of the finest Oloroso and Pedro Ximenez sherry casks for a minimum of 21 years and bottled at 48% ABV, the \u2018Parliament\u2019 continues the great GlenDronach tradition of offering fruit-laden intensity in its single malts.",
-    "Ratings": null,
+    "Ratings": [
+      3,
+      3,
+      3,
+      3
+    ],
     "Reviews": null,
     "Price": 39
   },
@@ -694,7 +838,12 @@
     "Title": "Margherita Pizza",
     "Cuisine": "Italian",
     "Description": "Tomato sauce, fresh mozzarella, olive oil, basil",
-    "Ratings": null,
+    "Ratings": [
+      4,
+      4,
+      5,
+      5
+    ],
     "Reviews": null,
     "Price": 18
   },
@@ -710,7 +859,12 @@
     "Title": "The Mean with Salt-n-Pepa Skins Sandwich",
     "Cuisine": "American",
     "Description": "1/3 pound of griddled corned beef, shop-made yellow mustard, shop-made pickled red cabbage and fresh picked mint. A delicious \u0022plot-twist\u0022 to your typical corned beef sandwich.",
-    "Ratings": null,
+    "Ratings": [
+      4,
+      5,
+      5,
+      5
+    ],
     "Reviews": null,
     "Price": 14
   },
@@ -726,7 +880,11 @@
     "Title": "Pud Thai",
     "Cuisine": "Thai",
     "Description": "Pan fried thin rice noodles with egg, bean sprouts, topped with carrots, ground peanuts, and onions",
-    "Ratings": null,
+    "Ratings": [
+      2,
+      2,
+      2
+    ],
     "Reviews": null,
     "Price": 12.95
   },
@@ -742,7 +900,14 @@
     "Title": "Pho Tai",
     "Cuisine": "Vietnamese",
     "Description": "Pho with Rare Beef",
-    "Ratings": null,
+    "Ratings": [
+      2,
+      3,
+      5,
+      5,
+      3,
+      5
+    ],
     "Reviews": null,
     "Price": 9.5
   },
@@ -758,7 +923,17 @@
     "Title": "Gyro Sandwich",
     "Cuisine": "Greek",
     "Description": "Lamb/Beef, lettuce, tomato, sauce, pita bread",
-    "Ratings": null,
+    "Ratings": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
     "Reviews": null,
     "Price": 9.69
   },
@@ -774,7 +949,14 @@
     "Title": "Loco Moco Scotch Egg",
     "Cuisine": "Hawaiian",
     "Description": "Ground beef, egg, mac salad",
-    "Ratings": null,
+    "Ratings": [
+      5,
+      5,
+      5,
+      5,
+      3,
+      3
+    ],
     "Reviews": null,
     "Price": 22
   },
@@ -790,7 +972,14 @@
     "Title": "Poke Bowl",
     "Cuisine": "Hawaiian",
     "Description": "Diced raw fish served either as an appetizer or a main course and is one of the main dishes of Native Hawaiian cuisine",
-    "Ratings": null,
+    "Ratings": [
+      5,
+      5,
+      4,
+      4,
+      5,
+      5
+    ],
     "Reviews": null,
     "Price": 15
   },
@@ -806,7 +995,14 @@
     "Title": "Garlic Tonkatsu Ramen",
     "Cuisine": "Japanese",
     "Description": "Extra rich pork broth that takes 16 hours to make with Shoyu flavored broth. Topped with vegetable, protein and an Award Wining mouth watering soft boiled egg.",
-    "Ratings": null,
+    "Ratings": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      3
+    ],
     "Reviews": null,
     "Price": 14.5
   },
@@ -822,7 +1018,12 @@
     "Title": "Boba Milk Tea",
     "Cuisine": "Asian",
     "Description": "Tea-based drink that consists of tea accompanied by chewy tapioca balls",
-    "Ratings": null,
+    "Ratings": [
+      4,
+      4,
+      4,
+      5
+    ],
     "Reviews": null,
     "Price": 4.95
   },
@@ -838,7 +1039,18 @@
     "Title": "Happy Hour Nachos",
     "Cuisine": "Mexican",
     "Description": "Chips with cheese, beans, and guacamole",
-    "Ratings": null,
+    "Ratings": [
+      5,
+      5,
+      5,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      4
+    ],
     "Reviews": null,
     "Price": 6
   },
@@ -856,7 +1068,13 @@
     "Description": "Also known as Butter Chicken. A sweet creamy tomato and fenugreek based sauce available in chicken or paneer.",
     "Ratings": [
       5,
-      5
+      5,
+      1,
+      1,
+      1,
+      4,
+      4,
+      4
     ],
     "Reviews": [
       "I love their garlic naans and chicken tikka masala! It\u0027s my go-to for curry. Staff is very nice and friendly as well! I usually order for delivery since it\u0027s a bit of a drive away but today I did a take out and ate in my car since I couldn\u0027t wait! Food was definitely fresh and the chicken was so tender with perfect seasoning.",
@@ -963,7 +1181,10 @@
     "Title": "Vanilla Custard Donut",
     "Cuisine": "American",
     "Description": "Filled with vanilla custard",
-    "Ratings": null,
+    "Ratings": [
+      5,
+      5
+    ],
     "Reviews": null,
     "Price": 5
   },
@@ -979,7 +1200,13 @@
     "Title": "Gyro Lamb and Beef Sandwich",
     "Cuisine": "Mediterranean",
     "Description": "Succulent grilled meat sliced off the cone, lettuce, tomatoes, onions, and homemade tzatziki on pita.",
-    "Ratings": null,
+    "Ratings": [
+      5,
+      5,
+      5,
+      5,
+      4
+    ],
     "Reviews": null,
     "Price": 7.55
   },
@@ -1011,7 +1238,11 @@
     "Title": "Spicy Tuna Roll",
     "Cuisine": "Japanese",
     "Description": "Tuna, rice, nori, avocado",
-    "Ratings": null,
+    "Ratings": [
+      4,
+      3,
+      3
+    ],
     "Reviews": null,
     "Price": 10.5
   },
@@ -1027,7 +1258,9 @@
     "Title": "ShackBurger",
     "Cuisine": "American",
     "Description": "Cheeseburger with lettuce, tomato, ShackSauce (contains eggs, milk, soy, wheat, and gluten).",
-    "Ratings": null,
+    "Ratings": [
+      4
+    ],
     "Reviews": null,
     "Price": 5.29
   }
