@@ -15,6 +15,7 @@ namespace UnitTests.Pages.Product.Delete
     public class DeleteTests
     {
         #region TestSetup
+
         /// <summary>
         /// Initialize a DeleteModel with the TestHelper
         /// </summary>
@@ -31,6 +32,7 @@ namespace UnitTests.Pages.Product.Delete
         #endregion TestSetup 
 
         #region OnGet
+
         /// <summary>
         /// Tests that OnGet method should return the items in the database
         /// </summary>
@@ -49,6 +51,7 @@ namespace UnitTests.Pages.Product.Delete
         #endregion OnGet
 
         #region OnPost
+
         /// <summary>
         /// Tests that OnPost method is returning a valid record and record is actually deleted
         /// </summary>
@@ -72,6 +75,7 @@ namespace UnitTests.Pages.Product.Delete
             // Confirm the item is deleted
             Assert.AreEqual(null, TestHelper.ProductService.GetAllData().FirstOrDefault(m => m.Id.Equals(pageModel.Product.Id)));
         }
+
         /// <summary>
         /// Tests that OnPost method is returning an invalid record and record is not actually deleted
         /// </summary>
