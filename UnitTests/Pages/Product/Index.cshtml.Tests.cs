@@ -33,6 +33,7 @@ namespace UnitTests.Pages.Product.Index
         #endregion TestSetup
 
         #region OnGet
+
         /// <summary>
         /// This tests that Index's OnGet returns the list of dishes
         /// </summary>
