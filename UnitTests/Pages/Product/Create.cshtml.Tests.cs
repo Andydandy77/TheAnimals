@@ -26,6 +26,7 @@ namespace UnitTests.Pages.Product.Create
         #endregion TestSetup
 
         #region OnGet
+
         /// <summary>
         /// Tests that OnGet method should return the items in the database
         /// </summary>
