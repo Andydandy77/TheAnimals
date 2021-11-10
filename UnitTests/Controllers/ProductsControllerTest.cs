@@ -57,6 +57,7 @@ namespace UnitTests.Controllers
         #endregion Patch
 
         #region Get
+
         /// <summary>
         /// Tests that Get method returns a list of products
         /// </summary>
