@@ -16,6 +16,7 @@ namespace UnitTests.Pages.Error
     public class ErrorTests
     {
         #region TestSetup
+
         //Testing OnGet
         public static ErrorModel pageModel;
 
@@ -40,6 +41,7 @@ namespace UnitTests.Pages.Error
         #endregion TestSetup
 
         #region OnGet
+
         /// <summary>
         /// Tests if OnGet returns a Valid RequestID
         /// </summary>
