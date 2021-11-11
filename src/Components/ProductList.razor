@@ -144,6 +144,17 @@
                         </div>
                         <div class="card-body">
                             <p class="card-text">@selectedProduct.Description</p>
+                            <p class="card-text">Price: @selectedProduct.Price</p>
+                            <p class="card-text">Cuisine: @selectedProduct.Cuisine</p>
+                            <p class="card-text">Location: @selectedProduct.Address @selectedProduct.City,@selectedProduct.State </p>
+                            <p class="card-text">Reviews:</p>
+                            @if (selectedProduct.Reviews != null)
+                            {
+                                foreach (var review in selectedProduct.Reviews)
+                                {
+                                    <p class="card-text">"@review"</p>
+                                }
+                            }
                         </div>
                     </div>
                 </div>
