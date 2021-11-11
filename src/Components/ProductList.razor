@@ -68,7 +68,7 @@
 
 <button class="btn btn-success" type="button" @onclick="(e => SortDishesByRating())">Get Me the Best!</button>
 
-<div class="card-columns">
+<div class="card w-100">
     @if (getTheBest)
     {
         foreach (var product in GetDishesByRating())
@@ -76,19 +76,21 @@
 
             if (WillDishShow(product))
             {
-                <div class="card">
-                    <div class="card-img" style="background-image: url('@product.Image');">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src=@product.Image class="card-img-top h-100">
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title">@product.Title</h5>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">
-                            <button @onclick="(e => SelectProduct(product.Id))"
-                                    data-toggle="modal" data-target="#productModal" class="btn btn-primary">
-                                More Info
-                            </button>
-                        </small>
+                    <div class="col-sm-7">
+                        <div class="card-body">
+                            <h5 class="card-title">@product.Title</h5>
+                            <h6 class="text-black-50">@product.Description</h6>
+                            <small class="text-muted">
+                                <button @onclick="(e => SelectProduct(product.Id))"
+                                        data-toggle="modal" data-target="#productModal" class="btn btn-primary">
+                                    More Info
+                                </button>
+                            </small>
+                        </div>
                     </div>
                 </div>
             }
@@ -102,19 +104,21 @@
 
             if (WillDishShow(product))
             {
-                <div class="card">
-                    <div class="card-img" style="background-image: url('@product.Image');">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src=@product.Image class="card-img-top h-100">
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title">@product.Title</h5>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">
-                            <button @onclick="(e => SelectProduct(product.Id))"
-                                    data-toggle="modal" data-target="#productModal" class="btn btn-primary">
-                                More Info
-                            </button>
-                        </small>
+                    <div class="col-sm-7">
+                        <div class="card-body">
+                            <h5 class="card-title">@product.Title</h5>
+                            <h6 class="text-black-50">@product.Description</h6>
+                            <small class="text-muted">
+                                <button @onclick="(e => SelectProduct(product.Id))"
+                                        data-toggle="modal" data-target="#productModal" class="btn btn-primary">
+                                    More Info
+                                </button>
+                            </small>
+                        </div>
                     </div>
                 </div>
             }
