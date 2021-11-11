@@ -46,6 +46,21 @@ namespace UnitTests.Pages.Product.Read
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
             Assert.AreEqual("Our signature burger - arugula, balsamic onions, hills bacon, beechers flagship cheddar, truffle aioli", pageModel.Product.Description);
         }
+
+        /// <summary>
+        /// Tests if passed id returns a null object. Should redirect page.
+        /// </summary>
+        [Test]
+        public void OnGet_Invalid_Null_Input_Should_Redirect_To_Index()
+        {
+            // Arrange
+
+            // Act
+            var p = pageModel.OnGet("23423423423412312");
+
+            // Assert
+            Assert.IsInstanceOf(typeof(Microsoft.AspNetCore.Mvc.RedirectToPageResult), p);
+        }
         #endregion OnGet
     }
 }
