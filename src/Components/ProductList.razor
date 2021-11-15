@@ -148,17 +148,44 @@
                             <p class="card-text">Cuisine: @selectedProduct.Cuisine</p>
                             <p class="card-text">Location: @selectedProduct.Address @selectedProduct.City,@selectedProduct.State </p>
                             <p class="card-text">Reviews:</p>
-                            @if (selectedProduct.Reviews != null)
-                            {
-                                foreach (var review in selectedProduct.Reviews)
-                                {
-                                    <p class="card-text">"@review"</p>
+
+                            @{
+                                if (selectedProduct.Reviews != null) {
+                                // First show all the existing Reviews
+                                    foreach (var review in selectedProduct.Reviews)
+                                    {
+                                        <div class="row">
+                                            <div class="col">
+                                                "@review.Review"
+                                            </div>
+                                        </div>
+                                     }
                                 }
+
+                                // If this is a new review, then add the Input boxes for it, else show the Add review Button
+                                if (NewReview)
+                                {
+                                    <div class="row">
+                                        <div class="col">
+                                            <input type="text" @onchange="(e) => UpdateReviewText(e.Value.ToString())" value="@NewReviewText" />
+                                            <button @onclick="(e => AddReview())" class="btn btn-success" data-toggle="modal">Save Review</button>
+                                        </div>
+                                    </div>
+                                }
+
+                                // If this is not a new review, then show the buttons for Adding review and Close
+                                if (NewReview == false)
+                                {
+                                    <div class="row">
+                                        <div class="col">
+                                            <button @onclick="(e => ShowNewReviewInput())" id="AddComment" class="btn btn-primary">Add Comment</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                }
+
                             }
-                            <button @onclick="(e => AddReview(selectedProduct.Id))"
-                                   data-target="#productModal" class="btn btn-primary">
-                                Add Review
-                            </button>
+                            
                         </div>
                     </div>
                 </div>
@@ -205,6 +232,50 @@
     int high = 1000;
     string voteLabel;
     string SearchTerm { get; set; }
+    // New Review Flag to show the input box or not
+    bool NewReview = false;
+    // Next Reivew Text is what the comment text is
+    string NewReviewText = "";
+
+    /// <summary>
+    /// Enable the New Comment Entry by setting the NewComment flag
+    /// </summary>
+    /// <param name="comment"></param>
+    void ShowNewReviewInput()
+    {
+        // Setting the new Comment flag to true will show the input box
+        NewReview = true;
+    }
+
+    /// <summary>
+    /// Set the New Comment Text variable to the data just entered in the input box
+    /// </summary>
+    /// <param name="newCommentText"></param>
+    void UpdateReviewText(string newReviewText)
+    {
+        NewReviewText = newReviewText;
+    }
+
+    /// <summary>
+    /// Add the comment to the product
+    /// Best to refactor this to be a method to call in the Middle Tier Data service, rathern than putting the logic here...
+    /// </summary>
+    /// <param name="comment"></param>
+    void AddReview()
+    {
+        // Refactor to be a call to the middle tier
+        // ProductService.AddCommentToProduct(selectedProduct, comment);
+
+
+        // Add it to the Comment List
+        selectedProduct.Reviews.Add(new ReviewModel() { Review = NewReviewText });
+
+        // Call for the Product to be saved
+        ProductService.UpdateData(selectedProduct);
+
+        // Set the NewComment flag to false to hide the input box
+        NewReview = false;
+    }
 
 
     void SelectProduct(string productId)
@@ -432,8 +503,5 @@
         return high == 1000 ? "Price" : "" + low + "-" + high;
     }
 
-    void AddReview(string id)
-    { 
 
-    }
 }
