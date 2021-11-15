@@ -49,7 +49,7 @@ namespace ContosoCrafts.WebSite.Models
         public int[] Ratings { get; set; }
 
         // User reviews of dish
-        public List<ReviewModel> ReviewList { get; set; } = new List<ReviewModel>();
+        public List<ReviewModel> Reviews { get; set; } = new List<ReviewModel>();
 
         // Price of dish
         public float Price { get; set; }
