@@ -13,6 +13,7 @@
             <tr>
                 <th>Title</th>
                 <th>Action</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
@@ -21,6 +22,7 @@
                 <tr>
                     <td>@product.Title</td>
                     <td><a asp-page="Read" asp-route-id="@product.Id">Read</a></td>
+                    <td><a asp-page="Update" asp-route-id="@product.Id">Update</a></td>
                 </tr>
             }
         </tbody>
