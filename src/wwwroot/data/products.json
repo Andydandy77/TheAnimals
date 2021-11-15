@@ -1258,9 +1258,7 @@
     "Title": "ShackBurger",
     "Cuisine": "American",
     "Description": "Cheeseburger with lettuce, tomato, ShackSauce (contains eggs, milk, soy, wheat, and gluten).",
-    "Ratings": [
-      4
-    ],
+    "Ratings": null,
     "Reviews": null,
     "Price": 5.29
   }

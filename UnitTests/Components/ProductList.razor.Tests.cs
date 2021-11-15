@@ -42,7 +42,7 @@ namespace UnitTests.Components
         {
             // Arrange
             Services.AddSingleton<JsonFileProductService>(TestHelper.ProductService);
-            var id = "The 8oz";
+            var id = "8oz";
 
             var page = RenderComponent<ProductList>();
 
@@ -82,7 +82,7 @@ namespace UnitTests.Components
 
             // Arrange
             Services.AddSingleton<JsonFileProductService>(TestHelper.ProductService);
-            var id = "MoreInfoButton_8oz";
+            var id = "MoreInfoButton_6b1025ff-7e6d-4e0e-8001-c841365325b0";
 
             var page = RenderComponent<ProductList>();
 
@@ -156,7 +156,7 @@ namespace UnitTests.Components
 
             // Arrange
             Services.AddSingleton<JsonFileProductService>(TestHelper.ProductService);
-            var id = "MoreInfoButton_jenlooper-cactus";
+            var id = "MoreInfoButton_8oz";
 
             var page = RenderComponent<ProductList>();
 
@@ -208,8 +208,8 @@ namespace UnitTests.Components
             // Assert
 
             // Confirm that the record had no votes to start, and 1 vote after
-            Assert.AreEqual(true, preVoteCountString.Contains("6 Votes"));
-            Assert.AreEqual(true, postVoteCountString.Contains("7 Votes"));
+            Assert.AreEqual(true, preVoteCountString.Contains("11 Votes"));
+            Assert.AreEqual(true, postVoteCountString.Contains("12 Votes"));
             Assert.AreEqual(false, preVoteCountString.Equals(postVoteCountString));
         }
         #endregion SubmitRating

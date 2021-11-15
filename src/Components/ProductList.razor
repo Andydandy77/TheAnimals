@@ -86,7 +86,7 @@
                             <h6 class="text-black-50">@product.Description</h6>
                             <small class="text-muted">
                                 <button @onclick="(e => SelectProduct(product.Id))"
-                                        data-toggle="modal" data-target="#productModal" class="btn btn-primary">
+                                        id="MoreInfoButton_@product.Id" data-toggle="modal" data-target="#productModal" class="btn btn-primary">
                                     More Info
                                 </button>
                             </small>
@@ -114,7 +114,7 @@
                             <h6 class="text-black-50">@product.Description</h6>
                             <small class="text-muted">
                                 <button @onclick="(e => SelectProduct(product.Id))"
-                                        data-toggle="modal" data-target="#productModal" class="btn btn-primary">
+                                        id="MoreInfoButton_@product.Id" data-toggle="modal" data-target="#productModal" class="btn btn-primary">
                                     More Info
                                 </button>
                             </small>
