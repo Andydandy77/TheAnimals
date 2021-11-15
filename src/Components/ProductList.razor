@@ -155,6 +155,10 @@
                                     <p class="card-text">"@review"</p>
                                 }
                             }
+                            <button @onclick="(e => AddReview(selectedProduct.Id))"
+                                   data-target="#productModal" class="btn btn-primary">
+                                Add Review
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -428,4 +432,8 @@
         return high == 1000 ? "Price" : "" + low + "-" + high;
     }
 
+    void AddReview(string id)
+    { 
+
+    }
 }
