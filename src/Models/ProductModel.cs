@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -48,7 +49,7 @@ namespace ContosoCrafts.WebSite.Models
         public int[] Ratings { get; set; }
 
         // User reviews of dish
-        public string[] Reviews { get; set; }
+        public List<ReviewModel> ReviewList { get; set; } = new List<ReviewModel>();
 
         // Price of dish
         public float Price { get; set; }
