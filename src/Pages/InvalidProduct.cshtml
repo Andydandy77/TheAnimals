@@ -1,0 +1,21 @@
+﻿@page
+@{
+    ViewData["About"] = "Invalid Dish";
+    <h1>@ViewData["Title"]</h1>
+
+
+    <style>
+        body {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://www.maxpixel.net/static/photo/1x/Beverage-Mugs-Snacks-Pattern-Donut-Food-6043572.png'); background-repeat: repeat;
+            background-attachment: fixed;
+        }
+    </style>
+
+    <div class="container">
+        <h1>Dish does not exist</h1>
+        <button class="btn btn-primary">
+            <a class="nav-link text-light" asp-area="" asp-page="/Index">Return Home</a>
+        </button>
+
+    </div>
+}
