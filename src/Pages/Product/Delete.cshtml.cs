@@ -41,7 +41,10 @@ namespace ContosoCrafts.WebSite.Pages.Product
         {
 
             Product = ProductService.GetAllData().FirstOrDefault(m => m.Id.Equals(id));
-        
+            if (Product == null)
+            {
+                Response.Redirect("/InvalidProduct");
+            }
         }
 
         /// <summary>
@@ -62,5 +65,6 @@ namespace ContosoCrafts.WebSite.Pages.Product
 
             return RedirectToPage("./Index");
         }
+
     }
 }
