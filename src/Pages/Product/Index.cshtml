@@ -14,16 +14,18 @@
                 <th>Title</th>
                 <th>Action</th>
                 <th>Action</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
             @foreach (var product in Model.Products)
             {
-                <tr>
-                    <td>@product.Title</td>
-                    <td><a asp-page="Read" asp-route-id="@product.Id">Read</a></td>
-                    <td><a asp-page="Update" asp-route-id="@product.Id">Update</a></td>
-                </tr>
+            <tr>
+                <td>@product.Title</td>
+                <td><a asp-page="Read" asp-route-id="@product.Id">Read</a></td>
+                <td><a asp-page="Update" asp-route-id="@product.Id">Update</a></td>
+                <td><a asp-page="Delete" asp-route-id="@product.Id">Delete</a></td>
+            </tr>
             }
         </tbody>
     </table>
