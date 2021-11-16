@@ -32,7 +32,7 @@
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
         @foreach (var cuisine in GetCuisines())
         {
-            <button class="dropdown-item" id ="FilterByCuisine_@cuisine"type="button" @onclick="(e => SetSelectedCuisine(cuisine))">@cuisine</button>
+            <button class="dropdown-item" id ="FilterByCuisine_@cuisine" type="button" @onclick="(e => SetSelectedCuisine(cuisine))">@cuisine</button>
         }
 
     </div>
@@ -45,7 +45,7 @@
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
         @foreach (var city in GetCities())
         {
-            <button class="dropdown-item" type="button" @onclick="(e => SetSelectedCity(city))">@city</button>
+            <button class="dropdown-item" id ="FilterByCuisine_@city" type="button" @onclick="(e => SetSelectedCity(city))">@city</button>
         }
 
     </div>
@@ -58,7 +58,7 @@
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
         @foreach (var price in GetPrices())
         {
-            <button class="dropdown-item" type="button" @onclick="(e => SetPriceRange(price))">@price</button>
+            <button class="dropdown-item" id ="FilterByCuisine_@price" type="button" @onclick="(e => SetPriceRange(price))">@price</button>
         }
 
     </div>
