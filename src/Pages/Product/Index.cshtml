@@ -20,13 +20,21 @@
         <tbody>
             @foreach (var product in Model.Products)
             {
-            <tr>
-                <td>@product.Title</td>
-                <td><a asp-page="Read" asp-route-id="@product.Id">Read</a></td>
-                <td><a asp-page="Update" asp-route-id="@product.Id">Update</a></td>
-                <td><a asp-page="Delete" asp-route-id="@product.Id">Delete</a></td>
-            </tr>
+                <tr>
+                    <td>@product.Title</td>
+                    <td><a asp-page="Read" asp-route-id="@product.Id">Read</a></td>
+                    <td><a asp-page="Update" asp-route-id="@product.Id">Update</a></td>
+                    <td><a asp-page="Delete" asp-route-id="@product.Id">Delete</a></td>
+                </tr>
             }
         </tbody>
     </table>
 </div>
+
+<style>
+    body {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://www.maxpixel.net/static/photo/1x/Beverage-Mugs-Snacks-Pattern-Donut-Food-6043572.png');
+        background-repeat: repeat;
+        background-attachment: fixed;
+    }
+</style>
