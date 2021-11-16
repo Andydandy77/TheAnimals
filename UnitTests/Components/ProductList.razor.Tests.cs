@@ -247,5 +247,36 @@ namespace UnitTests.Components
         }
         #endregion
 
+        #region CategoryFilter
+        [Test]
+        public void FilterByCategory_Valid_Click_Should_Display_Products_Only_Of_Selected_Category()
+        {
+            // Arrange
+            Services.AddSingleton<JsonFileProductService>(TestHelper.ProductService);
+            var id = "FilterByCategory_Burger";
+
+            var page = RenderComponent<ProductList>();
+
+            // Find the Buttons and click on GetMeTheBest button
+            var buttonList = page.FindAll("Button");
+            var button = buttonList.First(m => m.OuterHtml.Contains(id));
+
+            button.Click();
+
+            // Get the markup of the page post the Click action
+            var buttonMarkup = page.Markup;
+
+            var newButtonList = page.FindAll("Button");
+            button = newButtonList.First(m => m.OuterHtml.Contains("More Info"));
+
+            button.Click();
+
+            var pageMarkup = page.Markup;
+
+            // Assert
+            Assert.AreEqual(true, pageMarkup.Contains("Burger"));
+        }
+        #endregion
+
     }
 }
