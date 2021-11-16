@@ -19,7 +19,7 @@
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
         @foreach (var category in GetCategories())
         {
-            <button class="dropdown-item" type="button" @onclick="(e => SetSelectedCategory(category))">@category</button>
+            <button class="dropdown-item" id="FilterByCategory_@category" type="button" @onclick="(e => SetSelectedCategory(category))">@category</button>
         }
 
     </div>
