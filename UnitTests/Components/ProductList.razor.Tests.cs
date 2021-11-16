@@ -278,5 +278,36 @@ namespace UnitTests.Components
         }
         #endregion
 
+        #region CuisineFilter
+        [Test]
+        public void FilterByCuisine_Valid_Click_Should_Display_Products_Only_Of_Selected_Cuisine()
+        {
+            // Arrange
+            Services.AddSingleton<JsonFileProductService>(TestHelper.ProductService);
+            var id = "FilterByCuisine_Italian";
+
+            var page = RenderComponent<ProductList>();
+
+            // Find the Buttons and click on GetMeTheBest button
+            var buttonList = page.FindAll("Button");
+            var button = buttonList.First(m => m.OuterHtml.Contains(id));
+
+            button.Click();
+
+            // Get the markup of the page post the Click action
+            var buttonMarkup = page.Markup;
+
+            var newButtonList = page.FindAll("Button");
+            button = newButtonList.First(m => m.OuterHtml.Contains("More Info"));
+
+            button.Click();
+
+            var pageMarkup = page.Markup;
+
+            // Assert
+            Assert.AreEqual(true, pageMarkup.Contains("Italian"));
+        }
+        #endregion
+
     }
 }
