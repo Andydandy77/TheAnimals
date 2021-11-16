@@ -5,6 +5,7 @@ namespace ContosoCrafts.WebSite
 {
     public class Program
     {
+        //Main method that builds host with arguments and runs
         public static void Main(string[] args)
         {
 
