@@ -214,5 +214,38 @@ namespace UnitTests.Components
         }
         #endregion SubmitRating
 
+        #region GetTheBest
+        [Test]
+        public void GetTheBest_Valid_Click_Should_Display_Products_By_Rating_Descending()
+        {
+            // Arrange
+            Services.AddSingleton<JsonFileProductService>(TestHelper.ProductService);
+            var id = "GetMeTheBest";
+
+            var page = RenderComponent<ProductList>();
+
+            // Find the Buttons and click on GetMeTheBest button
+            var buttonList = page.FindAll("Button");
+            var button = buttonList.First(m => m.OuterHtml.Contains(id));
+
+            button.Click();
+
+            // Get the markup of the page post the Click action
+            var buttonMarkup = page.Markup;
+
+            var newButtonList = page.FindAll("Button");
+            button = newButtonList.First(m => m.OuterHtml.Contains("More Info"));
+
+            button.Click();
+
+            var starButtonList = page.FindAll("span");
+
+            var voteCountSpan = starButtonList[1];
+            var voteCountString = voteCountSpan.OuterHtml;
+
+            Assert.AreEqual(true, voteCountString.Contains("4 Votes"));
+        }
+        #endregion
+
     }
 }
