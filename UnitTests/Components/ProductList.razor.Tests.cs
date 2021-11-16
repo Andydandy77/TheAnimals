@@ -309,5 +309,67 @@ namespace UnitTests.Components
         }
         #endregion
 
+        #region CityFilter
+        [Test]
+        public void FilterByCity_Valid_Click_Should_Display_Products_Only_Of_Selected_City()
+        {
+            // Arrange
+            Services.AddSingleton<JsonFileProductService>(TestHelper.ProductService);
+            var id = "FilterByCity_Seattle";
+
+            var page = RenderComponent<ProductList>();
+
+            // Find the Buttons and click on GetMeTheBest button
+            var buttonList = page.FindAll("Button");
+            var button = buttonList.First(m => m.OuterHtml.Contains(id));
+
+            button.Click();
+
+            // Get the markup of the page post the Click action
+            var buttonMarkup = page.Markup;
+
+            var newButtonList = page.FindAll("Button");
+            button = newButtonList.First(m => m.OuterHtml.Contains("More Info"));
+
+            button.Click();
+
+            var pageMarkup = page.Markup;
+
+            // Assert
+            Assert.AreEqual(true, pageMarkup.Contains("Seattle"));
+        }
+        #endregion
+
+        #region PriceFilter
+        [Test]
+        public void FilterByPrice_Valid_Click_Should_Display_Products_Only_Of_Selected_Price()
+        {
+            // Arrange
+            Services.AddSingleton<JsonFileProductService>(TestHelper.ProductService);
+            var id = "FilterByPrice_0-5";
+
+            var page = RenderComponent<ProductList>();
+
+            // Find the Buttons and click on GetMeTheBest button
+            var buttonList = page.FindAll("Button");
+            var button = buttonList.First(m => m.OuterHtml.Contains(id));
+
+            button.Click();
+
+            // Get the markup of the page post the Click action
+            var buttonMarkup = page.Markup;
+
+            var newButtonList = page.FindAll("Button");
+            button = newButtonList.First(m => m.OuterHtml.Contains("More Info"));
+
+            button.Click();
+
+            var pageMarkup = page.Markup;
+
+            // Assert
+            Assert.AreEqual(true, pageMarkup.Contains("1.5"));
+        }
+        #endregion
+
     }
 }
