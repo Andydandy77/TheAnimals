@@ -49,6 +49,9 @@ namespace UnitTests.Pages.Product.Delete
             Assert.AreEqual("Burger", pageModel.Product.Category);
         }
 
+        /// <summary>
+        /// Tests that OnGet method redirects to different page when input is invalid
+        /// </summary>
         [Test]
         public void OnGet_Invalid_Null_Input_Should_Redirect_To_Invalid_Product()
         {
