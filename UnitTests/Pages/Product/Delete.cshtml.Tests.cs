@@ -48,6 +48,19 @@ namespace UnitTests.Pages.Product.Delete
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
             Assert.AreEqual("Burger", pageModel.Product.Category);
         }
+
+        [Test]
+        public void OnGet_Invalid_Null_Input_Should_Redirect_To_Invalid_Product()
+        {
+            // Arrange
+
+            // Act
+            var p = pageModel.OnGet("23423412312");
+
+            // Assert
+            Assert.IsInstanceOf(typeof(Microsoft.AspNetCore.Mvc.RedirectToPageResult), p);
+        }
+
         #endregion OnGet
 
         #region OnPost
