@@ -9,10 +9,16 @@ using System.Linq;
 
 namespace UnitTests.Components
 {
+    /// <summary>
+    /// Runs tests on on Product List razor component
+    /// </summary>
     public class ProductListTests : BunitTestContext
     {
         #region TestSetup
 
+        /// <summary>
+        /// Sets up tests
+        /// </summary>
         [SetUp]
         public void TestInitialize()
         {
@@ -20,6 +26,9 @@ namespace UnitTests.Components
 
         #endregion TestSetup
 
+        /// <summary>
+        /// Tests that product list should return content
+        /// </summary>
         [Test]
         public void ProductList_Default_Should_Return_Content()
         {
@@ -36,6 +45,9 @@ namespace UnitTests.Components
             Assert.AreEqual(true, result.Contains("8oz"));
         }
 
+        /// <summary>
+        /// Tests that a valid id returns the correct content
+        /// </summary>
         #region SelectProduct
         [Test]
         public void SelectProduct_Valid_ID_jenlooper_Should_Return_Content()
@@ -65,6 +77,9 @@ namespace UnitTests.Components
 
         #region SubmitRating
 
+        /// <summary>
+        /// Tests that a valid vote will change the star rating
+        /// </summary>
         [Test]
         public void SubmitRating_Valid_ID_Click_Unstared_Should_Increment_Count_And_Check_Star()
         {
@@ -139,6 +154,9 @@ namespace UnitTests.Components
             Assert.AreEqual(false, preVoteCountString.Equals(postVoteCountString));
         }
 
+        /// <summary>
+        /// Tests that submitting a rating will change the vote count
+        /// </summary>
         [Test]
         public void SubmitRating_Valid_ID_Click_Stared_Should_Increment_Count_And_Leave_Star_Check_Remaining()
         {
@@ -215,6 +233,9 @@ namespace UnitTests.Components
         #endregion SubmitRating
 
         #region GetTheBest
+        /// <summary>
+        /// Tests that clicking on the GetTheBest button will reorder the list to show the higest rated items on top
+        /// </summary>
         [Test]
         public void GetTheBest_Valid_Click_Should_Display_Products_By_Rating_Descending()
         {
@@ -248,6 +269,9 @@ namespace UnitTests.Components
         #endregion
 
         #region CategoryFilter
+        /// <summary>
+        /// Filtering by category should only show items of that category
+        /// </summary>
         [Test]
         public void FilterByCategory_Valid_Click_Should_Display_Products_Only_Of_Selected_Category()
         {
@@ -279,6 +303,9 @@ namespace UnitTests.Components
         #endregion
 
         #region CuisineFilter
+        /// <summary>
+        /// Filtering by cuisine should only show items of that cuisine
+        /// </summary>
         [Test]
         public void FilterByCuisine_Valid_Click_Should_Display_Products_Only_Of_Selected_Cuisine()
         {
@@ -310,6 +337,9 @@ namespace UnitTests.Components
         #endregion
 
         #region CityFilter
+        /// <summary>
+        /// Filtering by city should only show items of that city
+        /// </summary>
         [Test]
         public void FilterByCity_Valid_Click_Should_Display_Products_Only_Of_Selected_City()
         {
@@ -341,6 +371,9 @@ namespace UnitTests.Components
         #endregion
 
         #region PriceFilter
+        /// <summary>
+        /// Filtering by price should only show items of that price
+        /// </summary>
         [Test]
         public void FilterByPrice_Valid_Click_Should_Display_Products_Only_Of_Selected_Price()
         {
@@ -372,6 +405,9 @@ namespace UnitTests.Components
         #endregion
 
         #region Reset
+        /// <summary>
+        /// Resetting the filter should show the list how it was originally displayed
+        /// </summary>
         [Test]
         public void Reset_Should_Clear_Filters_And_Show_8oz_First()
         {
