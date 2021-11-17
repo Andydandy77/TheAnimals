@@ -371,5 +371,45 @@ namespace UnitTests.Components
         }
         #endregion
 
+        #region Reset
+        [Test]
+        public void Reset_Should_Clear_Filters_And_Show_8oz_First()
+        {
+            // Arrange
+            Services.AddSingleton<JsonFileProductService>(TestHelper.ProductService);
+            var id = "FilterByPrice_0-5";
+
+            var page = RenderComponent<ProductList>();
+
+            // Find the Buttons and click on GetMeTheBest button
+            var buttonList = page.FindAll("Button");
+            var button = buttonList.First(m => m.OuterHtml.Contains(id));
+
+            button.Click();
+
+            // Get the markup of the page post the Click action
+            var buttonMarkup = page.Markup;
+
+            var newButtonList = page.FindAll("Button");
+
+            // Find the resetButton
+            var resetButton = newButtonList.First(m => m.OuterHtml.Contains("resetButton"));
+
+            resetButton.Click();
+
+            newButtonList = page.FindAll("Button");
+
+
+            button = newButtonList.First(m => m.OuterHtml.Contains("More Info"));
+
+            button.Click();
+
+            var pageMarkup = page.Markup;
+
+            // Assert
+            Assert.AreEqual(true, pageMarkup.Contains("8oz"));
+        }
+        #endregion
+
     }
 }
