@@ -494,3 +494,12 @@ a:link {
 .aboutus-body {
     height: 30rem;
 }
+
+.product-image {
+    border-radius: 10px;
+    border: 15px;
+    padding: 5px;
+    object-fit: cover;
+    height: 260px;
+    width: 360px;
+}

@@ -1352,37 +1352,5 @@
     "Ratings": null,
     "Reviews": [],
     "Price": 35
-  },
-  {
-    "Id": "57a2d4d9-377e-48c2-b4d4-ac4abdbcd5f9",
-    "Category": "Enter Type of food",
-    "Restaurant": "Enter Restaurant name",
-    "Address": "Enter Address",
-    "City": "Enter City",
-    "State": "Enter State",
-    "img": "https://www.pikpng.com/pngl/b/59-592604_logo-knife-clipart.png",
-    "Url": "Restaurant Website",
-    "Title": "Name of Dish",
-    "Cuisine": "Type of Cuisine",
-    "Description": "Enter description of dish",
-    "Ratings": null,
-    "Reviews": [],
-    "Price": 0
-  },
-  {
-    "Id": "71f068cf-ee30-42b8-991a-f4cac3b48c74",
-    "Category": "Enter Type of food",
-    "Restaurant": "Enter Restaurant name",
-    "Address": "Enter Address",
-    "City": "Enter City",
-    "State": "Enter State",
-    "img": "https://www.pikpng.com/pngl/b/59-592604_logo-knife-clipart.png",
-    "Url": "Restaurant Website",
-    "Title": "Name of Dish",
-    "Cuisine": "Type of Cuisine",
-    "Description": "Enter description of dish",
-    "Ratings": null,
-    "Reviews": [],
-    "Price": 0
   }
 ]
