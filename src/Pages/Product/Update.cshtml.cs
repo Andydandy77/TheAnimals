@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 using ContosoCrafts.WebSite.Models;
 using ContosoCrafts.WebSite.Services;
+using System;
 
 namespace ContosoCrafts.WebSite.Pages.Product
 {
@@ -58,10 +59,68 @@ namespace ContosoCrafts.WebSite.Pages.Product
             {
                 return Page();
             }
+            if (ValidateInput()) {
+                //ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Record Inserted Successfully')", true);
+                ProductService.UpdateData(Product);
+                return RedirectToPage("./Index");
+            }
 
-            ProductService.UpdateData(Product);
+            return null;
+        }
 
-            return RedirectToPage("./Index");
+        public bool ValidateInput()
+        {
+           if (Product.Title.Length > 50)
+            {
+                return false;
+            }
+
+           if (Product.Description.Length > 200)
+            {
+                return false;
+            }
+
+           if (Product.Restaurant.Length > 25)
+            {
+                return false;
+            }
+
+           if (Product.City.Length > 25)
+            {
+                return false;
+            }
+
+           if (Product.State.Length > 2)
+            {
+                return false;
+            }
+
+           if (Product.Cuisine.Length > 25)
+            {
+                return false;
+            }
+
+           if (Product.Address.Length > 50)
+            {
+                return false;
+            }
+
+           if (!Uri.IsWellFormedUriString(Product.Url, UriKind.Absolute))
+            {
+                return false;
+            }
+
+           if (Product.Price <= 0)
+            {
+                return false;
+            }
+
+           if (Product.Price > 100)
+            {
+                return false;
+            }
+
+            return true;
         }
     }
 }
