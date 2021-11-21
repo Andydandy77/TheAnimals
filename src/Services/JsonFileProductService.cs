@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -242,6 +243,17 @@ namespace ContosoCrafts.WebSite.Services
 
             return GetAllData().OrderByDescending(s => s.GetCurrentRating());
         
+        }
+
+        /// <summary>
+        /// Returns random product from product list
+        /// </summary>
+        /// <returns></returns>
+        public string GetRandomProduct()
+        {
+            var rand = new Random();
+            int index = rand.Next(0, GetAllData().Count());
+            return GetAllData().ElementAt(index).Id;
         }
     }
 }
