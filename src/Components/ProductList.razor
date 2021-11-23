@@ -32,7 +32,7 @@
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
         @foreach (var cuisine in GetCuisines())
         {
-            <button class="dropdown-item" id ="FilterByCuisine_@cuisine" type="button" @onclick="(e => SetSelectedCuisine(cuisine))">@cuisine</button>
+            <button class="dropdown-item" id="FilterByCuisine_@cuisine" type="button" @onclick="(e => SetSelectedCuisine(cuisine))">@cuisine</button>
         }
 
     </div>
@@ -45,7 +45,7 @@
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
         @foreach (var city in GetCities())
         {
-            <button class="dropdown-item" id ="FilterByCity_@city" type="button" @onclick="(e => SetSelectedCity(city))">@city</button>
+            <button class="dropdown-item" id="FilterByCity_@city" type="button" @onclick="(e => SetSelectedCity(city))">@city</button>
         }
 
     </div>
@@ -58,18 +58,18 @@
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
         @foreach (var price in GetPrices())
         {
-            <button class="dropdown-item" id ="FilterByPrice_@price" type="button" @onclick="(e => SetPriceRange(price))">@price</button>
+            <button class="dropdown-item" id="FilterByPrice_@price" type="button" @onclick="(e => SetPriceRange(price))">@price</button>
         }
 
     </div>
 </div>
 
-<button class="btn btn-primary filterButton" id ="resetButton"type="button" @onclick="(e => ResetFilters())">Reset Filters</button>
+<button class="btn btn-primary filterButton" id="resetButton" type="button" @onclick="(e => ResetFilters())">Reset Filters</button>
 
-<button class="btn btn-success" id ="GetMeTheBest" type="button" @onclick="(e => SortDishesByRating())">Get Me the Best!</button>
+<button class="btn btn-success" id="GetMeTheBest" type="button" @onclick="(e => SortDishesByRating())">Get Me the Best!</button>
 
 
-<button class="btn btn-info" id="FeelingLucky" type="button" @onclick="(e => SortDishesByRating())">I'm Feeling Lucky!</button>
+<a href="@FeelingLucky()" id="FeelingLucky" class="btn btn-info">I'm Feeling Lucky!</a>
 
 <div class="card w-100">
     @if (getTheBest)
@@ -488,5 +488,9 @@
         return high == 1000 ? "Price" : "" + low + "-" + high;
     }
 
+    string FeelingLucky()
+    {
+        return "/Product/Read/" + ProductService.GetRandomProduct();
+    }
 
 }
