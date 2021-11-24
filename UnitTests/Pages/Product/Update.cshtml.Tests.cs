@@ -63,12 +63,16 @@ namespace UnitTests.Pages.Product.Update
                 Id = "sandwich",
                 Category = "category",
                 Restaurant = "restaurant",
+                Price = 10,
                 City = "city",
-                State = "state",
+                State = "WA",
                 Title = "title",
                 Description = "description",
-                Url = "url",
-                Image = "image"
+                Url = "https://www.google.com",
+                Image = "https://pbs.twimg.com/profile_images/1022058466708516864/xvWejEyc.jpg",
+                UberEats = "ubereats",
+                Cuisine = "mexican",
+                Address = "189 north ave"
             };
 
             // Act
