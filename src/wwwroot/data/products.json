@@ -11,7 +11,6 @@
     "Title": "The 8oz",
     "Cuisine": "American",
     "Description": "Our signature burger - arugula, balsamic onions, hills bacon, beechers flagship cheddar, truffle aioli",
-    "UberEats": "https://www.ubereats.com/store/8-oz-burger-%26-co-ballard/0PpBeFRFTzmii6ACk__erg/797e3885-9afe-4121-b69c-18a245b63dc6/7e12b8f3-feed-57a1-a6ea-8a4629b965c4/f5aecc68-f09a-4345-9c9f-e59c222f19c7?ps=1",
     "Ratings": [
       4,
       4,
@@ -35,7 +34,8 @@
         "Review": "This burger was juicy and the truffle aioli is a nice touch!"
       }
     ],
-    "Price": 15
+    "Price": 15,
+    "UberEats": "https://www.ubereats.com/store/8-oz-burger-%26-co-ballard/0PpBeFRFTzmii6ACk__erg/797e3885-9afe-4121-b69c-18a245b63dc6/7e12b8f3-feed-57a1-a6ea-8a4629b965c4/f5aecc68-f09a-4345-9c9f-e59c222f19c7?ps=1"
   },
   {
     "Id": "dantini",
@@ -49,7 +49,6 @@
     "Title": "Red Pie \u002B Pepperoni \u002B Caramelized Garlic",
     "Cuisine": "Italian",
     "Description": "A classic Dantini combo! Pepperoni, garlic confit, and mozzarella on a red base.",
-    "UberEats":null,
     "Ratings": [
       3,
       3,
@@ -59,8 +58,14 @@
       4,
       4
     ],
-    "Reviews": [],
-    "Price": 24
+    "Reviews": [
+      {
+        "Id": "2180d0e3-5b99-4f95-9c0b-e73aa5b934f9",
+        "Review": "fter a few failed attempts I finally got a reservation for a pizza. I decided to go with pepperoni because I wanted to get my hands on that infamous garlic confit. This is quite possibly one of the best pizzas I\u0027ve had in Seattle, and by far the best New York style pizza in Seattle. The crust was perfect, the cheese was delicious, the toppings were perfect. And that garlic confit was like garlic candy. I also got some of the smoked pepper flakes. I thought they were amazing, but my partner wasn\u0027t as impressed. Definitely worth the $.75 to me. To make things even better, they recently added online ordering to their platform making it much easier to secure your pie."
+      }
+    ],
+    "Price": 24,
+    "UberEats": null
   },
   {
     "Id": "ef224a7d-6fa1-475c-a8f7-9442529688c8",
@@ -74,7 +79,6 @@
     "Title": "The California Sandwich",
     "Cuisine": "American",
     "Description": "Sandwich - Mayo, sliced avocado, turkey, bacon, provolone cheese; toasted on a baguette, topped with lettuce and tomato",
-    "UberEats": null,
     "Ratings": [
       3,
       4,
@@ -83,8 +87,14 @@
       1,
       1
     ],
-    "Reviews": [],
-    "Price": 7.75
+    "Reviews": [
+      {
+        "Id": "77e2d601-c9d3-4da3-9726-226f1f49e937",
+        "Review": " love this place. The bread is nice and crispy on the outside soft on the inside. Flavors are spot on. I love the The Califonia Sandwich and the garlic pasta salad is yummy!"
+      }
+    ],
+    "Price": 7.75,
+    "UberEats": null
   },
   {
     "Id": "cdcf309b-ceb1-4040-a342-d6c49e0d9f28",
@@ -98,7 +108,6 @@
     "Title": "Red Mill Deluxe W/ Cheese",
     "Cuisine": "American",
     "Description": "American cheese, lettuce, tomato, pickle, red onion, mill sauce",
-    "UberEats": null,
     "Ratings": [
       4,
       4,
@@ -107,8 +116,14 @@
       4,
       4
     ],
-    "Reviews": [],
-    "Price": 7.25
+    "Reviews": [
+      {
+        "Id": "7b78773e-aff4-4dc1-b65f-27a7e006ec35",
+        "Review": "Ordered fried mushrooms, banana milkshake, and red mill deluxe online. Order was ready when arrived. banana shake and mushroom were must tries. burger was seasoned, bun was soft. In one sentence, I will take Red Mill Burgers over In N out any day (and In N out is good)."
+      }
+    ],
+    "Price": 7.25,
+    "UberEats": null
   },
   {
     "Id": "1a776d0c-224f-4d5e-8572-14ccf8197716",
@@ -122,7 +137,6 @@
     "Title": "Tacos",
     "Cuisine": "Mexican",
     "Description": "Corn tortillas, your choice of meat or fresh grilled vegetables, topped with Pico de Gallo",
-    "UberEats": null,
     "Ratings": [
       1,
       1,
@@ -137,8 +151,14 @@
       3,
       3
     ],
-    "Reviews": [],
-    "Price": 1.5
+    "Reviews": [
+      {
+        "Id": "b0e89fb8-c940-42bd-a09d-66d57b8e8bb2",
+        "Review": "I\u0027d say one of the better Mexican food trucks in Seattle. This is exactly what you\u0027re looking for. Have always seen this place in passing and never tried it until our friend told us to go. Not sure why I never went! It\u0027s near the university so it can get busy especially during the weekends. It\u0027s near Magnuson park which in my opinion, much better option than the other restaurants nearby. There\u0027s parking and options a plenty. My husband has ordered a shrimp and the veggie burrito, obviously not at the same time. He\u0027s super picky with Mexican food and he enjoyed both options. I got the shrimp tacos which were also amazing, the green sauce is killer. Pricing isn\u0027t bad and they serve food quickly which I appreciate."
+      }
+    ],
+    "Price": 1.5,
+    "UberEats": null
   },
   {
     "Id": "fe096d54-6bbd-4e57-875a-06eaf6c623c8",
@@ -152,7 +172,6 @@
     "Title": "Pizza - Prosciutto \u0026 Mushroom",
     "Cuisine": "Italian",
     "Description": "Tomato sauce, prosciutto di parma, mushroom, fresh mozzarella, basil",
-    "UberEats": "https://www.ubereats.com/store/tutta-bella-neapolitan-pizzeria-westlake/JDIU-s66SLSyrjlh1sTa1g/849cd708-f971-5bdd-aeb8-0ca92c45cf08/075be899-9655-5bfc-9f61-5c3da40686ee/5f8ef35c-311c-5ece-99df-4aaf4b483ce8?ps=1",
     "Ratings": [
       3,
       3,
@@ -164,8 +183,14 @@
       1,
       2
     ],
-    "Reviews": [],
-    "Price": 16
+    "Reviews": [
+      {
+        "Id": "0be6d29a-0b89-4513-9545-5bc5539679cb",
+        "Review": "Came here for lunch with a coworker and received great service.  Food came out quickly so we were able to enjoy our meal and get back to work within an hour.  I got the prosciutto and mushroom pizza, which has red sauce. The crust was perfectly cooked and not too chewy or burnt."
+      }
+    ],
+    "Price": 16,
+    "UberEats": "https://www.ubereats.com/store/tutta-bella-neapolitan-pizzeria-westlake/JDIU-s66SLSyrjlh1sTa1g/849cd708-f971-5bdd-aeb8-0ca92c45cf08/075be899-9655-5bfc-9f61-5c3da40686ee/5f8ef35c-311c-5ece-99df-4aaf4b483ce8?ps=1"
   },
   {
     "Id": "e767509f-ab60-48ba-b56f-09447b941ca6",
@@ -179,15 +204,20 @@
     "Title": "The Old Fashioned",
     "Cuisine": "American",
     "Description": "Made delicious with a touch of sour cream, these are some of our most popular doughnuts",
-    "UberEats": "https://www.ubereats.com/store/top-pot-doughnuts-summit/ZHWbcFbGS-CBd8PUsaEFOw/7e98ee22-254c-53f2-aba2-cd4772bd408b/68579cfe-db39-4091-bddf-5e3a37346125/55d1fea2-4db4-58ee-904a-d38bae8e2ec7?ps=1",
     "Ratings": [
       4,
       4,
       4,
       4
     ],
-    "Reviews": [],
-    "Price": 2.75
+    "Reviews": [
+      {
+        "Id": "70883760-f542-4327-8d1f-f1ef1d026647",
+        "Review": "Delicious doughnuts. Full stop. They have creative and fun flavors along with the classics we all know and love. We selected about seven doughnuts to try and agreed on the following: The plain glazed yeast raised ring is excellent. The raspberry glazed yeast raised ring was equally excellent but jazzier. The pumpkin old fashioned     was perfectly spiced and a lovely seasonal flavor. The salted caramel was nice but a touch too sticky and sweet. The lemon glazed old fashioned was also a good choice that I\u0027d probably add to the rotation.  The others were fine. The reason for the four stars was because the lattes we got were so bad we didn\u0027t drink them. Perhaps a new barista? I\u0027d definitely come again for doughnuts."
+      }
+    ],
+    "Price": 2.75,
+    "UberEats": "https://www.ubereats.com/store/top-pot-doughnuts-summit/ZHWbcFbGS-CBd8PUsaEFOw/7e98ee22-254c-53f2-aba2-cd4772bd408b/68579cfe-db39-4091-bddf-5e3a37346125/55d1fea2-4db4-58ee-904a-d38bae8e2ec7?ps=1"
   },
   {
     "Id": "a76e7cdf-dae5-4557-86b0-341ce0d0a3a4",
@@ -201,7 +231,6 @@
     "Title": "Shrimp \u0026 Kurobuta Pork Wontons with House Spicy Sauce",
     "Cuisine": "Chinese",
     "Description": "Served with our signature house spicy sauce and topped with garlic and green onion, our handmade wontons are always a fan favorite.",
-    "UberEats": "https://www.ubereats.com/store/din-tai-fung-pacific-place/5HIhoEW8QymFLtjy4afmow/f9700daf-065d-56d8-81e4-45ab20c5c0da/7e12b8f3-724a-5e1c-8d71-bcd45cbbf75f/662ee41e-c198-58bc-919d-7637a85aad3d?ps=1",
     "Ratings": [
       4,
       4,
@@ -211,8 +240,14 @@
       2,
       2
     ],
-    "Reviews": [],
-    "Price": 13.75
+    "Reviews": [
+      {
+        "Id": "e58582c1-4946-46ef-a817-57b6a212380c",
+        "Review": "Best for chicken dumplings, spicy shrimp and pork wontons, chicken fried noodles, garlic green beans. We love everything we\u0027ve tried and keep coming back for our favorites."
+      }
+    ],
+    "Price": 13.75,
+    "UberEats": "https://www.ubereats.com/store/din-tai-fung-pacific-place/5HIhoEW8QymFLtjy4afmow/f9700daf-065d-56d8-81e4-45ab20c5c0da/7e12b8f3-724a-5e1c-8d71-bcd45cbbf75f/662ee41e-c198-58bc-919d-7637a85aad3d?ps=1"
   },
   {
     "Id": "4d197c3f-9987-4e04-ac6c-2b8c462a97eb",
@@ -226,7 +261,6 @@
     "Title": "Taco Asada",
     "Cuisine": "Mexican",
     "Description": "Steak, onion, cilantro, salsa and guacamole on a soft corn tortilla. Priced per taco. Adjust quantity as desired.",
-    "UberEats": null,
     "Ratings": [
       3,
       4,
@@ -234,8 +268,14 @@
       5,
       5
     ],
-    "Reviews": [],
-    "Price" : 2.5
+    "Reviews": [
+      {
+        "Id": "7e6353cf-26f3-4c81-86b4-2531cb16ede0",
+        "Review": "For Seattle Mexican food, these tacos are pretty tasty. I like the basic tacos (asada, adobada) but their $4 baby burrito also hits the spot! Wish they had chips but that\u0027s their authentic style without it. Repeat customer"
+      }
+    ],
+    "Price": 2.5,
+    "UberEats": null
   },
   {
     "Id": "6edb0f30-4b9d-4fe7-9b5e-6d35b70eb084",
@@ -249,7 +289,6 @@
     "Title": "Kao Soi",
     "Cuisine": "Thai",
     "Description": "A Northern Thai curry noodle soup. Egg noodles cooked with chicken topped with red onions, pickled mustard greens and crispy noodles.",
-    "UberEats": null,
     "Ratings": [
       5,
       5,
@@ -259,8 +298,14 @@
       4,
       4
     ],
-    "Reviews": [],
-    "Price": 15
+    "Reviews": [
+      {
+        "Id": "6574402d-f4d3-43f7-bb1b-3f41ffa83ce2",
+        "Review": "The Kao Soi is a MUST try! It is one of my favorite dishes I\u0027ve tasted in all of Seattle. It has spices, rich with flavor, delicious noodles, and is perfectly warm. The Khao Phad was just fine. It was exactly what you\u0027d expect. I probably wouldn\u0027t get it again. The staff were beyond friendly and helpful. They were also quick with our dishes. They serve and encourage family style eating, which makes the experience much more fun (plus you get to try more!)"
+      }
+    ],
+    "Price": 15,
+    "UberEats": null
   },
   {
     "Id": "7297dc45-7e97-42f1-ac57-d2cec883ab3f",
@@ -274,7 +319,6 @@
     "Title": "Dick\u0027s Deluxe",
     "Cuisine": "American",
     "Description": "Two 1/8 pound grilled patties, with melted cheese, lettuce, mayonnaise and pickle relish.",
-    "UberEats": null,
     "Ratings": [
       3,
       3,
@@ -283,8 +327,14 @@
       2,
       2
     ],
-    "Reviews": [],
-    "Price": 4.5
+    "Reviews": [
+      {
+        "Id": "e47791fe-1f48-48a5-9e25-60af7732bf2b",
+        "Review": "The prices went up astronomically during covid and I seriously doubt they will go back down the Broadway location is still off the hook however the staff is friendly considering what they have had to endure during covid the food is good and greasy as usual the same ole Dick\u0027s you know and love i always get the Dick\u0027s deluxe and give a patty to a friend or dog fries and a strawberry shake if I\u0027m stoned enough lol"
+      }
+    ],
+    "Price": 4.5,
+    "UberEats": null
   },
   {
     "Id": "7297dc45-7e97-42f1-ac57-d2cec883ab13f",
@@ -298,15 +348,20 @@
     "Title": "Crunchy Fried Buttermilk Chicken Sandwich",
     "Cuisine": "American",
     "Description": "Fried Buttermilk Chicken thighs with a spicy chili pineapple sauce, garlic aioli, thinly sliced cabbage, pickled red onion, and pickles on a toasted brioche bun",
-    "UberEats": null,
     "Ratings": [
       5,
       5,
       5,
       5
     ],
-    "Reviews": [],
-    "Price": 13.75
+    "Reviews": [
+      {
+        "Id": "19cd1bdc-c265-4ff7-abe5-b87ff1e990e7",
+        "Review": "oh yesss, best fried chicken sandwich in seattle! you deserve to treat yourself to this amazing sando. flavorful chicken with a crispy crunchy outside and juicy inside. their tots are to die for, the nori seasoning is a great addition..."
+      }
+    ],
+    "Price": 13.75,
+    "UberEats": null
   },
   {
     "Id": "7297dc45-7e97-42f1-ac57-d2cec883ab14f",
@@ -320,7 +375,6 @@
     "Title": "Sweet Fennel Sausage",
     "Cuisine": "Italian",
     "Description": "Tomato sauce, fennel sausage, mixed peppers, provolone, Murray River salt, marjoram",
-    "UberEats": "https://www.ubereats.com/store/serious-pie-takeout/IoT0mqFhR1yTEfpdJCiX_A/0f70da6b-b7a4-4d58-8ba2-f107da285072/7e12b8f3-bc62-5239-8421-6a7a98408b64/508beaa8-9f00-4cee-a59f-a4c32634ea38?ps=1",
     "Ratings": [
       5,
       5,
@@ -328,8 +382,14 @@
       5,
       4
     ],
-    "Reviews": [],
-    "Price": 19
+    "Reviews": [
+      {
+        "Id": "5966f6d0-800d-4c61-9de8-92c02cd536ff",
+        "Review": "The service was welcoming, helpful and fast. We were seated right away and our food and drinks came out not too long after. I had the sweet fennel sausage pizza with pepperoni and my fianc\u00E9 had the ferndale farms pizza. We were both satisfied and would return if back in the Seattle area and craving pizza."
+      }
+    ],
+    "Price": 19,
+    "UberEats": "https://www.ubereats.com/store/serious-pie-takeout/IoT0mqFhR1yTEfpdJCiX_A/0f70da6b-b7a4-4d58-8ba2-f107da285072/7e12b8f3-bc62-5239-8421-6a7a98408b64/508beaa8-9f00-4cee-a59f-a4c32634ea38?ps=1"
   },
   {
     "Id": "7297dc45-7e97-42f1-ac57-d2cec883ab15f",
@@ -343,7 +403,6 @@
     "Title": "Old Stove Burger",
     "Cuisine": "American",
     "Description": "Pure Country beef*, American cheese, Blitzfire Brown braised onions, Old Stove sauce. Sub beyond patty at no extra cost.",
-    "UberEats": null,
     "Ratings": [
       5,
       5,
@@ -352,8 +411,14 @@
       5,
       4
     ],
-    "Reviews": [],
-    "Price": 20
+    "Reviews": [
+      {
+        "Id": "a840c5bd-53ed-4a99-a438-7be3a05a71ec",
+        "Review": "This place was great. I had to hesitate to order the Old Stove burger because it was $20. But dang, that may be the best burger I\u0027ve ever had! Great quality bun that was super fresh and just sturdy enough, and not all buttery and gross like the buns on most $10\u002B burgers. Quality meat, perfectly cooked. Just the right amount of cheese, tasty caramelized onions and special sauce, all while being possible to eat at a leisurely pace. So well balanced. Just a great burger experience. I had the two-pronged crown IPA which was really complex and tasty without being overly aggressive in any one vector, a fun and enjoyable beer that was perfect for a cool day. The one downside was my wife had the clams and mussels, and there was something we couldn\u0027t put our finger on that was just a little too bitter about the sauce. Not exactly peppery, but we expected it to be more savory / buttery, not such a fight in the mouth."
+      }
+    ],
+    "Price": 20,
+    "UberEats": null
   },
   {
     "Id": "7297dc45-7e97-42f1-ac57-d2cec883ab16f",
@@ -367,7 +432,6 @@
     "Title": "Pastrami Sandwich",
     "Cuisine": "American",
     "Description": "Pastrami Sandwich",
-    "UberEats": null,
     "Ratings": [
       5,
       5,
@@ -375,8 +439,14 @@
       4,
       5
     ],
-    "Reviews": [],
-    "Price": 15
+    "Reviews": [
+      {
+        "Id": "02507c73-c555-4bc4-a7a7-7c97f778868a",
+        "Review": "The pastrami sandwich here is pretty damn amazing. The dressing on there is definitely good and keeps it moist."
+      }
+    ],
+    "Price": 15,
+    "UberEats": null
   },
   {
     "Id": "7297dc45-7e97-42f1-ac57-d2cec883ab17f",
@@ -390,7 +460,6 @@
     "Title": "Mediterranean Vegan Sourdough Pasta",
     "Cuisine": "Italian",
     "Description": "Sundried and cherry tomatoes,kalamata olives,basil,sicilian spice,oven roasted eggplant red sauce",
-    "UberEats": null,
     "Ratings": [
       4,
       5,
@@ -398,8 +467,14 @@
       4,
       5
     ],
-    "Reviews": [],
-    "Price": 18
+    "Reviews": [
+      {
+        "Id": "79e82540-5172-4fdf-af75-353c1dad0db1",
+        "Review": "Welcome to Seattle, wow did not disappoint! Was referred to this awesome establishment by our hotel and we are very satisfied! The handmade sourdough pasta was the best pasta I ever had! The Apple strudel dessert was the perfect end to our amazing meal. We had the Sidechick as our drinks and it was so tropical and a great drink with our meal. Be prepared to spend downtown prices and our waiter disappeared a few times but it was a great first meal in WA!"
+      }
+    ],
+    "Price": 18,
+    "UberEats": null
   },
   {
     "Id": "4c10cf86-ebc0-4702-a667-dfef150a4a1b",
@@ -413,7 +488,6 @@
     "Title": "Caribbean Sandwich",
     "Cuisine": "Caribbean",
     "Description": "Morsels of roasted pork nestled atop banana peppers, draped with slices of smoked ham, and Swiss cheese, melted together in a hot press.",
-    "UberEats": null,
     "Ratings": [
       5,
       5,
@@ -425,8 +499,14 @@
       5,
       4
     ],
-    "Reviews": [],
-    "Price": 12.95
+    "Reviews": [
+      {
+        "Id": "c872700b-fa55-4be3-b678-38e99c7e708b",
+        "Review": "Yummy yummy yummy! I got a Caribbean roast sandwich which was worth every cent. Pork was tender and juicy, and flavors of the aioli, jalape\u00F1o, grilled onions, and pork all melded perfectly. The lettuce added a nice crunch, and bread was toasted to perfection. My one caution (can\u0027t even really call it a complaint cuz it\u0027s not) is that this sandwich is messy and falls apart. Bites will push things out the other end, so I spent a good amount of time reassembling there sandwich to get that perfect bite of everything. I also got a side order of beans which was also delicious. Definitely sweeter and tangier than I\u0027m used to, but it was delicious. I used the leftovers to make heuvos rancheros the next morning!"
+      }
+    ],
+    "Price": 12.95,
+    "UberEats": null
   },
   {
     "Id": "560ac95d-355a-4de9-8b43-ecf9b32621eb",
@@ -440,15 +520,20 @@
     "Title": "Pad Thai",
     "Cuisine": "Thai",
     "Description": "Rice noodle stir fried with egg, fresh bean sprout, green onion, ground peanut and your choice Chicken or beef or Tofu",
-    "UberEats": "https://www.ubereats.com/store/yes-siam-thai-cafe-and-bar/cJj5jr8BSCC_gwNW-YgaQg/9a12db68-e36b-4e22-a914-2aa42b7d200a/7e12b8f3-4e39-54ba-9087-0a0cefd2ecf7/e6e6717d-dda0-4b0e-a739-08187d6c57d2?ps=1",
     "Ratings": [
       5,
       4,
       4,
       4
     ],
-    "Reviews": [],
-    "Price": 14
+    "Reviews": [
+      {
+        "Id": "df0d1fb6-85ff-4835-85e2-d0817296d22f",
+        "Review": "We really enjoy this spot! Everything we\u0027ve had from here is good. Food is made quickly, packaged nicely, and always warm and delicious. We love the chicken lettuce wraps, Chicken pad Thai, crispy garlic chicken, and of course Thai Iced Tea. Food is always ready when we pick it up!"
+      }
+    ],
+    "Price": 14,
+    "UberEats": "https://www.ubereats.com/store/yes-siam-thai-cafe-and-bar/cJj5jr8BSCC_gwNW-YgaQg/9a12db68-e36b-4e22-a914-2aa42b7d200a/7e12b8f3-4e39-54ba-9087-0a0cefd2ecf7/e6e6717d-dda0-4b0e-a739-08187d6c57d2?ps=1"
   },
   {
     "Id": "d86a3766-301e-49ea-a456-a8b1564cafda",
@@ -462,12 +547,17 @@
     "Title": "Burrito",
     "Cuisine": "Mexican",
     "Description": "Meat, rice, cheese, and beans wrapped up in a flour tortilla",
-    "UberEats": "https://www.ubereats.com/store/birrieria-tijuana-en-burien/gt3ZFMHHQHeTbMnIMxuggg/a42024aa-360f-4f74-b2bc-4c043fc05b91/7e12b8f3-bde7-5da8-9d99-a9507705ac7a/f2767a1a-0f76-4239-8f9a-a72342723948?ps=1",
     "Ratings": [
       3
     ],
-    "Reviews": [],
-    "Price": 10
+    "Reviews": [
+      {
+        "Id": "3ded6431-e359-4bc8-85a4-6feb06484114",
+        "Review": "Not into the famous cheesy tacos that everyone loves it\u0027s just too greasy for me. Their steak burritos is what I normally order and it hits the spot every time!"
+      }
+    ],
+    "Price": 10,
+    "UberEats": "https://www.ubereats.com/store/birrieria-tijuana-en-burien/gt3ZFMHHQHeTbMnIMxuggg/a42024aa-360f-4f74-b2bc-4c043fc05b91/7e12b8f3-bde7-5da8-9d99-a9507705ac7a/f2767a1a-0f76-4239-8f9a-a72342723948?ps=1"
   },
   {
     "Id": "3cfb30bc-5517-4869-a6e1-6d255170eb63",
@@ -481,7 +571,6 @@
     "Title": "Dim Sum",
     "Cuisine": "Chinese",
     "Description": "large range of small Chinese dishes that are traditionally enjoyed in restaurants for breakfast and lunch",
-    "UberEats": "https://www.ubereats.com/store/jade-garden/vyxzSxlNSGaEVqbuMJ_axw/6dba605c-b2c5-4f8f-ae1f-c7a1d2f20d1e/f6529463-e56b-4bc7-a44f-b2ea6fe14b1f/17a42fd2-5ef4-46ce-b5e5-7beb2ea3af3f?ps=1",
     "Ratings": [
       2,
       2,
@@ -490,8 +579,14 @@
       5,
       5
     ],
-    "Reviews": [],
-    "Price": 2.95
+    "Reviews": [
+      {
+        "Id": "4ff71f25-c0f6-440d-a519-cbd2e5b04fee",
+        "Review": "Best choice for cart dim sum in the International district . The waiter honored our request to eat in the back. We always enjoy the freshness and variety of a restaurant we\u0027ve frequented since the mid-80\u0027s. Yep, this is our go to dim sum place in Seattle"
+      }
+    ],
+    "Price": 2.95,
+    "UberEats": "https://www.ubereats.com/store/jade-garden/vyxzSxlNSGaEVqbuMJ_axw/6dba605c-b2c5-4f8f-ae1f-c7a1d2f20d1e/f6529463-e56b-4bc7-a44f-b2ea6fe14b1f/17a42fd2-5ef4-46ce-b5e5-7beb2ea3af3f?ps=1"
   },
   {
     "Id": "f3a1001d-d7c0-45f2-9998-279d8dbbe808",
@@ -505,15 +600,20 @@
     "Title": "Vindaloo",
     "Cuisine": "Indian",
     "Description": "Zesty curry cooked in a tangy sauce of wine vinegar, ginger, and potatoes.",
-    "UberEats": "https://www.ubereats.com/store/taste-of-india/sG3KUFpYSDS2BcM_6ZTl9A/b6ce46e3-7dbb-4511-bf7e-969d4e852865/7e12b8f3-55ed-5c03-9711-0bb866689ba2/306f3770-5b39-4140-a279-9a2a26b401c3?ps=1",
     "Ratings": [
       5,
       5,
       5,
       5
     ],
-    "Reviews": [],
-    "Price": 19.99
+    "Reviews": [
+      {
+        "Id": "ec41c09a-50fe-4e4d-ad5a-4f775a02f75a",
+        "Review": "I\u0027ve been coming here for 5\u002B years and I still claim that it\u0027s the best in Seattle! I\u0027ve tried a lot of different restaurants, but Taste of India has the creamiest and tastiest butter chicken ever! Their tikka and vindaloo are also a hit. Garlic naan is a must, and their complimentary samosas always are a great start to the meal. If you check in on yelp, you also get 15% off your bill! Sometimes the service is slow, but that\u0027s due to them being extremely busy with takeout orders as well. Most recently, I (unfortunately) waited 40 minutes after ordering for my food, but it was worth!"
+      }
+    ],
+    "Price": 19.99,
+    "UberEats": "https://www.ubereats.com/store/taste-of-india/sG3KUFpYSDS2BcM_6ZTl9A/b6ce46e3-7dbb-4511-bf7e-969d4e852865/7e12b8f3-55ed-5c03-9711-0bb866689ba2/306f3770-5b39-4140-a279-9a2a26b401c3?ps=1"
   },
   {
     "Id": "fecdec9d-a3d7-4a65-a837-8930ff71e28b",
@@ -527,15 +627,20 @@
     "Title": "Hangry Style Fries",
     "Cuisine": "Vegan",
     "Description": "Fries smothered in Hangry Style fry sauce, American cheese and grilled onions.",
-    "UberEats": null,
     "Ratings": [
       3,
       4,
       5,
       5
     ],
-    "Reviews": [],
-    "Price": 7
+    "Reviews": [
+      {
+        "Id": "31c96da3-9593-4bef-bc98-64009c290419",
+        "Review": "This was my first time having vegan hotdogs and I\u0027m impressed with how it taste. We ordered elote dog, curry wurst, what a vegan burger, hangry style fries, and mac \u0026 cheese. The curry wurst was probably my least favorite as it was vegan dog with German curry ketchup and no other topping. The ketchup was too tangy and can\u0027t taste the curry at all. The elote dog was completely covered with corn which adds texture to the dish. I wish the corn was a bit sweeter but the cayenne pepper definitely adds a kick to the dish. My favorites were the what a vegan burger and hangry style fries. If you didn\u0027t tell me it\u0027s vegan, I wouldn\u0027t be able to tell at all. The grilled onions tasted amazing on top of crispy fries. The prices are reasonable for all the dishes we ordered, definitely a good place to stop by for quick lunch or snack."
+      }
+    ],
+    "Price": 7,
+    "UberEats": null
   },
   {
     "Id": "70ac8fe8-890b-40ca-84b7-3577139118ba",
@@ -549,7 +654,6 @@
     "Title": "Taiwanese Pork Burger",
     "Cuisine": "Chinese",
     "Description": "Taiwanese Pork Burger",
-    "UberEats": null,
     "Ratings": [
       5,
       5,
@@ -557,8 +661,14 @@
       5,
       5
     ],
-    "Reviews": [],
-    "Price": 6.95
+    "Reviews": [
+      {
+        "Id": "85a3d16e-f33e-4400-85c4-9da5f5e95279",
+        "Review": "Only go if you\u0027re seeking delicious food. The Taiwanese pork burger had an unflattering name for a taste sensation. You simply must try it, unless you have a peanut allergy. I\u0027m not sure it\u0027d be as great without the peanuts"
+      }
+    ],
+    "Price": 6.95,
+    "UberEats": null
   },
   {
     "Id": "8a9de63e-5c16-4422-8e9e-75470e4ae3ff",
@@ -572,14 +682,19 @@
     "Title": "The O.G.",
     "Cuisine": "Jewish-American",
     "Description": "house made pastrami, mama lil\u2019s peppers, 1000 island, horseradish cream, arugula \u0026 gruyere",
-    "UberEats": null,
     "Ratings": [
       4,
       4,
       4
     ],
-    "Reviews": [],
-    "Price": 14
+    "Reviews": [
+      {
+        "Id": "4f823da8-aa51-46d7-a776-f50f43dcbf04",
+        "Review": "Ordered the OG which I s an amazing pastrami on latke. This sandwich had a  huge made pastrami (not awful dry lunch meat style), arugula, peppers and sauce between latkes. This sandwich is a good diet sin. Looking forward to working my way through the menu."
+      }
+    ],
+    "Price": 14,
+    "UberEats": null
   },
   {
     "Id": "3138b489-97b6-4eea-8a42-2641f23be864",
@@ -593,7 +708,6 @@
     "Title": "Shoyu Ramen",
     "Cuisine": "Japanese",
     "Description": "Silky pork soup with shoyu flavor, noodle, char siu (roast pork), bamboo shoots, aji-tamago (marinated egg), scallion, and aroma oil.",
-    "UberEats": "https://www.ubereats.com/store/ooink/cystXjzyTYSbPjoUGNVz0Q/cbc8ea3b-b112-4174-8329-e835cd16f66f/7e12b8f3-a02e-58af-aa85-80c508b2db16/9a0fabf4-46bf-445c-b404-852560f41306?ps=1",
     "Ratings": [
       5,
       5,
@@ -602,8 +716,14 @@
       3,
       2
     ],
-    "Reviews": [],
-    "Price": 14
+    "Reviews": [
+      {
+        "Id": "e5d6c447-02e1-4b51-bb42-a73e783fb8cd",
+        "Review": "Went for ramen after bro-ing out at the gym with my friend Ryan. Turns out the owner also bros out with Ryan at the local cross fit and we got free beer. The pork gyoza is really good. The ramen is pretty good, but didn\u0027t fully grab me. For me ramen is all about the broth, and while Ooink\u0027s Shoyu Ramen\u0027s pork broth is good, it\u0027s thinner and not as flavorful as the Tonkatsu broth base at Samurai or Hokkaido Santouka. I would recommend it, but I definitely prefer Hokkaido."
+      }
+    ],
+    "Price": 14,
+    "UberEats": "https://www.ubereats.com/store/ooink/cystXjzyTYSbPjoUGNVz0Q/cbc8ea3b-b112-4174-8329-e835cd16f66f/7e12b8f3-a02e-58af-aa85-80c508b2db16/9a0fabf4-46bf-445c-b404-852560f41306?ps=1"
   },
   {
     "Id": "81a37dbc-dacd-4bc8-a133-4e3784903b4d",
@@ -617,15 +737,20 @@
     "Title": "Luau Lunch Plate",
     "Cuisine": "Hawaiian",
     "Description": "Have it for lunch or dinner! Choice of protein, mac salad, signature slaw, 2 scoops white rice.",
-    "UberEats": "https://www.ubereats.com/store/marination-ma-kai/KwrzZ-wlQMirOiUchBgWhw/cb2c93f2-34bd-57e4-9e17-5c071131f87a/01c1cbd2-6bf4-530d-b4bc-a367652538c3/7ef3ab79-128e-55d8-b8ec-d25b372d2a1a?ps=1",
     "Ratings": [
       4,
       5,
       5,
       5
     ],
-    "Reviews": [],
-    "Price": 10.5
+    "Reviews": [
+      {
+        "Id": "ecc5f1d0-1e96-431e-b09f-ede1bb6b5834",
+        "Review": "Katsu luau lunch plate was super good, katsu was crispy and delicious, rice was deliciously cooked, Mac salad and Cole slaw were all so good! Aloha fries were good. Fish and chips were super crispy and delicious, the kimchee tartar sauce was labeled spicy but was not very spicy which I loved!"
+      }
+    ],
+    "Price": 10.5,
+    "UberEats": "https://www.ubereats.com/store/marination-ma-kai/KwrzZ-wlQMirOiUchBgWhw/cb2c93f2-34bd-57e4-9e17-5c071131f87a/01c1cbd2-6bf4-530d-b4bc-a367652538c3/7ef3ab79-128e-55d8-b8ec-d25b372d2a1a?ps=1"
   },
   {
     "Id": "0415d563-05ba-426d-a1dd-ff3373a48f36",
@@ -639,7 +764,6 @@
     "Title": "Menudo",
     "Cuisine": "Mexican",
     "Description": "In Mexican cuisine, Menudo, also known as pancita or mole de panza, is a traditional Mexican soup, made with cow\u0027s stomach in broth with a red chili pepper base. Hominy, lime, onions, and oregano are used to season the broth.",
-    "UberEats": "https://www.ubereats.com/store/taqueria-tequila-authentic-mexican-food-phinney-ridge/5zxAYjU_QeWpITOIZ_Ocyw/89f4c6fb-181a-473a-aacf-0a5ba263035f/59f33158-70a5-47dd-8ad4-251f1bd40c04/6d2f9464-1955-4029-99c9-dc5df07bd837?ps=1",
     "Ratings": [
       1,
       2,
@@ -649,8 +773,14 @@
       4,
       4
     ],
-    "Reviews": [],
-    "Price": 11.99
+    "Reviews": [
+      {
+        "Id": "850db200-c470-435d-bb91-ab23081dd90f",
+        "Review": "Dine in or carry out...This is the best Tex/Authentic Mexican food in Seattle!  The salsas are homemade and a good variance from miLd to spicy.  Fantastic beef enchiladas, Menudo and burritos.  You can\u0027t go wrong with anything on the menu.  The only thing you need to watch out for is ordering too much. But with these prices - don\u0027t worry!"
+      }
+    ],
+    "Price": 11.99,
+    "UberEats": "https://www.ubereats.com/store/taqueria-tequila-authentic-mexican-food-phinney-ridge/5zxAYjU_QeWpITOIZ_Ocyw/89f4c6fb-181a-473a-aacf-0a5ba263035f/59f33158-70a5-47dd-8ad4-251f1bd40c04/6d2f9464-1955-4029-99c9-dc5df07bd837?ps=1"
   },
   {
     "Id": "b09c5050-1d28-45de-8e4a-cd8f8a7eac7d",
@@ -664,15 +794,20 @@
     "Title": "Xiao Long Bao",
     "Cuisine": "Chinese",
     "Description": "Steamed bun with pork filling",
-    "UberEats": "https://www.ubereats.com/store/din-tai-fung-pacific-place/5HIhoEW8QymFLtjy4afmow/f9700daf-065d-56d8-81e4-45ab20c5c0da/db5b52e7-4cf4-57f7-b74f-92c63a1bbf6d/c60011b3-d08a-5d72-9c98-cc83d814d659?ps=1",
     "Ratings": [
       3,
       4,
       4,
       4
     ],
-    "Reviews": [],
-    "Price": 10.99
+    "Reviews": [
+      {
+        "Id": "dffb53b7-dc51-4577-aec5-61aafd7b4510",
+        "Review": "Made reservations online. Showed up and was quickly seated. We ordered the hot and sour soup, cucumber appetizer, pork xiao long bao and crab and pork xiao long bao. The soup was warm, vinegar-y, not too spicy. The xiao long baos we\u0027re flavorful but not too soupy. They almost looked dehydrated when it got to us. The cucumber was crunchy, flavorful and yummy. The service was good and tentative. Overall it was good but nothing out of this world."
+      }
+    ],
+    "Price": 10.99,
+    "UberEats": "https://www.ubereats.com/store/din-tai-fung-pacific-place/5HIhoEW8QymFLtjy4afmow/f9700daf-065d-56d8-81e4-45ab20c5c0da/db5b52e7-4cf4-57f7-b74f-92c63a1bbf6d/c60011b3-d08a-5d72-9c98-cc83d814d659?ps=1"
   },
   {
     "Id": "cd76c1a9-e32c-4988-bfd7-6b4214d74724",
@@ -686,7 +821,6 @@
     "Title": "Pho Bo",
     "Cuisine": "Vietnamese",
     "Description": "Eye-round steak (medium rare beef) in a beef vermicelli noodle soup",
-    "UberEats": "https://www.ubereats.com/store/pho-than-brothers-edmonds/UDpy4LyXQXyJMM-soQelxg/fe6225ea-d304-4135-b74d-5389b84fd8b9/84b7da91-bc71-4232-96b1-5c63cebccb1c/4d4add2f-8920-4985-a9b8-9646e42d3ac5?ps=1",
     "Ratings": [
       5,
       5,
@@ -696,8 +830,14 @@
       4,
       4
     ],
-    "Reviews": [],
-    "Price": 14.99
+    "Reviews": [
+      {
+        "Id": "3bcfd97c-d044-4f06-8708-234a452270a4",
+        "Review": "This place had really good pho. Friendly service, and a little cream puff to eat while you wait for your food.  I got the Pho Bo Tai Chin (eye-round steak and brisket according to the menu). The steak was good and plentiful, the noodles were good, and the broth was warming and flavored well.  I\u0027d come back here for sure."
+      }
+    ],
+    "Price": 14.99,
+    "UberEats": "https://www.ubereats.com/store/pho-than-brothers-edmonds/UDpy4LyXQXyJMM-soQelxg/fe6225ea-d304-4135-b74d-5389b84fd8b9/84b7da91-bc71-4232-96b1-5c63cebccb1c/4d4add2f-8920-4985-a9b8-9646e42d3ac5?ps=1"
   },
   {
     "Id": "58e25773-1569-4478-b690-5a3e5d05c8ae",
@@ -711,10 +851,10 @@
     "Title": "Banh Mi",
     "Cuisine": "Vietnamese",
     "Description": "B\u00E1nh m\u00EC or banh mi is a short baguette with thin, crisp crust and soft, airy texture. It is often split lengthwise and filled with savory ingredients",
-    "UberEats": "https://www.ubereats.com/store/saigon-deli/kZTrgotUU_S8b1b7iuc00g/adda5727-a910-4909-8060-ff856d170a74/0031db60-b5b2-47ae-846c-e1732950ca31/fdb4f4b0-2bae-4e1c-99dc-46c98009a9c8?ps=1",
     "Ratings": null,
     "Reviews": [],
-    "Price": 4.99
+    "Price": 4.99,
+    "UberEats": "https://www.ubereats.com/store/saigon-deli/kZTrgotUU_S8b1b7iuc00g/adda5727-a910-4909-8060-ff856d170a74/0031db60-b5b2-47ae-846c-e1732950ca31/fdb4f4b0-2bae-4e1c-99dc-46c98009a9c8?ps=1"
   },
   {
     "Id": "8d326ce6-131c-4742-9ba0-afb9269a3719",
@@ -728,7 +868,6 @@
     "Title": "Glendronach Parliament 21 year",
     "Cuisine": "Scottish",
     "Description": "Matured in a combination of the finest Oloroso and Pedro Ximenez sherry casks for a minimum of 21 years and bottled at 48% ABV, the \u2018Parliament\u2019 continues the great GlenDronach tradition of offering fruit-laden intensity in its single malts.",
-    "UberEats": null,
     "Ratings": [
       3,
       3,
@@ -736,7 +875,8 @@
       3
     ],
     "Reviews": [],
-    "Price": 39
+    "Price": 39,
+    "UberEats": null
   },
   {
     "Id": "8d326ce6-131c-4742-9ba0-afb9269a3700",
@@ -750,13 +890,18 @@
     "Title": "Butter Chicken Pizza",
     "Cuisine": "Indian/Italian",
     "Description": "Butter chicken marinated in Can-Am special curry sauce, onions, green peppers, tomatoes, mozzarella cheese \u0026 pizza sauce",
-    "UberEats": "https://www.ubereats.com/store/can-am-pizza-redmond/224n7_c2T7KpyJ_zb7JAaQ/ebb3eb6a-11da-506e-b67a-bd9543d7044e/1bb9d5e0-1591-53b0-9d10-8ca3d9a8b8d7/545a4576-95a4-594a-9fb2-11d5da3e5208?ps=1",
     "Ratings": [
       5,
       5
     ],
-    "Reviews": [],
-    "Price": 18.99
+    "Reviews": [
+      {
+        "Id": "8467a3d4-3f9b-4242-969a-fd3f06c85491",
+        "Review": "Excellent Indian flavored pizzas - Had the Butter chicken and the Butter paneer and both were top notch. The thickness of the pizza was perfect for my liking and the toppings/sauce were abundant ensuring every bite was flavorful."
+      }
+    ],
+    "Price": 18.99,
+    "UberEats": "https://www.ubereats.com/store/can-am-pizza-redmond/224n7_c2T7KpyJ_zb7JAaQ/ebb3eb6a-11da-506e-b67a-bd9543d7044e/1bb9d5e0-1591-53b0-9d10-8ca3d9a8b8d7/545a4576-95a4-594a-9fb2-11d5da3e5208?ps=1"
   },
   {
     "Id": "8d326ce6-131c-4742-9ba0-afb9269a37001",
@@ -770,13 +915,18 @@
     "Title": "Pav Bhaji",
     "Cuisine": "Indian",
     "Description": "Indian Vegetable Curry With Signature Spices Served with Pav(Bread)",
-    "UberEats": "https://www.ubereats.com/store/honest-restaurant/J1XiXzipTkqTqdZJyZs-kA/9baebaf9-18c2-5259-8008-1400dd2b5059/7e12b8f3-7a72-5332-aaf9-4fc596f621b9/8b21910d-1450-593d-a38d-3d9edf4f68d2?ps=1",
     "Ratings": [
       4,
       5
     ],
-    "Reviews": [],
-    "Price": 9.99
+    "Reviews": [
+      {
+        "Id": "6da1c759-88c6-4351-8bc2-532b86dc8829",
+        "Review": "We ordered Pav Bhaji, Dahi Puri, veg grill and rose flooda. All were very good. We like how crispy Dahi Puri was and tasted good too. Would like to visit this place again."
+      }
+    ],
+    "Price": 9.99,
+    "UberEats": "https://www.ubereats.com/store/honest-restaurant/J1XiXzipTkqTqdZJyZs-kA/9baebaf9-18c2-5259-8008-1400dd2b5059/7e12b8f3-7a72-5332-aaf9-4fc596f621b9/8b21910d-1450-593d-a38d-3d9edf4f68d2?ps=1"
   },
   {
     "Id": "8d326ce6-131c-4742-9ba0-afb9269a37002",
@@ -790,13 +940,18 @@
     "Title": "Mutton (Goat) Dum Biryani",
     "Cuisine": "Indian",
     "Description": "Flavoured Goat meat rice served with raita and birnjal curry",
-    "UberEats": null,
     "Ratings": [
       5,
       5
     ],
-    "Reviews": [],
-    "Price": 16.99
+    "Reviews": [
+      {
+        "Id": "eaf44546-3634-4f88-ad77-6bf51a2c105c",
+        "Review": "We love their chicken and mutton dum biryani because it is better than the one in Redmond. The taste is the best in the area since they only cook it on Fridays, Saturdays, and Sundays. It is cooked slowly and you can taste all the flavors. We are looking forward to trying other dishes. The staff is very nice. Thanks!"
+      }
+    ],
+    "Price": 16.99,
+    "UberEats": null
   },
   {
     "Id": "8d326ce6-131c-4742-9ba0-afb9269a37003",
@@ -810,13 +965,18 @@
     "Title": "Chicken Tikka Masala",
     "Cuisine": "Indian",
     "Description": "Breast meat simmered in our signature tomato sauce and butter-cream sauce",
-    "UberEats": null,
     "Ratings": [
       4,
       3
     ],
-    "Reviews": [],
-    "Price": 16.99
+    "Reviews": [
+      {
+        "Id": "5bd832c0-d135-4844-93e6-e2933b4c570a",
+        "Review": "He also brought a side of my dining partners chicken tikka masala sauce so I could dip my chicken tikka in it if I chose. That was a really nice touch and the sauce was very good."
+      }
+    ],
+    "Price": 16.99,
+    "UberEats": null
   },
   {
     "Id": "8d326ce6-131c-4742-9ba0-afb9269a37004",
@@ -830,14 +990,19 @@
     "Title": "Mango Lassi",
     "Cuisine": "Indian",
     "Description": "Mango Yogurt Shake",
-    "UberEats": null,
     "Ratings": [
       5,
       4,
       3
     ],
-    "Reviews": [],
-    "Price": 3.49
+    "Reviews": [
+      {
+        "Id": "5a615d19-7f32-43ca-b639-b544bd6decc0",
+        "Review": "We\u0027ve been hearing about this place for years, finally made it there tonight and really enjoyed it. It was quiet, the service was great and the food was good. The mango lassi, in particular, was delicious. We had a group of 6 and ordered several different dishes to try, yet the food was served quickly. A great dinner and I\u0027m sure we\u0027ll return to try the buffet one day soon!"
+      }
+    ],
+    "Price": 3.49,
+    "UberEats": null
   },
   {
     "Id": "a5b0fb4f-8e2f-4184-95dc-25afcf078d6b",
@@ -851,15 +1016,20 @@
     "Title": "Margherita Pizza",
     "Cuisine": "Italian",
     "Description": "Tomato sauce, fresh mozzarella, olive oil, basil",
-    "UberEats": null,
     "Ratings": [
       4,
       4,
       5,
       5
     ],
-    "Reviews": [],
-    "Price": 18
+    "Reviews": [
+      {
+        "Id": "4e1f0945-5d4a-498b-bfa2-fdc6bffea2a2",
+        "Review": "After a day of traveling and sightseeing from Portland to Ballard, we were looking for a relaxing evening with comfort food. My girlfriend suggested pizza, which led me to discover Delancey, just a few blocks from our Airbnb. It couldn\u0027t have been a better situation. Great lighting, stylish decor, chill wait staff with super speedy service. We had some great wine and local beers and enjoyed the classic Margherita pizza. The real highlight of the experience was a delicious homemade chocolate chip cookie \u00E1 la mode. If you\u0027re wanting to continue the night check out the bar at Essex right next door for chill cocktails."
+      }
+    ],
+    "Price": 18,
+    "UberEats": null
   },
   {
     "Id": "ef0c8b5f-5031-4a09-99b7-8468296360fa",
@@ -873,15 +1043,20 @@
     "Title": "The Mean with Salt-n-Pepa Skins Sandwich",
     "Cuisine": "American",
     "Description": "1/3 pound of griddled corned beef, shop-made yellow mustard, shop-made pickled red cabbage and fresh picked mint. A delicious \u0022plot-twist\u0022 to your typical corned beef sandwich.",
-    "UberEats": null,
     "Ratings": [
       4,
       5,
       5,
       5
     ],
-    "Reviews": [],
-    "Price": 14
+    "Reviews": [
+      {
+        "Id": "d44de8e9-ae77-45a5-ae82-cef6804d75f5",
+        "Review": "I ordered the Mean Sandwich, Buon Appetito, Hama Hama Oyster Po\u0027Boy, the Salt-n-Pepa skins and loaded skins. EVERYTHING was delicious, uniquely seasoned with house made ingredients and flavors, and piping hot fresh! The Hama Hama Oystery Po\u0027Boy with the fried oysters was super flavorful with the remoulade and mayo, just what I was hoping for. The Buon Appetito was also excellent: The chicken was simply pull-apart tender and not at all dry (plus the cheese was mmmm, so good). And the Mean Sandwich! This was a very unique combination of flavors: The corn beef (very tender and moist, the fatty bits were uh-mazing), mint leaf, sharp mustard, and pickled red cabbage combined made for a very impressive tasting experience."
+      }
+    ],
+    "Price": 14,
+    "UberEats": null
   },
   {
     "Id": "c48a80fb-18b3-4820-a3e2-436f19b71065",
@@ -895,14 +1070,19 @@
     "Title": "Pud Thai",
     "Cuisine": "Thai",
     "Description": "Pan fried thin rice noodles with egg, bean sprouts, topped with carrots, ground peanuts, and onions",
-    "UberEats": null,
     "Ratings": [
       2,
       2,
       2
     ],
-    "Reviews": [],
-    "Price": 12.95
+    "Reviews": [
+      {
+        "Id": "2c5818ae-649b-4b32-8293-908bc1c0ce10",
+        "Review": "Just did a pick up order of Pud Thai noodles, crisp garlic chicken, fried rice with veggies and of course a side of peanut sauce, all of it was the best.  Always delicious .  Generally at 5:30 the restaurant would be full even on a Sunday. So it was funny to see all the chairs lined up directing you toward the desk."
+      }
+    ],
+    "Price": 12.95,
+    "UberEats": null
   },
   {
     "Id": "9526e763-4c4e-4617-9700-4360fe0f6c42",
@@ -916,7 +1096,6 @@
     "Title": "Pho Tai",
     "Cuisine": "Vietnamese",
     "Description": "Pho with Rare Beef",
-    "UberEats": null,
     "Ratings": [
       2,
       3,
@@ -926,7 +1105,8 @@
       5
     ],
     "Reviews": [],
-    "Price": 9.5
+    "Price": 9.5,
+    "UberEats": null
   },
   {
     "Id": "1a4b07d9-7614-4d21-a2ff-39d1f8011fb6",
@@ -940,7 +1120,6 @@
     "Title": "Gyro Sandwich",
     "Cuisine": "Greek",
     "Description": "Lamb/Beef, lettuce, tomato, sauce, pita bread",
-    "UberEats": null,
     "Ratings": [
       5,
       5,
@@ -952,8 +1131,14 @@
       5,
       5
     ],
-    "Reviews": [],
-    "Price": 9.69
+    "Reviews": [
+      {
+        "Id": "bcf15a45-98bb-4cd1-8e0d-170be9ca3aa0",
+        "Review": "I purchased a Gyro sandwich combination which included a drink and fries. It was hot and ready in no time... I love hot french fries. Sandwich was awesome, will be back for more. Keep up the good work."
+      }
+    ],
+    "Price": 9.69,
+    "UberEats": null
   },
   {
     "Id": "b43ae655-5215-409d-99f9-d2217eb68f04",
@@ -967,7 +1152,6 @@
     "Title": "Loco Moco Scotch Egg",
     "Cuisine": "Hawaiian",
     "Description": "Ground beef, egg, mac salad",
-    "UberEats": null,
     "Ratings": [
       5,
       5,
@@ -976,8 +1160,14 @@
       3,
       3
     ],
-    "Reviews": [],
-    "Price": 22
+    "Reviews": [
+      {
+        "Id": "2c4788e5-48f8-4910-b39c-7868d77f735b",
+        "Review": "I only regret that I can only give 5 stars. TN and Julia behind the bar made us feel like old friends, and watching them mix drinks was an absolute joy. Very friendly and welcoming. Sean in the kitchen KILLED IT. I did not expect this level of expertise in an after hours joint, and I am so very happy to have been wrong. I\u0027m an hour\u002B away and I WILL be back, early and often. The Scotch Egg was brilliant, the Kahlua Pig was outstanding, but the pi\u0117ce d\u00E9 resistance was the Karaage Cauliflower. It is life changing..."
+      }
+    ],
+    "Price": 22,
+    "UberEats": null
   },
   {
     "Id": "1aacbaed-7a9c-4de9-b40d-39fa843eeaf9",
@@ -991,7 +1181,6 @@
     "Title": "Poke Bowl",
     "Cuisine": "Hawaiian",
     "Description": "Diced raw fish served either as an appetizer or a main course and is one of the main dishes of Native Hawaiian cuisine",
-    "UberEats": null,
     "Ratings": [
       5,
       5,
@@ -1001,7 +1190,8 @@
       5
     ],
     "Reviews": [],
-    "Price": 15
+    "Price": 15,
+    "UberEats": null
   },
   {
     "Id": "61bbd0d0-97be-4d88-85ab-f26bed8db97d",
@@ -1015,7 +1205,6 @@
     "Title": "Garlic Tonkatsu Ramen",
     "Cuisine": "Japanese",
     "Description": "Extra rich pork broth that takes 16 hours to make with Shoyu flavored broth. Topped with vegetable, protein and an Award Wining mouth watering soft boiled egg.",
-    "UberEats": null,
     "Ratings": [
       5,
       5,
@@ -1025,7 +1214,8 @@
       3
     ],
     "Reviews": [],
-    "Price": 14.5
+    "Price": 14.5,
+    "UberEats": null
   },
   {
     "Id": "8d727985-6c72-4740-9e2c-1c4ef6b01a97",
@@ -1039,7 +1229,6 @@
     "Title": "Boba Milk Tea",
     "Cuisine": "Asian",
     "Description": "Tea-based drink that consists of tea accompanied by chewy tapioca balls",
-    "UberEats": null,
     "Ratings": [
       4,
       4,
@@ -1047,7 +1236,8 @@
       5
     ],
     "Reviews": [],
-    "Price": 4.95
+    "Price": 4.95,
+    "UberEats": null
   },
   {
     "Id": "96d97a40-bdb3-487c-876c-b4a7c0085fb6",
@@ -1061,7 +1251,6 @@
     "Title": "Happy Hour Nachos",
     "Cuisine": "Mexican",
     "Description": "Chips with cheese, beans, and guacamole",
-    "UberEats": null,
     "Ratings": [
       5,
       5,
@@ -1075,7 +1264,8 @@
       4
     ],
     "Reviews": [],
-    "Price": 6
+    "Price": 6,
+    "UberEats": null
   },
   {
     "Id": "96d97a40-bdb3-487c-876c-b4a7c00850001",
@@ -1089,7 +1279,6 @@
     "Title": "Tikka Masala",
     "Cuisine": "Indian",
     "Description": "Also known as Butter Chicken. A sweet creamy tomato and fenugreek based sauce available in chicken or paneer.",
-    "UberEats": null,
     "Ratings": [
       5,
       5,
@@ -1101,7 +1290,8 @@
       4
     ],
     "Reviews": [],
-    "Price": 14.99
+    "Price": 14.99,
+    "UberEats": null
   },
   {
     "Id": "96d97a40-bdb3-487c-876c-b4a7c00850010",
@@ -1115,13 +1305,13 @@
     "Title": "Chole Bhature",
     "Cuisine": "Indian",
     "Description": "Whole wheat flour bread served with Chickpea curry",
-    "UberEats": null,
     "Ratings": [
       5,
       4
     ],
     "Reviews": [],
-    "Price": 10.49
+    "Price": 10.49,
+    "UberEats": null
   },
   {
     "Id": "96d97a40-bdb3-487c-876c-b4a7c00850011",
@@ -1135,13 +1325,13 @@
     "Title": "Chettinad Chicken",
     "Cuisine": "Indian",
     "Description": "Chicken cooked with south Indian hot sauce of freshly ground homemade spices.",
-    "UberEats": null,
     "Ratings": [
       5,
       4
     ],
     "Reviews": [],
-    "Price": 15.99
+    "Price": 15.99,
+    "UberEats": null
   },
   {
     "Id": "96d97a40-bdb3-487c-876c-b4a7c00850012",
@@ -1155,13 +1345,13 @@
     "Title": "Mysore Masala Dosa",
     "Cuisine": "Indian",
     "Description": "Spicy dosa with chilies and mint chutney and clarified butter with potato masala.",
-    "UberEats": null,
     "Ratings": [
       5,
       4
     ],
     "Reviews": [],
-    "Price": 10.99
+    "Price": 10.99,
+    "UberEats": null
   },
   {
     "Id": "96d97a40-bdb3-487c-876c-b4a7c00850013",
@@ -1175,13 +1365,13 @@
     "Title": "Egg kothu Parotta",
     "Cuisine": "Indian",
     "Description": "Spicy dosa with chilies and mint chutney and clarified butter with potato masala.",
-    "UberEats": null,
     "Ratings": [
       5,
       4
     ],
     "Reviews": [],
-    "Price": 10.99
+    "Price": 10.99,
+    "UberEats": null
   },
   {
     "Id": "ced51dda-6637-4b5d-9d20-3d501563b497",
@@ -1195,13 +1385,13 @@
     "Title": "Vanilla Custard Donut",
     "Cuisine": "American",
     "Description": "Filled with vanilla custard",
-    "UberEats": null,
     "Ratings": [
       5,
       5
     ],
     "Reviews": [],
-    "Price": 5
+    "Price": 5,
+    "UberEats": null
   },
   {
     "Id": "c81edd8e-ff53-4ecb-860e-35b875442970",
@@ -1215,7 +1405,6 @@
     "Title": "Gyro Lamb and Beef Sandwich",
     "Cuisine": "Mediterranean",
     "Description": "Succulent grilled meat sliced off the cone, lettuce, tomatoes, onions, and homemade tzatziki on pita.",
-    "UberEats": null,
     "Ratings": [
       5,
       5,
@@ -1224,7 +1413,8 @@
       4
     ],
     "Reviews": [],
-    "Price": 7.55
+    "Price": 7.55,
+    "UberEats": null
   },
   {
     "Id": "d63d618a-2536-4108-98db-99ebc720401d",
@@ -1238,10 +1428,10 @@
     "Title": "Cookie Dough Ice Cream",
     "Cuisine": "Italian",
     "Description": "Enter description of dish",
-    "UberEats": null,
     "Ratings": null,
     "Reviews": [],
-    "Price": 4
+    "Price": 4,
+    "UberEats": null
   },
   {
     "Id": "cdc254a2-82a0-4abe-891f-8ca5419d69a3",
@@ -1255,14 +1445,14 @@
     "Title": "Spicy Tuna Roll",
     "Cuisine": "Japanese",
     "Description": "Tuna, rice, nori, avocado",
-    "UberEats": null,
     "Ratings": [
       4,
       3,
       3
     ],
     "Reviews": [],
-    "Price": 10.5
+    "Price": 10.5,
+    "UberEats": null
   },
   {
     "Id": "6b1025ff-7e6d-4e0e-8001-c841365325b0",
@@ -1276,10 +1466,10 @@
     "Title": "ShackBurger",
     "Cuisine": "American",
     "Description": "Cheeseburger with lettuce, tomato, ShackSauce (contains eggs, milk, soy, wheat, and gluten).",
-    "UberEats": null,
     "Ratings": null,
     "Reviews": [],
-    "Price": 5.29
+    "Price": 5.29,
+    "UberEats": null
   },
   {
     "Id": "c4aff32c-58b1-4820-aff2-f63a90e6aa85",
@@ -1293,10 +1483,10 @@
     "Title": "Fried Chicken",
     "Cuisine": "Southern",
     "Description": "Chicken coated in batter and deep fried",
-    "UberEats": null,
     "Ratings": null,
     "Reviews": [],
-    "Price": 12.99
+    "Price": 12.99,
+    "UberEats": null
   },
   {
     "Id": "a623ffdf-af5e-4dc0-8383-92c92cd5bec0",
@@ -1310,10 +1500,10 @@
     "Title": "Reuben Sandwich",
     "Cuisine": "American",
     "Description": "Corned beef, sauerkraut, between rye bread",
-    "UberEats": null,
     "Ratings": null,
     "Reviews": [],
-    "Price": 13.49
+    "Price": 13.49,
+    "UberEats": null
   },
   {
     "Id": "55ac8039-7b71-4f0b-9fc5-3a47a55e47df",
@@ -1327,10 +1517,10 @@
     "Title": "Oysters",
     "Cuisine": "American",
     "Description": "Salt water bivalve molluscs that live in marine or brackish habitats.",
-    "UberEats": null,
     "Ratings": null,
     "Reviews": [],
-    "Price": 3.75
+    "Price": 3.75,
+    "UberEats": null
   },
   {
     "Id": "a2ba3c93-944f-4c87-b83a-eec52b896476",
@@ -1344,10 +1534,10 @@
     "Title": "Lasagna",
     "Cuisine": "Italian",
     "Description": "Type of pasta, possibly one of the oldest types,[2] made of very wide, flat sheets.",
-    "UberEats": null,
     "Ratings": null,
     "Reviews": [],
-    "Price": 21
+    "Price": 21,
+    "UberEats": null
   },
   {
     "Id": "d225a445-e3e6-4983-b183-9f63b02ecad1",
@@ -1361,10 +1551,10 @@
     "Title": "Cheesecake",
     "Cuisine": "American",
     "Description": "sweet dessert consisting of one or more layers. The main, and thickest, layer consists of a mixture of a soft, fresh cheese (typically cottage cheese, cream cheese or ricotta), eggs, and sugar.",
-    "UberEats": null,
     "Ratings": null,
     "Reviews": [],
-    "Price": 28
+    "Price": 28,
+    "UberEats": null
   },
   {
     "Id": "9b76b550-98a8-45c1-9641-ae6c27d267bd",
@@ -1378,10 +1568,10 @@
     "Title": "100% A5 JAPANESE FILET",
     "Cuisine": "Mexican",
     "Description": "Miyazaki prefecture",
-    "UberEats": null,
     "Ratings": null,
     "Reviews": [],
-    "Price": 100
+    "Price": 100,
+    "UberEats": null
   },
   {
     "Id": "255539a0-f562-4db1-8d87-926cde194f16",
@@ -1395,10 +1585,10 @@
     "Title": "New Zealand Elk Rack",
     "Cuisine": "American",
     "Description": "grilled lacinato kale, cauliflower-olive tapenade, olive oil, sea salt",
-    "UberEats": null,
     "Ratings": null,
     "Reviews": [],
-    "Price": 46
+    "Price": 46,
+    "UberEats": null
   },
   {
     "Id": "e6ae1022-ca28-4720-9589-95249b2c91af",
@@ -1412,10 +1602,15 @@
     "Title": "Black Cod",
     "Cuisine": "American",
     "Description": "brussels sprouts, lemon, garlic, parsnip puree, aleppo pepper",
-    "UberEats": null,
     "Ratings": null,
-    "Reviews": [],
-    "Price": 35
+    "Reviews": [
+      {
+        "Id": "d5d8f747-5ed8-4bf5-88a4-d76b808be1c4",
+        "Review": "This place is always packed and hard to get reservations, so we went right when they opened at 5 pm and got a seat at the bar. The service was excellent and the ambiance was also great! It\u0027s a quaint restaurant and perfect for date night! The black cod, gnocchi, and smoked cod potatoes were delicious!! The only item that we weren\u0027t too impressed with was the hamachi crudo as it didn\u0027t taste very fresh. I love raw fish (sushi, sashimi, etc.) but this had a funny/fishy aftertaste. Everything else was great!!"
+      }
+    ],
+    "Price": 35,
+    "UberEats": null
   },
   {
     "Id": "156aa96a-ea2f-4752-9cbb-8ba8b3fe7721",
@@ -1429,10 +1624,15 @@
     "Title": "Garlic Truffle Fries",
     "Cuisine": "American",
     "Description": "Fried slices of potato with garlic and truffle powder",
-    "UberEats": null,
     "Ratings": null,
-    "Reviews": [],
-    "Price": 6.95
+    "Reviews": [
+      {
+        "Id": "79944e20-dddf-4346-a1f2-5876f4a37688",
+        "Review": "Headed to the airport and had to find a quick meal. Relied on Yelps reviews and found 8oz Burger \u0026 Co.  I must say Yelp pulled through again. This burger is amazing. I ordered the Classic Burger with Garlic Truffle Fries.  It tastes amazing!!! They had it ready for me to pick up, and their customer service was great.  If I had a complaint it would be that they didn\u0027t put napkins in the bag, but other than that it was a great burger at at great price!"
+      }
+    ],
+    "Price": 6.95,
+    "UberEats": null
   },
   {
     "Id": "fda90268-c5bf-4bd9-8399-07056d261f7d",
@@ -1446,10 +1646,15 @@
     "Title": "Garlic Broccolini",
     "Cuisine": "American",
     "Description": "Oven roasted broccolini with garlic",
-    "UberEats": null,
     "Ratings": null,
-    "Reviews": [],
-    "Price": 6
+    "Reviews": [
+      {
+        "Id": "51e3d9fc-27d4-4848-9bb5-1de2a66edebf",
+        "Review": "My husband and I went there on a Friday night, got a table right away, everyone was super nice and friendly. Food was fantastic. Happy hour are awesome here, half price small snack from 4-6 pm. I ordered the classic 8 oz burger with fries, it was amazing. My husband ordered the grass fed sliders (2) for $6 during happy hour, the roasted garlic broccolini and couple of beers. Every tasted amazing, server was great. We had a really good time there."
+      }
+    ],
+    "Price": 6,
+    "UberEats": null
   },
   {
     "Id": "412d41c4-e0e4-4a97-85b6-739300e8fdf1",
@@ -1463,10 +1668,15 @@
     "Title": "Giant Pretzel",
     "Cuisine": "German",
     "Description": "Baked giant pretzel served with honey mustard and cheese dip",
-    "UberEats": null,
     "Ratings": null,
-    "Reviews": [],
-    "Price": 16
+    "Reviews": [
+      {
+        "Id": "a8dc220e-529a-458a-8ad3-3f13b61648cb",
+        "Review": "We got the giant pretzel which comes with various dips that are bound to please your whole party. We also got the sausage sampler which was pretty good. Some sausages better than the other."
+      }
+    ],
+    "Price": 16,
+    "UberEats": null
   },
   {
     "Id": "cf15f7cd-0e2e-470b-a7c8-59987c2455ef",
@@ -1480,10 +1690,10 @@
     "Title": "Wurst Platte",
     "Cuisine": "German",
     "Description": "Choice of house-made sausage with mashed potatoes and sauerkraut",
-    "UberEats": null,
     "Ratings": null,
     "Reviews": [],
-    "Price": 15
+    "Price": 15,
+    "UberEats": null
   },
   {
     "Id": "0fccd253-afed-43bd-8285-f9118254ccfe",
@@ -1497,9 +1707,14 @@
     "Title": "Spring Rolls",
     "Cuisine": "Vietnamese",
     "Description": "Shrimp, rice vermicelli, and pickled carrots wrapped in rice paper",
-    "UberEats": null,
     "Ratings": null,
-    "Reviews": [],
-    "Price": 5
+    "Reviews": [
+      {
+        "Id": "d14f28aa-3cd6-4621-8f77-84bc2468373c",
+        "Review": "My go to lunch spot for when I\u0027m on campus, pre-covid all my classmates used to come here during our lunch break for their delicious spring rolls. Since classes are mostly online now, I sometimes dream of having them again. Please stop by to support them and their good quality food."
+      }
+    ],
+    "Price": 5,
+    "UberEats": null
   }
 ]
