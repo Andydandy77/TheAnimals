@@ -28,45 +28,47 @@
             <p class="card-text">@Model.Product.Description</p>
             <p class="card-text">Cuisine: @Model.Product.Cuisine</p>
             <p class="card-text">Location: @Model.Product.Address @Model.Product.City, @Model.Product.State</p>
+            <p class="card-text">Cuisine: @Model.Product.UberEats</p>
+
             <p class="card-text">Reviews:</p>
             @if (Model.Product.Reviews != null)
             {
-            foreach (var review in Model.Product.Reviews)
-            {
-            <p class="card-text">"@review.Review"</p>
-            }
+                foreach (var review in Model.Product.Reviews)
+                {
+                    <p class="card-text">"@review.Review"</p>
+                }
             }
 
             @{
-            var numOfVotes = 0;
+                var numOfVotes = 0;
 
-            if (Model.Product.Ratings != null)
-            {
-            numOfVotes = Model.Product.Ratings.Length;
-            }
+                if (Model.Product.Ratings != null)
+                {
+                    numOfVotes = Model.Product.Ratings.Length;
+                }
 
-            var voteLabel = numOfVotes > 1 ? "Votes" : "Vote";
+                var voteLabel = numOfVotes > 1 ? "Votes" : "Vote";
 
-            if (numOfVotes == 0)
-            {
-            <span>Be the first to vote!</span>
-            }
-            else
-            {
-            <span>@Model.Product.Ratings.Length @voteLabel</span>
-            }
-            for (int i = 1; i < 6; i++)
-            {
-            int currentStar = i;
-            if (i <= Model.Product.GetCurrentRating())
-            {
-            <span class="fa fa-star checked"></span>
-            }
-            else
-            {
-            <span class="fa fa-star"></span>
-            }
-            }
+                if (numOfVotes == 0)
+                {
+                    <span>Be the first to vote!</span>
+                }
+                else
+                {
+                    <span>@Model.Product.Ratings.Length @voteLabel</span>
+                }
+                for (int i = 1; i < 6; i++)
+                {
+                    int currentStar = i;
+                    if (i <= Model.Product.GetCurrentRating())
+                    {
+                        <span class="fa fa-star checked"></span>
+                    }
+                    else
+                    {
+                        <span class="fa fa-star"></span>
+                    }
+                }
             }
         </div>
     </div>

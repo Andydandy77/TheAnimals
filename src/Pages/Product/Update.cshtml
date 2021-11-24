@@ -91,6 +91,13 @@
             <span asp-validation-for="Product.Image" class="text-danger"></span>
         </div>
 
+        @*to update the Uber Eats Url of the dish*@
+        <div class="form-group">
+            <label asp-for="Product.UberEats" class="control-label"></label>
+            <input asp-for="Product.UberEats" class="form-control" />
+            <span asp-validation-for="Product.UberEats" class="text-danger"></span>
+        </div>
+
         @*a button to save the changes made in the update page*@
         <div class="form-group">
             <input type="submit" value="Save" class="btn btn-primary" />

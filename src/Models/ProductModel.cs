@@ -54,6 +54,9 @@ namespace ContosoCrafts.WebSite.Models
         // Price of dish
         public float Price { get; set; }
 
+        //Uber Eats Link
+        public string UberEats { get; set; }
+
 
         /// <summary>
         /// Returns string representation of the dish

@@ -151,6 +151,8 @@ namespace ContosoCrafts.WebSite.Services
             productData.Category = data.Category;
             productData.Restaurant = data.Restaurant;
             productData.Reviews = data.Reviews;
+            productData.UberEats = data.UberEats;
+
 
             SaveData(products);
 
@@ -202,6 +204,7 @@ namespace ContosoCrafts.WebSite.Services
                 Title = "Name of Dish",
                 Cuisine = "Type of Cuisine",
                 Description = "Enter description of dish",
+                UberEats = "Enter the Uber Eats Link",
                 Price = 0,
 
             };
