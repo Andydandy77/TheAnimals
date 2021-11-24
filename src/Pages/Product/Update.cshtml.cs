@@ -50,9 +50,9 @@ namespace ContosoCrafts.WebSite.Pages.Product
         /// Post the model back to the page
         /// The model is in the class variable Product
         /// Call the data layer to Update that data
-        /// Then return to the index page
+        /// Then return to the index page if update was successful
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Either a redirect to Index page or null</returns>
         public IActionResult OnPost()
         {
             if (!ModelState.IsValid)
@@ -68,6 +68,11 @@ namespace ContosoCrafts.WebSite.Pages.Product
             return null;
         }
 
+
+        /// <summary>
+        /// Validates input for dish update fields
+        /// </summary>
+        /// <returns>true if the update is valid, false otherwise</returns>
         public bool ValidateInput()
         {
            if (Product.Title.Length > 50)
