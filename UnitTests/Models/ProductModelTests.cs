@@ -43,7 +43,7 @@ namespace UnitTests.Pages.Product.Delete
         {
 
             // Arrange
-            var expected = "{\"Id\":null,\"Category\":null,\"Restaurant\":null,\"Address\":null,\"City\":null,\"State\":null,\"img\":null,\"Url\":null,\"Title\":null,\"Cuisine\":null,\"Description\":null,\"Ratings\":null,\"Reviews\":[],\"Price\":0}";
+            var expected = "{\"Id\":null,\"Category\":null,\"Restaurant\":null,\"Address\":null,\"City\":null,\"State\":null,\"img\":null,\"Url\":null,\"Title\":null,\"Cuisine\":null,\"Description\":null,\"Ratings\":null,\"Reviews\":[],\"Price\":0,\"UberEats\":null}";
             
             // Act
             var result = pageModel.ToString();
