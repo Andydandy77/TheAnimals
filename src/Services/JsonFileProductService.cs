@@ -162,7 +162,6 @@ namespace ContosoCrafts.WebSite.Services
         /// <summary>
         /// Save All products data to storage
         /// </summary>
-
         private void SaveData(IEnumerable<ProductModel> products)
         {
 
