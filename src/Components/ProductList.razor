@@ -7,8 +7,8 @@
     <div class="form-outline">
         <input type="search" class="form-control" @bind="@SearchTerm" />
     </div>
-    <button type="button" class="btn btn-primary mb-3 searchButton" @onclick="StateHasChanged">Search</button>
-    <button type="button" class="btn btn-primary mb-3 searchButton" @onclick="ClearSearch">Clear</button>
+    <button type="button" class="btn btn-primary mb-3 searchButton" id="Search" @onclick="StateHasChanged">Search</button>
+    <button type="button" class="btn btn-primary mb-3 searchButton" id="Clear" @onclick="ClearSearch">Clear</button>
 
 </div>
 
