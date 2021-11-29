@@ -220,11 +220,20 @@ a:link {
 
 .searchButton {
     margin-left: 10px;
+    height:40px;
+}
+
+.form-control {
+    height:40px;
 }
 
 .title {
     font-family: 'Bookman Old Style';
     font-size: 42px;
+}
+
+.float-right {
+    float:right;
 }
 
 .aboutus {
@@ -516,4 +525,13 @@ a:link {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+#username{
+    float:right;
+}
+
+.position-right{
+    position:absolute;
+    right:15px;
 }
