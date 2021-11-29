@@ -33,7 +33,7 @@ namespace ContosoCrafts.WebSite
             services.AddHttpClient();
             services.AddControllers();
             services.AddTransient<JsonFileProductService>();
-        
+            services.AddTransient<JsonFileUserService>();
         }
 
         /// <summary>
