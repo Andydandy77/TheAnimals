@@ -2,15 +2,47 @@
 @using ContosoCrafts.WebSite.Services
 @using Microsoft.AspNetCore.Components.Web
 @inject JsonFileProductService ProductService
+@inject JsonFileUserService UserService
 
-<div class="input-group">
-    <div class="form-outline">
-        <input type="search" class="form-control" @bind="@SearchTerm" />
+<div class="row">
+    <div class="input-group col">
+        <div class="form-outline">
+            <input type="search" class="form-control" @bind="@SearchTerm" />
+        </div>
+        <button type="button" class="btn btn-primary mb-3 searchButton" id="Search" @onclick="StateHasChanged">Search</button>
+        <button type="button" class="btn btn-primary mb-3 searchButton" id="Clear" @onclick="ClearSearch">Clear</button>
+
     </div>
-    <button type="button" class="btn btn-primary mb-3 searchButton" id="Search" @onclick="StateHasChanged">Search</button>
-    <button type="button" class="btn btn-primary mb-3 searchButton" id="Clear" @onclick="ClearSearch">Clear</button>
+    <div class="col">
+
+        @if (CurrentUser == null)
+        {
+        <div>
+            <div class="float-right">
+
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required @onchange="(e) => UpdateUsernameText(e.Value.ToString())" value="@Username">
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required @onchange="(e) => UpdatePasswordText(e.Value.ToString())" value="@Password">
+
+                <button type="submit" class="btn btn-primary mb-3 float-right" @onclick="(e => ValidateLogin())">Login</button>
+            </div>
+        </div>
+        }
+        else
+        {
+        <div class="float-right">
+            <h3>@CurrentUser.Username is logged in</h3>
+            <button type="submit" class="btn btn-primary mb-3 position-right" @onclick="(e => LogOut())">Logout</button>
+        </div>
+
+        }
+
+        </div>
 
 </div>
+
 
 <div class="dropdown filterButton">
     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -151,7 +183,7 @@
                             <p class="card-text"><b>Cuisine: </b>@selectedProduct.Cuisine</p>
                             <p class="card-text"><b>Restaurant: </b>@selectedProduct.Restaurant</p>
                             <p class="card-text"><b>Location : </b>@selectedProduct.Address @selectedProduct.City,@selectedProduct.State </p>
-                            <p class="card-text"><a href=@selectedProduct.UberEats><img id="ubereats"src="images/button-ubereats.webp"/></a></p>
+                            <p class="card-text"><a href=@selectedProduct.UberEats><img id="ubereats" src="images/button-ubereats.webp" /></a></p>
                             <p class="card-text"><b>Reviews:</b></p>
 
                             @{
@@ -163,6 +195,7 @@
                                         <div class="row review">
                                             <div class="col">
                                                 "@review.Review"
+                                                <p>- @review.User</p>
                                             </div>
                                         </div>
                                     }
@@ -243,6 +276,13 @@
     // Next Reivew Text is what the comment text is
     string NewReviewText = "";
 
+    // Username inputted
+    string Username;
+    // Password inputted
+    string Password;
+
+    UserModel CurrentUser;
+
     /// <summary>
     /// Enable the New Comment Entry by setting the NewComment flag
     /// </summary>
@@ -263,6 +303,25 @@
     }
 
     /// <summary>
+    /// Set the Username variable to the data just entered in the input box
+    /// </summary>
+    /// <param name="newUsernameText"></param>
+    void UpdateUsernameText(string newUsernameText)
+    {
+        Username = newUsernameText;
+    }
+
+    /// <summary>
+    /// Set the Password variable to the data just entered in the input box
+    /// </summary>
+    /// <param name="newUsernameText"></param>
+    void UpdatePasswordText(string newPasswordText)
+    {
+        Password = newPasswordText;
+    }
+
+
+    /// <summary>
     /// Add the comment to the product
     /// Best to refactor this to be a method to call in the Middle Tier Data service, rathern than putting the logic here...
     /// </summary>
@@ -274,7 +333,7 @@
 
 
         // Add it to the Comment List
-        selectedProduct.Reviews.Add(new ReviewModel() { Review = NewReviewText });
+        selectedProduct.Reviews.Add(new ReviewModel() { Review = NewReviewText, User = CurrentUser.Username});
 
         // Call for the Product to be saved
         ProductService.UpdateData(selectedProduct);
@@ -492,6 +551,29 @@
     string FeelingLucky()
     {
         return "/Product/Read/" + ProductService.GetRandomProduct();
+    }
+
+    void ValidateLogin()
+    {
+
+        UserModel user = UserService.GetUser(Username);
+        if (user == null)
+        {
+            CurrentUser = UserService.CreateUser(Username, Password);
+
+        }
+        else
+        {
+            if (UserService.ValidatePassword(Username, Password))
+            {
+                CurrentUser = user;
+
+            }
+        }
+    }
+
+    void LogOut() {
+        CurrentUser = null;
     }
 
 }
