@@ -10,5 +10,8 @@
 
         // The Comment
         public string Review { get; set; }
+
+        // The Username of the user that wrote the review
+        public string User { get; set; }
     }
 }
