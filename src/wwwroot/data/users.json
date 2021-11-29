@@ -1,7 +1,17 @@
-﻿[
+[
   {
-    "Id" "123",
+    "Id": "123",
     "Username": "test",
-    "Password":  "test"
+    "Password": "test"
+  },
+  {
+    "Id": "905a574a-c305-4e2d-8a12-8d5c22269b9d",
+    "Username": "dave",
+    "Password": "password"
+  },
+  {
+    "Id": "b15241a4-85da-406a-aea4-c143b98c9dc2",
+    "Username": "Billy",
+    "Password": "password1"
   }
 ]
