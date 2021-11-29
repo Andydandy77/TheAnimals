@@ -99,5 +99,48 @@ namespace ContosoCrafts.WebSite.Services
 
             return data;
         }
+
+        /// <summary>
+        /// Gets the user using the given username and password
+        /// </summary>
+        /// <param name="username"></param>
+        /// <param name="password"></param>
+        /// <returns>The UserModel for the user, if the user doesn't exist
+        /// this returns null</returns>
+        public UserModel GetUser(string username)
+        {
+            foreach (UserModel user in GetAllData())
+            {
+                if (user.Username == username)
+                {
+                    return user;   
+                }
+                }
+
+            return null;
+        }
+
+        /// <summary>
+        /// Validates the username and password entered by the user
+        /// </summary>
+        /// <param name="username"></param>
+        /// <param name="password"></param>
+        /// <returns>true if the combination of username and password is correct,
+        /// false otherwise</returns>
+        public bool ValidatePassword(string username, string password)
+        {
+            foreach (UserModel user in GetAllData())
+            {
+                if (user.Username == username)
+                {
+                    if (user.Password == password)
+                    {
+                        return true;
+                    }
+                }
+
+            }
+            return false;
+        }
     }
 }
