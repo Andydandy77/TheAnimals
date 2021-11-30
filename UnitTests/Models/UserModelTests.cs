@@ -53,6 +53,9 @@ namespace UnitTests.Pages.Product.Delete
         }
         #endregion GetId
 
+        /// <summary>
+        /// Tests that username getter function returns the right username
+        /// </summary>
         #region UsernameGetAndSet
         [Test]
         public void GetUsername_Valid_Should_Set_Username()
@@ -69,7 +72,9 @@ namespace UnitTests.Pages.Product.Delete
         }
         #endregion UsernameGetAndSet
 
-
+        /// <summary>
+        /// Tests that password getter function returns the right password
+        /// </summary>
         #region PasswordGetAndSet
         [Test]
         public void GetPassword_Valid_Should_Set_Password()
