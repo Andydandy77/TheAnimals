@@ -34,6 +34,7 @@ namespace UnitTests.Components
         {
             // Arrange
             Services.AddSingleton<JsonFileProductService>(TestHelper.ProductService);
+            Services.AddSingleton<JsonFileUserService>(TestHelper.UserService);
 
             // Act
             var page = RenderComponent<ProductList>();
@@ -54,6 +55,7 @@ namespace UnitTests.Components
         {
             // Arrange
             Services.AddSingleton<JsonFileProductService>(TestHelper.ProductService);
+            Services.AddSingleton<JsonFileUserService>(TestHelper.UserService);
             var id = "8oz";
 
             var page = RenderComponent<ProductList>();
@@ -97,6 +99,7 @@ namespace UnitTests.Components
 
             // Arrange
             Services.AddSingleton<JsonFileProductService>(TestHelper.ProductService);
+            Services.AddSingleton<JsonFileUserService>(TestHelper.UserService);
             var id = "MoreInfoButton_6b1025ff-7e6d-4e0e-8001-c841365325b0";
 
             var page = RenderComponent<ProductList>();
@@ -174,6 +177,7 @@ namespace UnitTests.Components
 
             // Arrange
             Services.AddSingleton<JsonFileProductService>(TestHelper.ProductService);
+            Services.AddSingleton<JsonFileUserService>(TestHelper.UserService);
             var id = "MoreInfoButton_8oz";
 
             var page = RenderComponent<ProductList>();
@@ -241,6 +245,7 @@ namespace UnitTests.Components
         {
             // Arrange
             Services.AddSingleton<JsonFileProductService>(TestHelper.ProductService);
+            Services.AddSingleton<JsonFileUserService>(TestHelper.UserService);
             var id = "GetMeTheBest";
 
             var page = RenderComponent<ProductList>();
@@ -277,6 +282,7 @@ namespace UnitTests.Components
         {
             // Arrange
             Services.AddSingleton<JsonFileProductService>(TestHelper.ProductService);
+            Services.AddSingleton<JsonFileUserService>(TestHelper.UserService);
             var id = "FilterByCategory_Burger";
 
             var page = RenderComponent<ProductList>();
@@ -311,6 +317,7 @@ namespace UnitTests.Components
         {
             // Arrange
             Services.AddSingleton<JsonFileProductService>(TestHelper.ProductService);
+            Services.AddSingleton<JsonFileUserService>(TestHelper.UserService);
             var id = "FilterByCuisine_Italian";
 
             var page = RenderComponent<ProductList>();
@@ -345,6 +352,7 @@ namespace UnitTests.Components
         {
             // Arrange
             Services.AddSingleton<JsonFileProductService>(TestHelper.ProductService);
+            Services.AddSingleton<JsonFileUserService>(TestHelper.UserService);
             var id = "FilterByCity_Seattle";
 
             var page = RenderComponent<ProductList>();
@@ -379,6 +387,7 @@ namespace UnitTests.Components
         {
             // Arrange
             Services.AddSingleton<JsonFileProductService>(TestHelper.ProductService);
+            Services.AddSingleton<JsonFileUserService>(TestHelper.UserService);
             var id = "FilterByPrice_0-5";
 
             var page = RenderComponent<ProductList>();
@@ -413,6 +422,7 @@ namespace UnitTests.Components
         {
             // Arrange
             Services.AddSingleton<JsonFileProductService>(TestHelper.ProductService);
+            Services.AddSingleton<JsonFileUserService>(TestHelper.UserService);
             var id = "FilterByPrice_0-5";
 
             var page = RenderComponent<ProductList>();
