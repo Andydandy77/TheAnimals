@@ -48,6 +48,9 @@ namespace UnitTests.Services.Models.UserServiceTests
         #endregion CreateUser
 
         #region GetUser
+        /// <summary>
+        /// Tests that GetUser method on nonexisting username should return null
+        /// </summary>
         [Test]
         public void GetUser_Invalid_Should_Return_Null()
         {
@@ -63,6 +66,9 @@ namespace UnitTests.Services.Models.UserServiceTests
         }
         #endregion GetUser
 
+        /// <summary>
+        /// Tests password validation in case user puts in correct password
+        /// </summary>
         #region ValidatePassword 
         [Test]
         public void ValidatePassword_Valid_Should_Return_True()
@@ -79,6 +85,9 @@ namespace UnitTests.Services.Models.UserServiceTests
             Assert.AreEqual(true, data);
         }
 
+        /// <summary>
+        /// Tests password validation in case user puts in wrong password
+        /// </summary>
         [Test]
         public void ValidatePassword_Invalid_Should_Return_False()
         {
