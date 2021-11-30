@@ -63,5 +63,36 @@ namespace UnitTests.Services.Models.UserServiceTests
         }
         #endregion GetUser
 
+        #region ValidatePassword 
+        [Test]
+        public void ValidatePassword_Valid_Should_Return_True()
+        {
+            // Arrange
+            var username = "aaaaaaaaa";
+            var password = "password";
+
+            // Act
+            TestHelper.UserService.CreateUser(username, password);
+            var data = TestHelper.UserService.ValidatePassword(username, password);
+
+            // Assert
+            Assert.AreEqual(true, data);
+        }
+
+        [Test]
+        public void ValidatePassword_Invalid_Should_Return_False()
+        {
+            // Arrange
+            var username = "aaaaaaaaa";
+            var password = "password";
+
+            // Act
+            TestHelper.UserService.CreateUser(username, password);
+            var data = TestHelper.UserService.ValidatePassword(username, "wrongPassword");
+
+            // Assert
+            Assert.AreEqual(false, data);
+        }
+        #endregion ValidatePassword
     }
 }
