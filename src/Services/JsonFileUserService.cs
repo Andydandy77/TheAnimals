@@ -34,7 +34,10 @@ namespace ContosoCrafts.WebSite.Services
 
         }
 
-        //Exposes an enumerator, iterators over
+        /// <summary>
+        /// Gets all user data
+        /// </summary>
+        /// <returns></returns>
         public IEnumerable<UserModel> GetAllData()
         {
             using (var jsonFileReader = File.OpenText(JsonFileName))
@@ -115,7 +118,7 @@ namespace ContosoCrafts.WebSite.Services
                 {
                     return user;   
                 }
-                }
+            }
 
             return null;
         }
