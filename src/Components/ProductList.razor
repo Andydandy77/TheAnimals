@@ -183,7 +183,13 @@
                             <p class="card-text"><b>Cuisine: </b>@selectedProduct.Cuisine</p>
                             <p class="card-text"><b>Restaurant: </b>@selectedProduct.Restaurant</p>
                             <p class="card-text"><b>Location : </b>@selectedProduct.Address @selectedProduct.City,@selectedProduct.State </p>
-                            <p class="card-text"><a href=@selectedProduct.UberEats><img id="ubereats" src="images/button-ubereats.webp" /></a></p>
+                            @{
+                                if (selectedProduct.UberEats != null)
+                                {
+                                    <p class="card-text"><a href=@selectedProduct.UberEats><img id="ubereats" src="images/button-ubereats.webp" /></a></p>
+                                }
+                            }
+
                             <p class="card-text"><b>Reviews:</b></p>
 
                             @{
