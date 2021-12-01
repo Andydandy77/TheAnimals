@@ -210,12 +210,19 @@
                                 // If this is a new review, then add the Input boxes for it, else show the Add review Button
                                 if (NewReview)
                                 {
-                                    <div class="row">
-                                        <div class="col">
-                                            <input type="text" @onchange="(e) => UpdateReviewText(e.Value.ToString())" value="@NewReviewText" />
-                                            <button @onclick="(e => AddReview())" class="btn btn-success" data-toggle="modal">Save Review</button>
+                                    if (CurrentUser != null)
+                                    {
+                                        <div class="row">
+                                            <div class="col">
+                                                <input type="text" @onchange="(e) => UpdateReviewText(e.Value.ToString())" value="@NewReviewText" />
+                                                <button @onclick="(e => AddReview())" class="btn btn-success" data-toggle="modal">Save Review</button>
+                                            </div>
                                         </div>
-                                    </div>
+                                    }
+                                    else
+                                    {
+                                        <p class="red">Log in to leave a review</p>
+                                    }
                                 }
 
                                 // If this is not a new review, then show the buttons for Adding review and Close
