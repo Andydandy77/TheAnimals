@@ -1089,7 +1089,7 @@
     "Address": "1510 NW Leary Way",
     "City": "Seattle",
     "State": "WA",
-    "img": "https://scontent-iad3-1.cdninstagram.com/v/t51.29350-15/240700871_547673359881318_7447505390550548614_n.jpg?_nc_cat=106\u0026ccb=1-5\u0026_nc_sid=8ae9d6\u0026_nc_ohc=BJJjeWxGY8MAX8IoBtY\u0026_nc_ht=scontent-iad3-1.cdninstagram.com\u0026edm=ABbrh9MEAAAA\u0026oh=09d85eb926641c4674f99150b9711498\u0026oe=6186F792",
+    "img": "https://fastly.4sqi.net/img/general/width960/897362_10obpDnFyFYP10Z_nC-mO4ddz6RTFWP3XbBV3nNVCng.jpg",
     "Url": "https://www.meansandwich.com/",
     "Title": "The Mean with Salt-n-Pepa Skins Sandwich",
     "Cuisine": "American",
@@ -1100,13 +1100,7 @@
       5,
       5
     ],
-    "Reviews": [
-      {
-        "Id": "d44de8e9-ae77-45a5-ae82-cef6804d75f5",
-        "Review": "I ordered the Mean Sandwich, Buon Appetito, Hama Hama Oyster Po\u0027Boy, the Salt-n-Pepa skins and loaded skins. EVERYTHING was delicious, uniquely seasoned with house made ingredients and flavors, and piping hot fresh! The Hama Hama Oystery Po\u0027Boy with the fried oysters was super flavorful with the remoulade and mayo, just what I was hoping for. The Buon Appetito was also excellent: The chicken was simply pull-apart tender and not at all dry (plus the cheese was mmmm, so good). And the Mean Sandwich! This was a very unique combination of flavors: The corn beef (very tender and moist, the fatty bits were uh-mazing), mint leaf, sharp mustard, and pickled red cabbage combined made for a very impressive tasting experience.",
-        "User": "dave"
-      }
-    ],
+    "Reviews": [],
     "Price": 14,
     "UberEats": null
   },
