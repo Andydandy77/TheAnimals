@@ -6,6 +6,7 @@ using ContosoCrafts.WebSite.Components;
 using Microsoft.Extensions.DependencyInjection;
 using ContosoCrafts.WebSite.Services;
 using System.Linq;
+using AngleSharp.Dom;
 
 namespace UnitTests.Components
 {
@@ -454,6 +455,231 @@ namespace UnitTests.Components
 
             // Assert
             Assert.AreEqual(true, pageMarkup.Contains("8oz"));
+        }
+        #endregion
+
+        #region Search
+        /// <summary>
+        /// Tests filtering books by search term
+        /// </summary>
+        [Test]
+        public void GetSearch_Dishes_Should_Should_Return_Valid_dishes()
+
+        {
+
+            // Arrange
+
+            Services.AddSingleton<JsonFileProductService>(TestHelper.ProductService);
+            Services.AddSingleton<JsonFileUserService>(TestHelper.UserService);
+
+
+            // Act
+
+            var page = RenderComponent<ProductList>();
+
+
+
+            // Find filter button
+
+            IElement filterButton = null;
+
+            foreach (var element in page.FindAll("button"))
+
+            {
+
+                if (element.Id != null && element.Id.Equals("Search"))
+
+                {
+
+                    filterButton = element;
+
+                }
+
+            }
+
+
+
+            // Find filter text input field
+
+            IElement filterText = null;
+
+            foreach (var element in page.FindAll("input"))
+
+            {
+
+                if (element.Id.Equals("searchdish"))
+
+                {
+
+                    filterText = element;
+
+                }
+
+                if (element.Id != null)
+
+                {
+
+                    filterText = element;
+                    break;
+
+                }
+
+            }
+
+
+
+            // Enter search term
+
+            filterText.Change("Burger");
+
+
+
+            // Click filter button
+
+            filterButton.Click();
+
+
+
+            //Get the Cards returned
+
+            var result = page.Markup;
+
+
+
+            // Assert
+
+            Assert.AreEqual(true, result.Contains("The 8oz"));
+
+
+
+        }
+
+        #endregion Search
+
+        #region Clear
+        [Test]
+
+        public void ClearSearch_Should_Return_All_Valid_Dishes()
+
+        {
+
+            // Arrange
+
+            Services.AddSingleton<JsonFileProductService>(TestHelper.ProductService);
+            Services.AddSingleton<JsonFileUserService>(TestHelper.UserService);
+
+
+
+            // Act
+
+            var page = RenderComponent<ProductList>();
+
+
+
+            // Find filter button
+
+            IElement filterButton = null;
+
+            foreach (var element in page.FindAll("button"))
+
+            {
+
+                if (element.Id != null && element.Id.Equals("Clear"))
+
+                {
+
+                    filterButton = element;
+
+                }
+
+            }
+
+
+
+            // Find filter text input field
+
+            IElement filterText = null;
+
+            foreach (var element in page.FindAll("input"))
+
+            {
+
+                if (element.Id.Equals("searchdish"))
+
+                {
+
+                    filterText = element;
+
+                }
+
+                if (element.Id != null)
+
+                {
+
+                    filterText = element;
+
+                }
+
+            }
+
+
+
+            // Find the clear button
+
+            IElement clearFilterButton = null;
+
+            foreach (var element in page.FindAll("button"))
+
+            {
+
+                if (element.Id != null && element.Id.Equals("Clear"))
+
+                {
+
+                    clearFilterButton = element;
+
+                }
+
+            }
+
+
+
+            //Get the all the unfiltered cards
+
+            var preResult = page.Markup;
+
+
+
+            // Enter search term
+
+            filterText.Change("Burger");
+
+
+
+            // Click filter button
+
+            filterButton.Click();
+
+
+
+            // Click clear filter button
+
+            clearFilterButton.Click();
+
+            filterText.Change("");
+
+
+
+            //Get the Cards returned
+
+            var postResult = page.Markup;
+
+
+
+            // Assert
+
+            Assert.AreEqual(1, postResult.CompareTo(preResult));
+
         }
         #endregion
 
